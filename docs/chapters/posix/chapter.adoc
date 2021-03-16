@@ -1,1 +1,180 @@
 = Terminalen och Posix
+
+== Navigation
+
+Kunskap om kommandon för att navigera i terminalen och förstå absoluta och relativa sökvägar.
+
+=== Varför?
+
+För att kunna använda CLI-baserade utvecklingsverktyg.
+
+=== Vad?
+
+.Kommandon:
+* pwd
+* cd
+
+== Filer
+
+Kunskap om olika filtyper, metadata och förståelse att allting är filer i unix. Använda kommandon för att manipulera filer genom följande operationer:
+* lista
+* byta namn
+* skapa
+* ta bort
+* läsa
+* skriva
+
+=== Varför?
+
+För att kunna använda CLI-baserade utvecklingsverktyg.
+
+=== Vad?
+
+Kunna använda följande kommandon med vanliga växlar.
+
+.Kommandon:
+* ls
+* cat
+* rm
+* mv
+* cp
+* touch
+* mkdir
+* rmdir
+* less/more
+* file
+* du
+
+== CLI-baserade textredigare
+
+Kunskap att använda en eller flera textredigare ifrån terminalen.
+
+=== Varför?
+
+För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
+
+=== Vad?
+
+* nano/vim/emacs
+
+== Unix permissions
+
+Kunskap om filrättigheter och kunna ändra dessa från terminalen.
+
+=== Varför?
+
+För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
+
+=== Vad?
+
+Kunna använda följande kommandon med vanliga växlar.
+
+.Kommandon:
+* sudo
+* chmod
+* chown
+* umask
+
+.Koncept
+* Användare
+* Grupper
+
+== Kommandon för filtrering av text och filer
+
+Använda CLI program för filtrera text och hitta filer med specifika egenskaper.
+
+=== Varför?
+
+För att kunna söka efter text och filer i CLI-baserat gränssnitt.
+
+=== Vad?
+
+Kunna använda följande kommandon med vanliga växlar.
+
+.Kommandon:
+* head
+* tail
+* sort
+* wc
+* grep
+* find
+
+== Streams, redirects och piping
+
+Kunskap om indata/utdata till terminalen, filer och andra program.
+
+=== Varför?
+
+För att kunna använda flera CLI program tillsammans.
+
+=== Vad?
+
+Standard streams:
+* stdin
+* stdout
+* stderr
+
+Kunna använda följande operatorer.
+
+.Operatorer:
+* >
+* >>
+* 2>
+* <
+* |
+
+== Processer
+
+Kunskap hur man interagerar med processer från terminalen och hur dessa samspelar med varandra.
+
+=== Varför?
+
+För att kunna använda CLI-baserade utvecklingsverktyg.
+
+=== Vad?
+
+.Kort kommandon:
+- CTRL + C
+- CTRL + Z
+
+.Kommandon:
+- kill
+- ps
+- jobs
+- fg
+- top
+
+.Operatorer:
+- &
+- &&
+
+== Scripting
+
+Kunskap hur man använder bash scripting.
+
+=== Varför?
+
+För att kunna använda utveckla CLI-baserade verktyg.
+
+=== Vad?
+
+.Koncept:
+- Subshells
+- Variabler
+- Miljövariabler
+- Escaping
+- Conditionals
+
+.Kommandon:
+- echo
+
+== Övrigt
+
+Kunskaper om övriga kommandon.
+
+=== Vad?
+
+Kunna använda följande kommandon med vanliga växlar.
+
+.Kommandon:
+- man
