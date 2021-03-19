@@ -17,6 +17,7 @@ För att kunna använda CLI-baserade utvecklingsverktyg.
 == Filer
 
 Kunskap om olika filtyper, metadata och förståelse att allting är filer i unix. Använda kommandon för att manipulera filer genom följande operationer:
+.Operationer
 * lista
 * byta namn
 * skapa
@@ -109,7 +110,7 @@ För att kunna använda flera CLI program tillsammans.
 
 === Vad?
 
-Standard streams:
+.Standard streams:
 * stdin
 * stdout
 * stderr
@@ -178,3 +179,4 @@ Kunna använda följande kommandon med vanliga växlar.
 
 .Kommandon:
 - man
+- history
