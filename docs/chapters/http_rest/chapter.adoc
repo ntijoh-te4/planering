@@ -1,0 +1,61 @@
+= HTTP och REST
+
+== HTTP
+
+För att kunna med säkerhet kunna utveckla web-applikationer behöver man ha en förståelse för det underliggande protokollet.
+
+Eleverna ska i slutet av momentet kunna implementera en egen HTTP-server som tolkar HTTP(1.1)-requests (GET/POST) och genererar korrekta HTTP-responses.
+
+=== HyperText
+
+Eleven kan förklara vad HyperText är
+
+=== Protokoll
+
+Eleven förstår att protokoll är en uppsättning regler i textform - inget magiskt som en dator bara förstår.
+
+Eleverna visar förståelse för att det finns flera olika sorters protokol.
+
+=== Client/Server
+
+Eleven kan redogöra för Client-Server-arkitekturen som den förhåller sig till webbutveckling (och, till viss del, t.ex mobil-app-utvecling mot webbservrar
+
+=== IETF/RFC
+
+Eleverna uppvisar förståelse för IETF och kan läsa en RFC
+
+=== Request/Response
+
+Eleverna kan redogöra för hur request-response-cykeln och hur en HTTP-request/response är uppbyggt.
+
+==== Headers
+
+Eleven kan manuellt tolka http requests och har förståelse för de vanligaste headers-fälten.
+
+De kan skriva en egen HTTP-request parser och HTTP-response-generator
+
+=== URL/URI
+
+Eleverna känner till begreppen och kan använda dem i sitt arbete.
+
+=== Query string & Body params
+
+Elevern kan läsa och skapa http query string och förstår skillnaden mellan query strings och body params.
+
+=== Verbs
+
+Eleven kan redogöra för GET/PUT/POST/PATCH/DELETE och dess skillnader och användningsområden och i vilka körtidsmiljöer de används.
+
+== REST
+
+För att kunna bygga standard-följande applikationer och ha en förståelse för ramverk med kodgeneration som följer REST behöver eleverna ha en förståelse för vad REST är och kunna redogöra för arkitekturen.
+
+=== Resurs
+
+Eleverna kan redogöra för vad som menas med en resurs inom REST.
+
+=== RESTful routes
+
+Eleverna kan redogöra för de vanliga restful routes, och kan använda termer som verb, action, resurs, List/Crud etc som de förhåller sig till REST.
+
+De kan manuellt skapa webapplikationer som följer REST.
