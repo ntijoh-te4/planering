@@ -1,0 +1,16 @@
+= Objektorienterad programmering
+
+.Begrepp:
+* Klass
+* Instans/Objekt
+* Metod
+* Arv - Super/Sub-klass
+* Super i metodanrop
+* Komposition
+* State
+* Override
+* Statiska/Dynamiska språk
+* Statiska/Klass vs Instansmetoder
+* Stark/Svag typning
+* Overloading 
+* Overriding
