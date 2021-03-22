@@ -1,0 +1,34 @@
+= Funktionell Programmering
+
+Funktionell programmering är enligt många räddningen i en alltmer parallelliseringsvänlig datorarkitektur. 
+
+Även om eleverna inte kommer använda sig av ett funktionellt språk som Haskell, F#, Erlang, Elixir eller Clojure på sin praktik eller fortsatt yrkesliv finns det många lärdomar från funktionell programmering som är bra att föra över till andra språk.
+
+Genom att använda sig av ett "snällt" FP-språk som Elixir kan vi utforska FP utan att stånga pannan blodig på monads och liknande.
+
+.Begrepp:
+* Imperative programming
+* Structured programming
+* Procedural programming
+* Functional programming
+* Declarative programming
+* Logical programming
+* Spaghettikod
+* Funktioner
+* Rekursion
+* Linked List
+* Enums
+* Streams
+* Aritet
+* Map (funktionen)
+* Map (datastrukturen)
+* Reduce
+* List Comprehensions
+* Pattern Matching
+* Composition
+* "List Comprehensions"
+* Side Effects
+* Immutability
+* Parallellism/Concurrency
+* Race Conditions
+* Piping
