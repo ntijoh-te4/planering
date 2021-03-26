@@ -1,13 +1,19 @@
-= Terminalen och Posix
+= Terminalen och POSIX
+
+Kunskaper relaterat till anvädning av terminalen. Grundläggande kunskaper om olika skal är också nödvändigt. Bash (Bourne Again Shell) är det skal (eng. shell) som utgås ifrån i följande dokumentation.
+
+Eftersom bash är så utspritt och väl använt är detta vad som utgås ifrån istället för ett helt POSIX-kompatibelt skal såsom dash (Debian Almquist shell).
 
 == Navigation
 
 Kunskap om kommandon för att navigera i terminalen och förstå absoluta och relativa sökvägar.
 
+[discrete]
 === Varför?
 
 För att kunna använda CLI-baserade utvecklingsverktyg.
 
+[discrete]
 === Vad?
 
 .Kommandon:
@@ -17,6 +23,7 @@ För att kunna använda CLI-baserade utvecklingsverktyg.
 == Filer
 
 Kunskap om olika filtyper, metadata och förståelse att allting är filer i unix. Använda kommandon för att manipulera filer genom följande operationer:
+
 .Operationer
 * lista
 * byta namn
@@ -25,10 +32,12 @@ Kunskap om olika filtyper, metadata och förståelse att allting är filer i uni
 * läsa
 * skriva
 
+[discrete]
 === Varför?
 
 För att kunna använda CLI-baserade utvecklingsverktyg.
 
+[discrete]
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
@@ -50,10 +59,12 @@ Kunna använda följande kommandon med vanliga växlar.
 
 Kunskap att använda en eller flera textredigare ifrån terminalen.
 
+[discrete]
 === Varför?
 
 För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
+[discrete]
 === Vad?
 
 * nano/vim/emacs
@@ -62,10 +73,12 @@ För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
 Kunskap om filrättigheter och kunna ändra dessa från terminalen.
 
+[discrete]
 === Varför?
 
 För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
+[discrete]
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
@@ -84,10 +97,12 @@ Kunna använda följande kommandon med vanliga växlar.
 
 Använda CLI program för filtrera text och hitta filer med specifika egenskaper.
 
+[discrete]
 === Varför?
 
 För att kunna söka efter text och filer i CLI-baserat gränssnitt.
 
+[discrete]
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
@@ -104,10 +119,12 @@ Kunna använda följande kommandon med vanliga växlar.
 
 Kunskap om indata/utdata till terminalen, filer och andra program.
 
+[discrete]
 === Varför?
 
 För att kunna använda flera CLI program tillsammans.
 
+[discrete]
 === Vad?
 
 .Standard streams:
@@ -128,10 +145,12 @@ Kunna använda följande operatorer.
 
 Kunskap hur man interagerar med processer från terminalen och hur dessa samspelar med varandra.
 
+[discrete]
 === Varför?
 
 För att kunna använda CLI-baserade utvecklingsverktyg.
 
+[discrete]
 === Vad?
 
 .Kort kommandon:
@@ -153,17 +172,21 @@ För att kunna använda CLI-baserade utvecklingsverktyg.
 
 Kunskap hur man använder bash scripting.
 
+[discrete]
 === Varför?
 
 För att kunna använda utveckla CLI-baserade verktyg.
 
+[discrete]
 === Vad?
 
 .Koncept:
-- Subshells
-- Variabler
-- Miljövariabler
+- Shebangs
+- Arguments
+- Variables
+- Envrionment variables
 - Escaping
+- Subshells
 - Conditionals
 
 .Kommandon:
@@ -173,10 +196,12 @@ För att kunna använda utveckla CLI-baserade verktyg.
 
 Kunskaper om övriga kommandon.
 
+[discrete]
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
 
 .Kommandon:
 - man
+- alias
 - history

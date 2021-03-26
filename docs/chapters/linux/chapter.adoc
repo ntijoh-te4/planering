@@ -1,0 +1,88 @@
+= Linux och Docker
+
+Kunskaper relaterat till anvädning av Linuxbaserade system med och utan docker.
+
+I följande dokumentation syftar Linuxbaserade system i första hand på debianbaserade distributioner (påverkar exempelvis pakethanterare).
+
+== Pakethanterare
+
+Kunskap att installera programvara från terminalen på Linux system.
+
+[discrete]
+=== Varför?
+
+För att kunna använda en CLI-baserad pakethanterare.
+
+[discrete]
+=== Vad?
+
+.Kommandon:
+* apt-get
+
+== SSH
+
+Kunskap om SSH (secure shell) och förståelse för uppkoppling till server via terminalen.
+
+[discrete]
+=== Varför?
+
+För att kunna administrera system från en annan dator.
+
+[discrete]
+=== Vad?
+
+Kunna använda ssh och förstå hur olika autentiseringsmetoder funkar. Exempelvis hur man sätter upp privata och publika SSH nycklar och konfigurerar dessa. Kunna lägga till en host i OpenSSH config.
+
+.Kommandon:
+* ssh
+* ssh-keygen
+* ssh-copy-id
+* ssh-agent
+* ssh-add
+
+== Special filer
+
+Förståelse hur filstrukturen i Linuxbaserade system är uppbyggt.
+
+[discrete]
+=== Varför?
+
+För att kunna använda och felsöka programvara som körs under Linux.
+
+[discrete]
+=== Vad?
+
+.Sökvägar
+- /var/log
+- /etc
+- /proc
+- /dev
+- /home
+
+== Docker
+
+Kunskap om containeriserade system med hjälp av docker och hur dessa skiljer sig mot VMs.
+
+[discrete]
+=== Varför?
+
+För att kunna skapa och köra programvara som är ihopbuntad med alla beroenden utan hög overhead.
+
+[discrete]
+=== Vad?
+
+Kunna använda följande kommandon med vanliga växlar.
+
+.Kommandon:
+* docker ps
+* docker build
+* docker run
+* docker logs
+* docker exec
+* docker push
+* docker pull
+
+.Koncept
+* Dockerfile
+* Docker images
+* Docker containers
