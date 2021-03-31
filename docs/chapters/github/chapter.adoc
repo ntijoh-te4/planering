@@ -1,0 +1,75 @@
+= Github
+
+Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering. I denna dokumentationen är github platformen som utgås ifrån.
+
+== Git-repository manager
+
+Kunskaper om att jobba mot en centraliserad remote (client-server).
+
+[discrete]
+=== Varför?
+
+För att kunna dela kod med andra utvecklare.
+
+[discrete]
+=== Vad?
+
+.Kommandon:
+* git remote
+* git fetch
+* git push
+* git pull
+* git clone
+* gh repo create
+
+.Koncept:
+* Bare repositories
+
+== Issues
+
+För att skapa tasks med labels och en assignee i github platformen.
+
+[discrete]
+=== Varför?
+
+För att kunna jobba med issue tracking i git flow arbetsflödet.
+
+[discrete]
+=== Vad?
+
+.Koncept
+
+* Github issues
+
+== Projects
+
+Verktyg för projekthantering och skapa kanban boards för organisera issues.
+
+[discrete]
+=== Varför?
+
+För att kunna spåra status av issues.
+
+[discrete]
+=== Vad?
+
+.Koncept:
+* Project boards
+
+== Pull requests
+
+Kunskaper om hur pull/merge requests används.
+
+[discrete]
+=== Varför?
+
+För att kunna uppbehålla en konsekvent kodstandard och kodkvalité genom manuella och automatiserade code reviews.
+
+[discrete]
+=== Vad?
+
+.Koncept:
+* Pull requesuts
+
+.Kommandon:
+* gh pr create
