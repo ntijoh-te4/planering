@@ -1,0 +1,77 @@
+= Git
+
+Kunskaper relaterat till versionshantering (SCM) med hjälp av git. Vetskap om att det finns alternativa VCS än git.
+
+== Git teori
+
+Kunskaper om designen bakom git och vilka datastrukturer som används.
+
+[discrete]
+=== Varför?
+
+För att kunna förstå teorin bakom kommandon som används.
+
+[discrete]
+=== Vad?
+
+.Koncept:
+* Datastrukturer
+   - Mutable index
+   - Object database
+* Refs
+   - HEAD
+   - branches
+   - tags
+* Remotes
+
+== Git CLI
+
+Kunskap om vanliga kommandon och växlar för git.
+
+[discrete]
+=== Varför?
+
+Git är i grunden terminalbaserat. Många grafiska utvecklingsverktyg saknar funktionalitet från Git CLI.
+
+[discrete]
+=== Vad?
+
+.Kommandon
+* git status
+* git add
+* git reset
+* git commit
+* git restore
+* git log
+* git branch
+* git checkout
+* git rm
+* git merge
+* git rebase
+* git stash
+* git cherry-pick
+
+== Git arbetssätt
+
+Kunskaper om att använda git som ett kollaborativt verktyg genom ett arbetsflöde.
+
+[discrete]
+=== Varför?
+
+För att kunna jobba på samma kodbas med flera utvecklare.
+
+[discrete]
+=== Vad?
+
+Kunna jobba med branches och git flow. Lösa merge conflicts.
+
+.Branches:
+* master
+* develop
+* feature
+* release
+* hotfix
+
+.Koncept:
+* Merge conflicts
+* Diverging git history

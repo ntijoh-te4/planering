@@ -466,30 +466,45 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_docker">2.4. Docker</a></li>
 </ul>
 </li>
-<li><a href="#_http_och_rest">3. HTTP och REST</a>
+<li><a href="#_git">3. Git</a>
 <ul class="sectlevel2">
-<li><a href="#_http">3.1. HTTP</a>
+<li><a href="#_git_teori">3.1. Git teori</a></li>
+<li><a href="#_git_cli">3.2. Git CLI</a></li>
+<li><a href="#_git_arbetssätt">3.3. Git arbetssätt</a></li>
+</ul>
+</li>
+<li><a href="#_github">4. Github</a>
+<ul class="sectlevel2">
+<li><a href="#_git_repository_manager">4.1. Git-repository manager</a></li>
+<li><a href="#_issues">4.2. Issues</a></li>
+<li><a href="#_projects">4.3. Projects</a></li>
+<li><a href="#_pull_requests">4.4. Pull requests</a></li>
+</ul>
+</li>
+<li><a href="#_http_och_rest">5. HTTP och REST</a>
+<ul class="sectlevel2">
+<li><a href="#_http">5.1. HTTP</a>
 <ul class="sectlevel3">
-<li><a href="#_hypertext">3.1.1. HyperText</a></li>
-<li><a href="#_protokoll">3.1.2. Protokoll</a></li>
-<li><a href="#_clientserver">3.1.3. Client/Server</a></li>
-<li><a href="#_ietfrfc">3.1.4. IETF/RFC</a></li>
-<li><a href="#_requestresponse">3.1.5. Request/Response</a></li>
-<li><a href="#_urluri">3.1.6. URL/URI</a></li>
-<li><a href="#_query_string_body_params">3.1.7. Query string &amp; Body params</a></li>
-<li><a href="#_verbs">3.1.8. Verbs</a></li>
+<li><a href="#_hypertext">5.1.1. HyperText</a></li>
+<li><a href="#_protokoll">5.1.2. Protokoll</a></li>
+<li><a href="#_clientserver">5.1.3. Client/Server</a></li>
+<li><a href="#_ietfrfc">5.1.4. IETF/RFC</a></li>
+<li><a href="#_requestresponse">5.1.5. Request/Response</a></li>
+<li><a href="#_urluri">5.1.6. URL/URI</a></li>
+<li><a href="#_query_string_body_params">5.1.7. Query string &amp; Body params</a></li>
+<li><a href="#_verbs">5.1.8. Verbs</a></li>
 </ul>
 </li>
-<li><a href="#_rest">3.2. REST</a>
+<li><a href="#_rest">5.2. REST</a>
 <ul class="sectlevel3">
-<li><a href="#_resurs">3.2.1. Resurs</a></li>
-<li><a href="#_restful_routes">3.2.2. RESTful routes</a></li>
+<li><a href="#_resurs">5.2.1. Resurs</a></li>
+<li><a href="#_restful_routes">5.2.2. RESTful routes</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_funktionell_programmering">4. Funktionell Programmering</a></li>
-<li><a href="#_objektorienterad_programmering">5. Objektorienterad programmering</a></li>
+<li><a href="#_funktionell_programmering">6. Funktionell Programmering</a></li>
+<li><a href="#_objektorienterad_programmering">7. Objektorienterad programmering</a></li>
 </ul>
 </div>
 </div>
@@ -1019,10 +1034,281 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_http_och_rest">3. HTTP och REST</h2>
+<h2 id="_git">3. Git</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kunskaper relaterat till versionshantering (SCM) med hjälp av git. Vetskap om att det finns alternativa VCS än git.</p>
+</div>
+<div class="sect2">
+<h3 id="_git_teori">3.1. Git teori</h3>
+<div class="paragraph">
+<p>Kunskaper om designen bakom git och vilka datastrukturer som används.</p>
+</div>
+<h4 id="_varför_13" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna förstå teorin bakom kommandon som används.</p>
+</div>
+<h4 id="_vad_14" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Koncept:</div>
+<ul>
+<li>
+<p>Datastrukturer</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Mutable index</p>
+</li>
+<li>
+<p>Object database</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Refs</p>
+<div class="ulist">
+<ul>
+<li>
+<p>HEAD</p>
+</li>
+<li>
+<p>branches</p>
+</li>
+<li>
+<p>tags</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Remotes</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_git_cli">3.2. Git CLI</h3>
+<div class="paragraph">
+<p>Kunskap om vanliga kommandon och växlar för git.</p>
+</div>
+<h4 id="_varför_14" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>Git är i grunden terminalbaserat. Många grafiska utvecklingsverktyg saknar funktionalitet från Git CLI.</p>
+</div>
+<h4 id="_vad_15" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Kommandon</div>
+<ul>
+<li>
+<p>git status</p>
+</li>
+<li>
+<p>git add</p>
+</li>
+<li>
+<p>git reset</p>
+</li>
+<li>
+<p>git commit</p>
+</li>
+<li>
+<p>git restore</p>
+</li>
+<li>
+<p>git log</p>
+</li>
+<li>
+<p>git branch</p>
+</li>
+<li>
+<p>git checkout</p>
+</li>
+<li>
+<p>git rm</p>
+</li>
+<li>
+<p>git merge</p>
+</li>
+<li>
+<p>git rebase</p>
+</li>
+<li>
+<p>git stash</p>
+</li>
+<li>
+<p>git cherry-pick</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_git_arbetssätt">3.3. Git arbetssätt</h3>
+<div class="paragraph">
+<p>Kunskaper om att använda git som ett kollaborativt verktyg genom ett arbetsflöde.</p>
+</div>
+<h4 id="_varför_15" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna jobba på samma kodbas med flera utvecklare.</p>
+</div>
+<h4 id="_vad_16" class="discrete">Vad?</h4>
+<div class="paragraph">
+<p>Kunna jobba med branches och git flow. Lösa merge conflicts.</p>
+</div>
+<div class="ulist">
+<div class="title">Branches:</div>
+<ul>
+<li>
+<p>master</p>
+</li>
+<li>
+<p>develop</p>
+</li>
+<li>
+<p>feature</p>
+</li>
+<li>
+<p>release</p>
+</li>
+<li>
+<p>hotfix</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Koncept:</div>
+<ul>
+<li>
+<p>Merge conflicts</p>
+</li>
+<li>
+<p>Diverging git history</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_github">4. Github</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering. I denna dokumentationen är github platformen som utgås ifrån.</p>
+</div>
+<div class="sect2">
+<h3 id="_git_repository_manager">4.1. Git-repository manager</h3>
+<div class="paragraph">
+<p>Kunskaper om att jobba mot en centraliserad remote (client-server).</p>
+</div>
+<h4 id="_varför_16" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna dela kod med andra utvecklare.</p>
+</div>
+<h4 id="_vad_17" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Kommandon:</div>
+<ul>
+<li>
+<p>git remote</p>
+</li>
+<li>
+<p>git fetch</p>
+</li>
+<li>
+<p>git push</p>
+</li>
+<li>
+<p>git pull</p>
+</li>
+<li>
+<p>git clone</p>
+</li>
+<li>
+<p>gh repo create</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Koncept:</div>
+<ul>
+<li>
+<p>Bare repositories</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_issues">4.2. Issues</h3>
+<div class="paragraph">
+<p>För att skapa tasks med labels och en assignee i github platformen.</p>
+</div>
+<h4 id="_varför_17" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna jobba med issue tracking i git flow arbetsflödet.</p>
+</div>
+<h4 id="_vad_18" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Koncept</div>
+<ul>
+<li>
+<p>Github issues</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_projects">4.3. Projects</h3>
+<div class="paragraph">
+<p>Verktyg för projekthantering och skapa kanban boards för organisera issues.</p>
+</div>
+<h4 id="_varför_18" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna spåra status av issues.</p>
+</div>
+<h4 id="_vad_19" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Koncept:</div>
+<ul>
+<li>
+<p>Project boards</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pull_requests">4.4. Pull requests</h3>
+<div class="paragraph">
+<p>Kunskaper om hur pull/merge requests används.</p>
+</div>
+<h4 id="_varför_19" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna uppbehålla en konsekvent kodstandard och kodkvalité genom manuella och automatiserade code reviews.</p>
+</div>
+<h4 id="_vad_20" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Koncept:</div>
+<ul>
+<li>
+<p>Pull requesuts</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Kommandon:</div>
+<ul>
+<li>
+<p>gh pr create</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_och_rest">5. HTTP och REST</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_http">3.1. HTTP</h3>
+<h3 id="_http">5.1. HTTP</h3>
 <div class="paragraph">
 <p>För att kunna med säkerhet kunna utveckla web-applikationer behöver man ha en förståelse för det underliggande protokollet.</p>
 </div>
@@ -1030,13 +1316,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Eleverna ska i slutet av momentet kunna implementera en egen HTTP-server som tolkar HTTP(1.1)-requests (GET/POST) och genererar korrekta HTTP-responses.</p>
 </div>
 <div class="sect3">
-<h4 id="_hypertext">3.1.1. HyperText</h4>
+<h4 id="_hypertext">5.1.1. HyperText</h4>
 <div class="paragraph">
 <p>Eleven kan förklara vad HyperText är</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_protokoll">3.1.2. Protokoll</h4>
+<h4 id="_protokoll">5.1.2. Protokoll</h4>
 <div class="paragraph">
 <p>Eleven förstår att protokoll är en uppsättning regler i textform - inget magiskt som en dator bara förstår.</p>
 </div>
@@ -1045,19 +1331,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_clientserver">3.1.3. Client/Server</h4>
+<h4 id="_clientserver">5.1.3. Client/Server</h4>
 <div class="paragraph">
 <p>Eleven kan redogöra för Client-Server-arkitekturen som den förhåller sig till webbutveckling (och, till viss del, t.ex mobil-app-utvecling mot webbservrar</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ietfrfc">3.1.4. IETF/RFC</h4>
+<h4 id="_ietfrfc">5.1.4. IETF/RFC</h4>
 <div class="paragraph">
 <p>Eleverna uppvisar förståelse för IETF och kan läsa en RFC</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_requestresponse">3.1.5. Request/Response</h4>
+<h4 id="_requestresponse">5.1.5. Request/Response</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för hur request-response-cykeln och hur en HTTP-request/response är uppbyggt.</p>
 </div>
@@ -1072,37 +1358,37 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_urluri">3.1.6. URL/URI</h4>
+<h4 id="_urluri">5.1.6. URL/URI</h4>
 <div class="paragraph">
 <p>Eleverna känner till begreppen och kan använda dem i sitt arbete.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_query_string_body_params">3.1.7. Query string &amp; Body params</h4>
+<h4 id="_query_string_body_params">5.1.7. Query string &amp; Body params</h4>
 <div class="paragraph">
 <p>Elevern kan läsa och skapa http query string och förstår skillnaden mellan query strings och body params.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_verbs">3.1.8. Verbs</h4>
+<h4 id="_verbs">5.1.8. Verbs</h4>
 <div class="paragraph">
 <p>Eleven kan redogöra för GET/PUT/POST/PATCH/DELETE och dess skillnader och användningsområden och i vilka körtidsmiljöer de används.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_rest">3.2. REST</h3>
+<h3 id="_rest">5.2. REST</h3>
 <div class="paragraph">
 <p>För att kunna bygga standard-följande applikationer och ha en förståelse för ramverk med kodgeneration som följer REST behöver eleverna ha en förståelse för vad REST är och kunna redogöra för arkitekturen.</p>
 </div>
 <div class="sect3">
-<h4 id="_resurs">3.2.1. Resurs</h4>
+<h4 id="_resurs">5.2.1. Resurs</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för vad som menas med en resurs inom REST.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_restful_routes">3.2.2. RESTful routes</h4>
+<h4 id="_restful_routes">5.2.2. RESTful routes</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för de vanliga restful routes, och kan använda termer som verb, action, resurs, List/Crud etc som de förhåller sig till REST.</p>
 </div>
@@ -1114,7 +1400,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_funktionell_programmering">4. Funktionell Programmering</h2>
+<h2 id="_funktionell_programmering">6. Funktionell Programmering</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Funktionell programmering är enligt många räddningen i en alltmer parallelliseringsvänlig datorarkitektur.</p>
@@ -1208,7 +1494,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_objektorienterad_programmering">5. Objektorienterad programmering</h2>
+<h2 id="_objektorienterad_programmering">7. Objektorienterad programmering</h2>
 <div class="sectionbody">
 <div class="ulist">
 <div class="title">Begrepp:</div>
@@ -1259,7 +1545,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-26 16:22:12 UTC
+Last updated 2021-03-31 10:27:06 UTC
 </div>
 </div>
 </body>

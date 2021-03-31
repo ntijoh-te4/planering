@@ -15,6 +15,10 @@ include::chapters/posix/chapter.adoc[leveloffset=+1]
 
 include::chapters/linux/chapter.adoc[leveloffset=+1]
 
+include::chapters/git/chapter.adoc[leveloffset=+1]
+
+include::chapters/github/chapter.adoc[leveloffset=+1]
+
 include::chapters/http_rest/chapter.adoc[leveloffset=+1]
 
 include::chapters/fp/chapter.adoc[leveloffset=+1]
