@@ -1,0 +1,32 @@
+= Datalagring
+
+== Relationsdatabaser
+
+.Beprepp:
+* DBMS
+* Databas
+* Tabell
+* Tupel
+* Rad
+* Entitet
+* Attribut
+* Relation
+* ER-modellering
+* Nycklar
+* Normalformer
+* Queries
+* Joins
+* Indexering
+* ACID
+* Consistency
+* Integrity
+* Transaktioner
+* Rollback
+* EXPLAIN
+
+== NoSQL
+
+.Begrepp:
+* Grafdatabaser
+* Dokumentdatabaser
+* Eventual Consistency
