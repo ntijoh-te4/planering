@@ -478,30 +478,36 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_pull_requests">4.4. Pull requests</a></li>
 </ul>
 </li>
-<li><a href="#_http_och_rest">5. HTTP och REST</a>
+<li><a href="#_datalagring">5. Datalagring</a>
 <ul class="sectlevel2">
-<li><a href="#_http">5.1. HTTP</a>
+<li><a href="#_relationsdatabaser">5.1. Relationsdatabaser</a></li>
+<li><a href="#_nosql">5.2. NoSQL</a></li>
+</ul>
+</li>
+<li><a href="#_http_och_rest">6. HTTP och REST</a>
+<ul class="sectlevel2">
+<li><a href="#_http">6.1. HTTP</a>
 <ul class="sectlevel3">
-<li><a href="#_hypertext">5.1.1. HyperText</a></li>
-<li><a href="#_protokoll">5.1.2. Protokoll</a></li>
-<li><a href="#_clientserver">5.1.3. Client/Server</a></li>
-<li><a href="#_ietfrfc">5.1.4. IETF/RFC</a></li>
-<li><a href="#_requestresponse">5.1.5. Request/Response</a></li>
-<li><a href="#_urluri">5.1.6. URL/URI</a></li>
-<li><a href="#_query_string_body_params">5.1.7. Query string &amp; Body params</a></li>
-<li><a href="#_verbs">5.1.8. Verbs</a></li>
+<li><a href="#_hypertext">6.1.1. HyperText</a></li>
+<li><a href="#_protokoll">6.1.2. Protokoll</a></li>
+<li><a href="#_clientserver">6.1.3. Client/Server</a></li>
+<li><a href="#_ietfrfc">6.1.4. IETF/RFC</a></li>
+<li><a href="#_requestresponse">6.1.5. Request/Response</a></li>
+<li><a href="#_urluri">6.1.6. URL/URI</a></li>
+<li><a href="#_query_string_body_params">6.1.7. Query string &amp; Body params</a></li>
+<li><a href="#_verbs">6.1.8. Verbs</a></li>
 </ul>
 </li>
-<li><a href="#_rest">5.2. REST</a>
+<li><a href="#_rest">6.2. REST</a>
 <ul class="sectlevel3">
-<li><a href="#_resurs">5.2.1. Resurs</a></li>
-<li><a href="#_restful_routes">5.2.2. RESTful routes</a></li>
+<li><a href="#_resurs">6.2.1. Resurs</a></li>
+<li><a href="#_restful_routes">6.2.2. RESTful routes</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_funktionell_programmering">6. Funktionell Programmering</a></li>
-<li><a href="#_objektorienterad_programmering">7. Objektorienterad programmering</a></li>
+<li><a href="#_funktionell_programmering">7. Funktionell Programmering</a></li>
+<li><a href="#_objektorienterad_programmering">8. Objektorienterad programmering</a></li>
 </ul>
 </div>
 </div>
@@ -1302,10 +1308,100 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_http_och_rest">5. HTTP och REST</h2>
+<h2 id="_datalagring">5. Datalagring</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_http">5.1. HTTP</h3>
+<h3 id="_relationsdatabaser">5.1. Relationsdatabaser</h3>
+<div class="ulist">
+<div class="title">Beprepp:</div>
+<ul>
+<li>
+<p>DBMS</p>
+</li>
+<li>
+<p>Databas</p>
+</li>
+<li>
+<p>Tabell</p>
+</li>
+<li>
+<p>Tupel</p>
+</li>
+<li>
+<p>Rad</p>
+</li>
+<li>
+<p>Entitet</p>
+</li>
+<li>
+<p>Attribut</p>
+</li>
+<li>
+<p>Relation</p>
+</li>
+<li>
+<p>ER-modellering</p>
+</li>
+<li>
+<p>Nycklar</p>
+</li>
+<li>
+<p>Normalformer</p>
+</li>
+<li>
+<p>Queries</p>
+</li>
+<li>
+<p>Joins</p>
+</li>
+<li>
+<p>Indexering</p>
+</li>
+<li>
+<p>ACID</p>
+</li>
+<li>
+<p>Consistency</p>
+</li>
+<li>
+<p>Integrity</p>
+</li>
+<li>
+<p>Transaktioner</p>
+</li>
+<li>
+<p>Rollback</p>
+</li>
+<li>
+<p>EXPLAIN</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nosql">5.2. NoSQL</h3>
+<div class="ulist">
+<div class="title">Begrepp:</div>
+<ul>
+<li>
+<p>Grafdatabaser</p>
+</li>
+<li>
+<p>Dokumentdatabaser</p>
+</li>
+<li>
+<p>Eventual Consistency</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_http_och_rest">6. HTTP och REST</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_http">6.1. HTTP</h3>
 <div class="paragraph">
 <p>För att kunna med säkerhet kunna utveckla web-applikationer behöver man ha en förståelse för det underliggande protokollet.</p>
 </div>
@@ -1313,13 +1409,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Eleverna ska i slutet av momentet kunna implementera en egen HTTP-server som tolkar HTTP(1.1)-requests (GET/POST) och genererar korrekta HTTP-responses.</p>
 </div>
 <div class="sect3">
-<h4 id="_hypertext">5.1.1. HyperText</h4>
+<h4 id="_hypertext">6.1.1. HyperText</h4>
 <div class="paragraph">
 <p>Eleven kan förklara vad HyperText är</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_protokoll">5.1.2. Protokoll</h4>
+<h4 id="_protokoll">6.1.2. Protokoll</h4>
 <div class="paragraph">
 <p>Eleven förstår att protokoll är en uppsättning regler i textform - inget magiskt som en dator bara förstår.</p>
 </div>
@@ -1328,19 +1424,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_clientserver">5.1.3. Client/Server</h4>
+<h4 id="_clientserver">6.1.3. Client/Server</h4>
 <div class="paragraph">
 <p>Eleven kan redogöra för Client-Server-arkitekturen som den förhåller sig till webbutveckling (och, till viss del, t.ex mobil-app-utvecling mot webbservrar</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ietfrfc">5.1.4. IETF/RFC</h4>
+<h4 id="_ietfrfc">6.1.4. IETF/RFC</h4>
 <div class="paragraph">
 <p>Eleverna uppvisar förståelse för IETF och kan läsa en RFC</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_requestresponse">5.1.5. Request/Response</h4>
+<h4 id="_requestresponse">6.1.5. Request/Response</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för hur request-response-cykeln och hur en HTTP-request/response är uppbyggt.</p>
 </div>
@@ -1355,37 +1451,37 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_urluri">5.1.6. URL/URI</h4>
+<h4 id="_urluri">6.1.6. URL/URI</h4>
 <div class="paragraph">
 <p>Eleverna känner till begreppen och kan använda dem i sitt arbete.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_query_string_body_params">5.1.7. Query string &amp; Body params</h4>
+<h4 id="_query_string_body_params">6.1.7. Query string &amp; Body params</h4>
 <div class="paragraph">
 <p>Elevern kan läsa och skapa http query string och förstår skillnaden mellan query strings och body params.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_verbs">5.1.8. Verbs</h4>
+<h4 id="_verbs">6.1.8. Verbs</h4>
 <div class="paragraph">
 <p>Eleven kan redogöra för GET/PUT/POST/PATCH/DELETE och dess skillnader och användningsområden och i vilka körtidsmiljöer de används.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_rest">5.2. REST</h3>
+<h3 id="_rest">6.2. REST</h3>
 <div class="paragraph">
 <p>För att kunna bygga standard-följande applikationer och ha en förståelse för ramverk med kodgeneration som följer REST behöver eleverna ha en förståelse för vad REST är och kunna redogöra för arkitekturen.</p>
 </div>
 <div class="sect3">
-<h4 id="_resurs">5.2.1. Resurs</h4>
+<h4 id="_resurs">6.2.1. Resurs</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för vad som menas med en resurs inom REST.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_restful_routes">5.2.2. RESTful routes</h4>
+<h4 id="_restful_routes">6.2.2. RESTful routes</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för de vanliga restful routes, och kan använda termer som verb, action, resurs, List/Crud etc som de förhåller sig till REST.</p>
 </div>
@@ -1397,7 +1493,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_funktionell_programmering">6. Funktionell Programmering</h2>
+<h2 id="_funktionell_programmering">7. Funktionell Programmering</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Funktionell programmering är enligt många räddningen i en alltmer parallelliseringsvänlig datorarkitektur.</p>
@@ -1494,7 +1590,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_objektorienterad_programmering">7. Objektorienterad programmering</h2>
+<h2 id="_objektorienterad_programmering">8. Objektorienterad programmering</h2>
 <div class="sectionbody">
 <div class="ulist">
 <div class="title">Begrepp:</div>
@@ -1545,7 +1641,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-06-04 10:17:09 UTC
+Last updated 2021-06-04 10:20:09 UTC
 </div>
 </div>
 </body>
