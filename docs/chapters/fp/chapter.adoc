@@ -13,6 +13,7 @@ Genom att använda sig av ett "snällt" FP-språk som Elixir kan vi utforska FP 
 * Functional programming
 * Declarative programming
 * Logical programming
+* Eventbaserad programmering
 * Spaghettikod
 * Funktioner
 * Rekursion
