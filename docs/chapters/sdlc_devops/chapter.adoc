@@ -1,0 +1,105 @@
+= SDLC och DevOps
+
+Kunskaper relaterat till systemutveckling (eng. software development life cycle) enligt något agilt ramverk samt utvecklingsmetodik för kvalitetssäkring. Även användning och konfigurering av de verktyg som beskrivs nedanför innefattas i detta kapitel.
+
+Agila ramverket scrum och utvecklingsmetodiken DevOps är vad som utgås ifrån i följande dokumentation. Github används som platform för utveckling och projekthantering.
+
+== Planering
+
+Inbegriper planerings, analys och design fas från SDLC. Under processen deltar eleverna i alla scrum cermonier för sprintar.
+
+[discrete]
+=== Varför?
+
+För att jobba i sprintar krävs en sprintplanering. Tanken är att jobba i cycklar för att i slutet av varje sprint ha en fungerande produkt.
+
+[discrete]
+=== Vad?
+
+.Begrepp
+* Tasks
+* User story
+* Definition of Done
+* Acceptance Criteria
+* Backlog
+* Sprintplanering
+* Sprintmål
+* Sprint review
+* Sprint retrospective
+
+== Utveckling
+
+Inbegriper utvecklingsfasen från SDLC. Jobbet som innefattas är utveckling av funktionalitet, dokumentation, felsökning samt buggfixar.
+
+[discrete]
+=== Varför?
+
+För att kunna implementera planerad funktionalitet.
+
+[discrete]
+=== Vad?
+
+Jobba både självständigt och kollaborativt med ny funktionalitet eller utarbeta/förändra existerande funktionalitet. Jobbet sker iterativt enligt planeringsfasen och flera prototyper skapas under utvecklingsfasen. Elever dokumenterar sitt arbete kontinuerligt genom kodkommentarer, commitmeddelanden samt via projekthanteringsverktyg. Eleverna tillämpar strategier som exemepelvis divide and conquer för att bryta ner ett problem i mindre delar.
+
+.Kunskaper
+* Läsa, skriva och modifiera kod
+* Läsa, skriva och söka dokumetation
+* Felsökning
+* Code reviews
+
+.Verktyg
+- Git
+- Github
+
+== Testning
+
+Inbegriper testningsfasen från SDLC. Jobbet som innefattas är att skriva olika typer av tester (både enhetstester och integrationstester).
+
+[discrete]
+=== Varför?
+
+För att kunna verifiera implementerad funktionalitet.
+
+[discrete]
+=== Vad?
+
+Förmåga att skriva tester som verifierar funktionalitet utan att testa implementationen. Eleverna skriver tester som är oberoende av ordningen dem körs i.
+
+.Begrepp
+* Unit tests
+* Integration tests
+* Acceptance tests
+* API tests
+* Doctests
+* Mocking
+* Red-Green-Refactor
+
+.Verktyg
+* Testramverk (bl.a. Cypress, Jest, minitest)
+* SCA
+    - Linting (bl.a. ESLint)
+    - Code quality (bl.a. Codeclimate)
+    - Code security (bl.a. Semmle LGTM)
+
+== Agil systemutveckling
+
+Inbegriper filosofier och principer utifrån manifiestet för agil systemutveckling.
+
+[discrete]
+=== Varför?
+
+För att kunna arbeta iterativt och att kvalitetssäkra funktionalitet innan den integreras.
+
+[discrete]
+=== Vad?
+
+Eleverna jobbar enligt agila principer och förstår och tillämpar praxis som grundar sig i utvecklingsmetodiken DevOps.
+
+.Praxis
+* CI
+* CD
+* TLD/TDD
+* PP
+
+.Verktyg
+- Github actions
