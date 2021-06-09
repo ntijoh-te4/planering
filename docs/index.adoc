@@ -29,3 +29,5 @@ include::chapters/fp/chapter.adoc[leveloffset=+1]
 
 include::chapters/oop/chapter.adoc[leveloffset=+1]
 
+include::chapters/vue/chapter.adoc[leveloffset=+1]
+
