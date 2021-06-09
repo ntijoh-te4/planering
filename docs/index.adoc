@@ -31,3 +31,4 @@ include::chapters/oop/chapter.adoc[leveloffset=+1]
 
 include::chapters/vue/chapter.adoc[leveloffset=+1]
 
+include::chapters/rails/chapter.adoc[leveloffset=+1]
