@@ -1,0 +1,70 @@
+= DOM
+Förståelse för JavaScript DOM (Document Object Model).
+
+== Object oriented representation:
+* HTML Structure
+* Document Object
+* Selectors 
+    - getElementById()
+    - getElementsByClassName()
+    - getElementsByTagName()
+    - querySelector()
+    - querySelectorAll()
+* Relations
+    - Parents
+        *** .parentNode
+        *** .parentElement
+    - Children
+        *** .childNodes
+        *** .children
+        *** .firstChild
+        *** .firstElementChild
+        *** .lastChild & .lastElementChild
+    - Siblings
+        *** .nextSibling
+        *** .nextElementSibling
+        *** .previousSibling
+        *** .previousElementSibling
+
+== DOM interactions:
+* Create Elements
+    - .createElement()
+    - .createTextNode()
+    - .appendChild()
+* Insert Created Elements Into the DOM
+    - .insertBefore()
+
+== Events
+* Event Listener
+    - .addEventListener() with Click Event
+* Event Parameter
+    - e.target
+    - e.type
+    - e.clientX
+    - e.clientY
+    - e.offsetX
+    - e.offsetY
+    - e.altKey, ctrlKey & shiftKey
+* Mouse Events
+    - dblclick
+    - mousedown
+    - mouseup
+    - mouseenter
+    - mouseleave
+    - mouseover & mouseout
+    - mousemove
+* Keyboard & Input Events
+    - keydown
+    - keyup
+    - keypress
+    - focus & blur
+    - cut
+    - paste
+    - input
+    - change
+    - submit
+
+== Miscellaneous
+* Event bubbling
+* Event propagation
+* HTML template element
