@@ -478,36 +478,44 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_pull_requests">4.4. Pull requests</a></li>
 </ul>
 </li>
-<li><a href="#_datalagring">5. Datalagring</a>
+<li><a href="#_sdlc_och_devops">5. SDLC och DevOps</a>
 <ul class="sectlevel2">
-<li><a href="#_relationsdatabaser">5.1. Relationsdatabaser</a></li>
-<li><a href="#_nosql">5.2. NoSQL</a></li>
+<li><a href="#_planering">5.1. Planering</a></li>
+<li><a href="#_utveckling">5.2. Utveckling</a></li>
+<li><a href="#_testning">5.3. Testning</a></li>
+<li><a href="#_agil_systemutveckling">5.4. Agil systemutveckling</a></li>
 </ul>
 </li>
-<li><a href="#_http_och_rest">6. HTTP och REST</a>
+<li><a href="#_datalagring">6. Datalagring</a>
 <ul class="sectlevel2">
-<li><a href="#_http">6.1. HTTP</a>
+<li><a href="#_relationsdatabaser">6.1. Relationsdatabaser</a></li>
+<li><a href="#_nosql">6.2. NoSQL</a></li>
+</ul>
+</li>
+<li><a href="#_http_och_rest">7. HTTP och REST</a>
+<ul class="sectlevel2">
+<li><a href="#_http">7.1. HTTP</a>
 <ul class="sectlevel3">
-<li><a href="#_hypertext">6.1.1. HyperText</a></li>
-<li><a href="#_protokoll">6.1.2. Protokoll</a></li>
-<li><a href="#_clientserver">6.1.3. Client/Server</a></li>
-<li><a href="#_ietfrfc">6.1.4. IETF/RFC</a></li>
-<li><a href="#_requestresponse">6.1.5. Request/Response</a></li>
-<li><a href="#_urluri">6.1.6. URL/URI</a></li>
-<li><a href="#_query_string_body_params">6.1.7. Query string &amp; Body params</a></li>
-<li><a href="#_verbs">6.1.8. Verbs</a></li>
+<li><a href="#_hypertext">7.1.1. HyperText</a></li>
+<li><a href="#_protokoll">7.1.2. Protokoll</a></li>
+<li><a href="#_clientserver">7.1.3. Client/Server</a></li>
+<li><a href="#_ietfrfc">7.1.4. IETF/RFC</a></li>
+<li><a href="#_requestresponse">7.1.5. Request/Response</a></li>
+<li><a href="#_urluri">7.1.6. URL/URI</a></li>
+<li><a href="#_query_string_body_params">7.1.7. Query string &amp; Body params</a></li>
+<li><a href="#_verbs">7.1.8. Verbs</a></li>
 </ul>
 </li>
-<li><a href="#_rest">6.2. REST</a>
+<li><a href="#_rest">7.2. REST</a>
 <ul class="sectlevel3">
-<li><a href="#_resurs">6.2.1. Resurs</a></li>
-<li><a href="#_restful_routes">6.2.2. RESTful routes</a></li>
+<li><a href="#_resurs">7.2.1. Resurs</a></li>
+<li><a href="#_restful_routes">7.2.2. RESTful routes</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#_funktionell_programmering">7. Funktionell Programmering</a></li>
-<li><a href="#_objektorienterad_programmering">8. Objektorienterad programmering</a></li>
+<li><a href="#_funktionell_programmering">8. Funktionell Programmering</a></li>
+<li><a href="#_objektorienterad_programmering">9. Objektorienterad programmering</a></li>
 </ul>
 </div>
 </div>
@@ -1308,10 +1316,209 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_datalagring">5. Datalagring</h2>
+<h2 id="_sdlc_och_devops">5. SDLC och DevOps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kunskaper relaterat till systemutveckling (eng. software development life cycle) enligt något agilt ramverk samt utvecklingsmetodik för kvalitetssäkring. Även användning och konfigurering av de verktyg som beskrivs nedanför innefattas i detta kapitel.</p>
+</div>
+<div class="paragraph">
+<p>Agila ramverket scrum och utvecklingsmetodiken DevOps är vad som utgås ifrån i följande dokumentation. Github används som platform för utveckling och projekthantering.</p>
+</div>
+<div class="sect2">
+<h3 id="_planering">5.1. Planering</h3>
+<div class="paragraph">
+<p>Inbegriper planerings, analys och design fas från SDLC. Under processen deltar eleverna i alla scrum cermonier för sprintar.</p>
+</div>
+<h4 id="_varför_20" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att jobba i sprintar krävs en sprintplanering. Tanken är att jobba i cycklar för att i slutet av varje sprint ha en fungerande produkt.</p>
+</div>
+<h4 id="_vad_21" class="discrete">Vad?</h4>
+<div class="ulist">
+<div class="title">Begrepp</div>
+<ul>
+<li>
+<p>Tasks</p>
+</li>
+<li>
+<p>User story</p>
+</li>
+<li>
+<p>Definition of Done</p>
+</li>
+<li>
+<p>Acceptance Criteria</p>
+</li>
+<li>
+<p>Backlog</p>
+</li>
+<li>
+<p>Sprintplanering</p>
+</li>
+<li>
+<p>Sprintmål</p>
+</li>
+<li>
+<p>Sprint review</p>
+</li>
+<li>
+<p>Sprint retrospective</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_utveckling">5.2. Utveckling</h3>
+<div class="paragraph">
+<p>Inbegriper utvecklingsfasen från SDLC. Jobbet som innefattas är utveckling av funktionalitet, dokumentation, felsökning samt buggfixar.</p>
+</div>
+<h4 id="_varför_21" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna implementera planerad funktionalitet.</p>
+</div>
+<h4 id="_vad_22" class="discrete">Vad?</h4>
+<div class="paragraph">
+<p>Jobba både självständigt och kollaborativt med ny funktionalitet eller utarbeta/förändra existerande funktionalitet. Jobbet sker iterativt enligt planeringsfasen och flera prototyper skapas under utvecklingsfasen. Elever dokumenterar sitt arbete kontinuerligt genom kodkommentarer, commitmeddelanden samt via projekthanteringsverktyg. Eleverna tillämpar strategier som exemepelvis divide and conquer för att bryta ner ett problem i mindre delar.</p>
+</div>
+<div class="ulist">
+<div class="title">Kunskaper</div>
+<ul>
+<li>
+<p>Läsa, skriva och modifiera kod</p>
+</li>
+<li>
+<p>Läsa, skriva och söka dokumetation</p>
+</li>
+<li>
+<p>Felsökning</p>
+</li>
+<li>
+<p>Code reviews</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Verktyg</div>
+<ul>
+<li>
+<p>Git</p>
+</li>
+<li>
+<p>Github</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testning">5.3. Testning</h3>
+<div class="paragraph">
+<p>Inbegriper testningsfasen från SDLC. Jobbet som innefattas är att skriva olika typer av tester (både enhetstester och integrationstester).</p>
+</div>
+<h4 id="_varför_22" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna verifiera implementerad funktionalitet.</p>
+</div>
+<h4 id="_vad_23" class="discrete">Vad?</h4>
+<div class="paragraph">
+<p>Förmåga att skriva tester som verifierar funktionalitet utan att testa implementationen. Eleverna skriver tester som är oberoende av ordningen dem körs i.</p>
+</div>
+<div class="ulist">
+<div class="title">Begrepp</div>
+<ul>
+<li>
+<p>Unit tests</p>
+</li>
+<li>
+<p>Integration tests</p>
+</li>
+<li>
+<p>Acceptance tests</p>
+</li>
+<li>
+<p>API tests</p>
+</li>
+<li>
+<p>Doctests</p>
+</li>
+<li>
+<p>Mocking</p>
+</li>
+<li>
+<p>Red-Green-Refactor</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Verktyg</div>
+<ul>
+<li>
+<p>Testramverk (bl.a. Cypress, Jest, minitest)</p>
+</li>
+<li>
+<p>SCA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Linting (bl.a. ESLint)</p>
+</li>
+<li>
+<p>Code quality (bl.a. Codeclimate)</p>
+</li>
+<li>
+<p>Code security (bl.a. Semmle LGTM)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_agil_systemutveckling">5.4. Agil systemutveckling</h3>
+<div class="paragraph">
+<p>Inbegriper filosofier och principer utifrån manifiestet för agil systemutveckling.</p>
+</div>
+<h4 id="_varför_23" class="discrete">Varför?</h4>
+<div class="paragraph">
+<p>För att kunna arbeta iterativt och att kvalitetssäkra funktionalitet innan den integreras.</p>
+</div>
+<h4 id="_vad_24" class="discrete">Vad?</h4>
+<div class="paragraph">
+<p>Eleverna jobbar enligt agila principer och förstår och tillämpar praxis som grundar sig i utvecklingsmetodiken DevOps.</p>
+</div>
+<div class="ulist">
+<div class="title">Praxis</div>
+<ul>
+<li>
+<p>CI</p>
+</li>
+<li>
+<p>CD</p>
+</li>
+<li>
+<p>TLD/TDD</p>
+</li>
+<li>
+<p>PP</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Verktyg</div>
+<ul>
+<li>
+<p>Github actions</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_datalagring">6. Datalagring</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_relationsdatabaser">5.1. Relationsdatabaser</h3>
+<h3 id="_relationsdatabaser">6.1. Relationsdatabaser</h3>
 <div class="ulist">
 <div class="title">Beprepp:</div>
 <ul>
@@ -1379,7 +1586,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="_nosql">5.2. NoSQL</h3>
+<h3 id="_nosql">6.2. NoSQL</h3>
 <div class="ulist">
 <div class="title">Begrepp:</div>
 <ul>
@@ -1398,10 +1605,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_http_och_rest">6. HTTP och REST</h2>
+<h2 id="_http_och_rest">7. HTTP och REST</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_http">6.1. HTTP</h3>
+<h3 id="_http">7.1. HTTP</h3>
 <div class="paragraph">
 <p>För att kunna med säkerhet kunna utveckla web-applikationer behöver man ha en förståelse för det underliggande protokollet.</p>
 </div>
@@ -1409,13 +1616,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Eleverna ska i slutet av momentet kunna implementera en egen HTTP-server som tolkar HTTP(1.1)-requests (GET/POST) och genererar korrekta HTTP-responses.</p>
 </div>
 <div class="sect3">
-<h4 id="_hypertext">6.1.1. HyperText</h4>
+<h4 id="_hypertext">7.1.1. HyperText</h4>
 <div class="paragraph">
 <p>Eleven kan förklara vad HyperText är</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_protokoll">6.1.2. Protokoll</h4>
+<h4 id="_protokoll">7.1.2. Protokoll</h4>
 <div class="paragraph">
 <p>Eleven förstår att protokoll är en uppsättning regler i textform - inget magiskt som en dator bara förstår.</p>
 </div>
@@ -1424,19 +1631,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_clientserver">6.1.3. Client/Server</h4>
+<h4 id="_clientserver">7.1.3. Client/Server</h4>
 <div class="paragraph">
 <p>Eleven kan redogöra för Client-Server-arkitekturen som den förhåller sig till webbutveckling (och, till viss del, t.ex mobil-app-utvecling mot webbservrar</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ietfrfc">6.1.4. IETF/RFC</h4>
+<h4 id="_ietfrfc">7.1.4. IETF/RFC</h4>
 <div class="paragraph">
 <p>Eleverna uppvisar förståelse för IETF och kan läsa en RFC</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_requestresponse">6.1.5. Request/Response</h4>
+<h4 id="_requestresponse">7.1.5. Request/Response</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för hur request-response-cykeln och hur en HTTP-request/response är uppbyggt.</p>
 </div>
@@ -1451,37 +1658,37 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect3">
-<h4 id="_urluri">6.1.6. URL/URI</h4>
+<h4 id="_urluri">7.1.6. URL/URI</h4>
 <div class="paragraph">
 <p>Eleverna känner till begreppen och kan använda dem i sitt arbete.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_query_string_body_params">6.1.7. Query string &amp; Body params</h4>
+<h4 id="_query_string_body_params">7.1.7. Query string &amp; Body params</h4>
 <div class="paragraph">
 <p>Elevern kan läsa och skapa http query string och förstår skillnaden mellan query strings och body params.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_verbs">6.1.8. Verbs</h4>
+<h4 id="_verbs">7.1.8. Verbs</h4>
 <div class="paragraph">
 <p>Eleven kan redogöra för GET/PUT/POST/PATCH/DELETE och dess skillnader och användningsområden och i vilka körtidsmiljöer de används.</p>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_rest">6.2. REST</h3>
+<h3 id="_rest">7.2. REST</h3>
 <div class="paragraph">
 <p>För att kunna bygga standard-följande applikationer och ha en förståelse för ramverk med kodgeneration som följer REST behöver eleverna ha en förståelse för vad REST är och kunna redogöra för arkitekturen.</p>
 </div>
 <div class="sect3">
-<h4 id="_resurs">6.2.1. Resurs</h4>
+<h4 id="_resurs">7.2.1. Resurs</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för vad som menas med en resurs inom REST.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_restful_routes">6.2.2. RESTful routes</h4>
+<h4 id="_restful_routes">7.2.2. RESTful routes</h4>
 <div class="paragraph">
 <p>Eleverna kan redogöra för de vanliga restful routes, och kan använda termer som verb, action, resurs, List/Crud etc som de förhåller sig till REST.</p>
 </div>
@@ -1493,7 +1700,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_funktionell_programmering">7. Funktionell Programmering</h2>
+<h2 id="_funktionell_programmering">8. Funktionell Programmering</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Funktionell programmering är enligt många räddningen i en alltmer parallelliseringsvänlig datorarkitektur.</p>
@@ -1590,7 +1797,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_objektorienterad_programmering">8. Objektorienterad programmering</h2>
+<h2 id="_objektorienterad_programmering">9. Objektorienterad programmering</h2>
 <div class="sectionbody">
 <div class="ulist">
 <div class="title">Begrepp:</div>
@@ -1641,7 +1848,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-06-04 10:20:09 UTC
+Last updated 2021-06-09 09:26:57 UTC
 </div>
 </div>
 </body>
