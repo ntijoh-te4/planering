@@ -1,0 +1,29 @@
+= Rails
+Förmåga att kunna använda sig av ett MVC ramverk för backend utveckling. Kunskaper att utveckla, felsöka och problemlösa CRUD applikationer med relationer av alla kardinalitetsförhållanden. Anpassa ett backend API till RESTful standard.
+
+
+.Kommandon:
+* ruby
+* bundler
+* gem
+* rake
+* rails
+    - rails s
+    - rails routes
+    - rails generate
+    - rails console
+
+
+.Begrepp:
+* MVC och rails arkitektur
+* Rails principles
+* Rails application structure
+* Rails scaffold
+* Parameters
+* Render/redirect
+* Response formats
+* Routing
+* ORM
+* Sessions/Cookies
+* Authorization/Autentisiering
+* JWT

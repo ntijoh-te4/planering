@@ -1,0 +1,26 @@
+= Vue
+Förmåga att kunna använda sig av ett MVC ramverk för frontend utveckling. Kunskaper att utveckla, felsöka och problemlösa en hemsida som kommunicerar med JSON api:er.
+
+.Kommandon:
+* vue
+
+.Begrepp:
+* MVC och koppling till vue terminologi
+* Reactivity och two-way databinding
+* Virtual DOM och rendrering
+* Komponenter
+* Props
+* Events
+* Computed
+* Watchers
+* Router
+* Vuex
+
+== Node
+
+.Kommandon
+* npm
+* node/yarn
+
+== Webpack
+TBD

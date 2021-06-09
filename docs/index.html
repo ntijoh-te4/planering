@@ -516,6 +516,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_funktionell_programmering">8. Funktionell Programmering</a></li>
 <li><a href="#_objektorienterad_programmering">9. Objektorienterad programmering</a></li>
+<li><a href="#_dom">10. DOM</a>
+<ul class="sectlevel2">
+<li><a href="#_object_oriented_representation">10.1. Object oriented representation:</a></li>
+<li><a href="#_dom_interactions">10.2. DOM interactions:</a></li>
+<li><a href="#_events">10.3. Events</a></li>
+<li><a href="#_miscellaneous">10.4. Miscellaneous</a></li>
+</ul>
+</li>
+<li><a href="#_vue">11. Vue</a>
+<ul class="sectlevel2">
+<li><a href="#_node">11.1. Node</a></li>
+<li><a href="#_webpack">11.2. Webpack</a></li>
+</ul>
+</li>
+<li><a href="#_rails">12. Rails</a></li>
 </ul>
 </div>
 </div>
@@ -1845,10 +1860,426 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_dom">10. DOM</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Förståelse för JavaScript DOM (Document Object Model).</p>
+</div>
+<div class="sect2">
+<h3 id="_object_oriented_representation">10.1. Object oriented representation:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HTML Structure</p>
+</li>
+<li>
+<p>Document Object</p>
+</li>
+<li>
+<p>Selectors</p>
+<div class="ulist">
+<ul>
+<li>
+<p>getElementById()</p>
+</li>
+<li>
+<p>getElementsByClassName()</p>
+</li>
+<li>
+<p>getElementsByTagName()</p>
+</li>
+<li>
+<p>querySelector()</p>
+</li>
+<li>
+<p>querySelectorAll()</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Relations</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Parents</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.parentNode</p>
+</li>
+<li>
+<p>.parentElement</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Children</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.childNodes</p>
+</li>
+<li>
+<p>.children</p>
+</li>
+<li>
+<p>.firstChild</p>
+</li>
+<li>
+<p>.firstElementChild</p>
+</li>
+<li>
+<p>.lastChild &amp; .lastElementChild</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Siblings</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.nextSibling</p>
+</li>
+<li>
+<p>.nextElementSibling</p>
+</li>
+<li>
+<p>.previousSibling</p>
+</li>
+<li>
+<p>.previousElementSibling</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dom_interactions">10.2. DOM interactions:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Create Elements</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.createElement()</p>
+</li>
+<li>
+<p>.createTextNode()</p>
+</li>
+<li>
+<p>.appendChild()</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Insert Created Elements Into the DOM</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.insertBefore()</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_events">10.3. Events</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Event Listener</p>
+<div class="ulist">
+<ul>
+<li>
+<p>.addEventListener() with Click Event</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Event Parameter</p>
+<div class="ulist">
+<ul>
+<li>
+<p>e.target</p>
+</li>
+<li>
+<p>e.type</p>
+</li>
+<li>
+<p>e.clientX</p>
+</li>
+<li>
+<p>e.clientY</p>
+</li>
+<li>
+<p>e.offsetX</p>
+</li>
+<li>
+<p>e.offsetY</p>
+</li>
+<li>
+<p>e.altKey, ctrlKey &amp; shiftKey</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Mouse Events</p>
+<div class="ulist">
+<ul>
+<li>
+<p>dblclick</p>
+</li>
+<li>
+<p>mousedown</p>
+</li>
+<li>
+<p>mouseup</p>
+</li>
+<li>
+<p>mouseenter</p>
+</li>
+<li>
+<p>mouseleave</p>
+</li>
+<li>
+<p>mouseover &amp; mouseout</p>
+</li>
+<li>
+<p>mousemove</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Keyboard &amp; Input Events</p>
+<div class="ulist">
+<ul>
+<li>
+<p>keydown</p>
+</li>
+<li>
+<p>keyup</p>
+</li>
+<li>
+<p>keypress</p>
+</li>
+<li>
+<p>focus &amp; blur</p>
+</li>
+<li>
+<p>cut</p>
+</li>
+<li>
+<p>paste</p>
+</li>
+<li>
+<p>input</p>
+</li>
+<li>
+<p>change</p>
+</li>
+<li>
+<p>submit</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_miscellaneous">10.4. Miscellaneous</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Event bubbling</p>
+</li>
+<li>
+<p>Event propagation</p>
+</li>
+<li>
+<p>HTML template element</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vue">11. Vue</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Förmåga att kunna använda sig av ett MVC ramverk för frontend utveckling. Kunskaper att utveckla, felsöka och problemlösa en hemsida som kommunicerar med JSON api:er.</p>
+</div>
+<div class="ulist">
+<div class="title">Kommandon:</div>
+<ul>
+<li>
+<p>vue</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Begrepp:</div>
+<ul>
+<li>
+<p>MVC och koppling till vue terminologi</p>
+</li>
+<li>
+<p>Reactivity och two-way databinding</p>
+</li>
+<li>
+<p>Virtual DOM och rendrering</p>
+</li>
+<li>
+<p>Komponenter</p>
+</li>
+<li>
+<p>Props</p>
+</li>
+<li>
+<p>Events</p>
+</li>
+<li>
+<p>Computed</p>
+</li>
+<li>
+<p>Watchers</p>
+</li>
+<li>
+<p>Router</p>
+</li>
+<li>
+<p>Vuex</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_node">11.1. Node</h3>
+<div class="ulist">
+<div class="title">Kommandon</div>
+<ul>
+<li>
+<p>npm</p>
+</li>
+<li>
+<p>node/yarn</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_webpack">11.2. Webpack</h3>
+<div class="paragraph">
+<p>TBD</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rails">12. Rails</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Förmåga att kunna använda sig av ett MVC ramverk för backend utveckling. Kunskaper att utveckla, felsöka och problemlösa CRUD applikationer med relationer av alla kardinalitetsförhållanden. Anpassa ett backend API till RESTful standard.</p>
+</div>
+<div class="ulist">
+<div class="title">Kommandon:</div>
+<ul>
+<li>
+<p>ruby</p>
+</li>
+<li>
+<p>bundler</p>
+</li>
+<li>
+<p>gem</p>
+</li>
+<li>
+<p>rake</p>
+</li>
+<li>
+<p>rails</p>
+<div class="ulist">
+<ul>
+<li>
+<p>rails s</p>
+</li>
+<li>
+<p>rails routes</p>
+</li>
+<li>
+<p>rails generate</p>
+</li>
+<li>
+<p>rails console</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Begrepp:</div>
+<ul>
+<li>
+<p>MVC och rails arkitektur</p>
+</li>
+<li>
+<p>Rails principles</p>
+</li>
+<li>
+<p>Rails application structure</p>
+</li>
+<li>
+<p>Rails scaffold</p>
+</li>
+<li>
+<p>Parameters</p>
+</li>
+<li>
+<p>Render/redirect</p>
+</li>
+<li>
+<p>Response formats</p>
+</li>
+<li>
+<p>Routing</p>
+</li>
+<li>
+<p>ORM</p>
+</li>
+<li>
+<p>Sessions/Cookies</p>
+</li>
+<li>
+<p>Authorization/Autentisiering</p>
+</li>
+<li>
+<p>JWT</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-06-09 09:26:57 UTC
+Last updated 2021-06-09 10:06:00 UTC
 </div>
 </div>
 </body>
