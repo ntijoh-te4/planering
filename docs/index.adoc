@@ -8,6 +8,7 @@
 :imagesdir: docs/chapters
 :code_lang: ruby
 :!figure-caption:
+:hide-uri-scheme:
 
 = TE4-Planering
 

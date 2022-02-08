@@ -23,35 +23,78 @@ För att kunna använda CLI-baserade utvecklingsverktyg.
 Kunskap om olika filtyper, metadata och förståelse att allting är filer i unix. Använda kommandon för att manipulera filer genom följande operationer:
 
 .Operationer
-* lista
-* byta namn
-* skapa
-* ta bort
-* läsa
-* skriva
+----
+lista, byta namn, skapa, ta bort, läsa, skriva
+----
 
-[discrete]
 === Varför?
 
 För att kunna använda CLI-baserade utvecklingsverktyg.
 
-[discrete]
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
 
 .Kommandon:
-* ls
-* cat
-* rm
-* mv
-* cp
-* touch
-* mkdir
-* rmdir
-* less/more
-* file
-* du
+[source,shell]
+----
+ls, cat, rm, mv, cp, touch, mkdir, rmdir, less, more, file, du
+----
+
+=== Hur?
+==== Filsystemet
+En kortfattad beskrivning av Unix-filsystemet:
+----
+/var/log - loggfiler
+/etc - inställningar + startup scripts
+/proc - hårdvaruinfo. om tex. cpu osv
+/dev - enheter
+/home - alla användares hemmappar
+----
+För djupare förståelse om filsystemet, läs: https://tldp.org/LDP/sag/html/dir-tree-overview.html
+
+==== Navigering, filer och mappar
+Läs om gundläggande kommandon i terminalen: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm
+
+==== Kommandon att utforska i terminalen
+
+[cols=">1,3,3"]
+|===
+| Kommando | Beskrivning | Exempel
+
+| `man`
+| Öppna kommandots manualtext. Använd `q` för att återgå.
+| `man cd`
+
+| `cd`
+| Förflyttning genom mappar
+| `cd ~/Desktop`
+
+| `mv`
+| Flyttar (eller byter namn) på en fil eller map 
+| `mv fil.txt ~/Desktop/fil.txt`
+
+| `clear`
+| Rensar terminalskärmen
+| `clear`
+
+| `du`
+| Räknar hur stor en fil eller mapp är. https://www.oreilly.com/library/view/macintosh-terminal-pocket/9781449328962/re31.html[Läs mer]
+| `du fil.txt`
+
+| `file`
+| Kommandot tittar på en fil och försöker lista ut vilken sorts fil det är. https://en.wikipedia.org/wiki/File_(command)[Läs mer]
+| `file fil.txt`
+
+| `find`
+| Går igenom alla filer i en specifik sökväg och går neråt i hierarkin, rekursivt. https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/[Läs mer]
+| `find /Desktop`
+
+| `wc`
+| Räkna mängden ord, rader eller bytes som finns i en textfil. https://www.fosslinux.com/45753/linux-wc-command-examples.htm[Läs mer]
+| `wc fil.txt`
+
+|===
 
 == CLI-baserade textredigare
 
@@ -170,36 +213,37 @@ För att kunna använda CLI-baserade utvecklingsverktyg.
 
 Kunskap hur man använder bash scripting.
 
-[discrete]
 === Varför?
 
 För att kunna använda utveckla CLI-baserade verktyg.
 
-[discrete]
 === Vad?
 
 .Koncept:
-- Shebangs
-- Arguments
-- Variables
-- Envrionment variables
-- Escaping
-- Subshells
-- Conditionals
+----
+Shebangs, Arguments, Variables, Envrionment variables, Escaping, Subshells, Conditionals
+----
 
 .Kommandon:
-- echo
+----
+echo
+----
 
 == Övrigt
 
 Kunskaper om övriga kommandon.
 
-[discrete]
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
 
 .Kommandon:
-- man
-- alias
-- history
+----
+man, alias, history
+----
+Kommandot `alias` skapar en genväg till kommandon, med eller utan nycklar, för att t.ex. spara tid. Exempel. kör i terminalen:
+
+----
+$ alias lista="ls -lah
+$ lista
+----
