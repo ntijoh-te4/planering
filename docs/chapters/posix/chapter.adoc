@@ -1,8 +1,6 @@
 = Terminalen och POSIX
 
-Kunskaper relaterat till anvädning av terminalen. Grundläggande kunskaper om olika skal är också nödvändigt. Bash (Bourne Again Shell) är det skal (eng. shell) som utgås ifrån i följande dokumentation.
-
-Eftersom bash är så utspritt och väl använt är detta vad som utgås ifrån istället för ett helt POSIX-kompatibelt skal såsom dash (Debian Almquist shell).
+Kunskaper relaterat till anvädning av terminalen. Grundläggande kunskaper om olika skal är också nödvändigt. Våra exempel utgår ifrån Zsh eller Bash.
 
 == Navigation
 
