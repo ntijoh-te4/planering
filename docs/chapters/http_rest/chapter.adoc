@@ -14,7 +14,7 @@ Eleven kan förklara vad HyperText är
 
 Eleven förstår att protokoll är en uppsättning regler i textform - inget magiskt som en dator bara förstår.
 
-Eleverna visar förståelse för att det finns flera olika sorters protokol.
+Eleverna visar förståelse för att det finns flera olika sorters protokoll.
 
 === Client/Server
 
@@ -26,13 +26,13 @@ Eleverna uppvisar förståelse för IETF och kan läsa en RFC
 
 === Request/Response
 
-Eleverna kan redogöra för hur request-response-cykeln och hur en HTTP-request/response är uppbyggt.
+Eleverna kan redogöra för request-response-cykeln och hur en HTTP-request/response är uppbyggt.
 
 ==== Headers
 
 Eleven kan manuellt tolka http requests och har förståelse för de vanligaste headers-fälten.
 
-De kan skriva en egen HTTP-request parser och HTTP-response-generator
+Eleven kan skriva en egen HTTP-request parser och HTTP-response-generator
 
 === URL/URI
 
@@ -50,12 +50,8 @@ Eleven kan redogöra för GET/PUT/POST/PATCH/DELETE och dess skillnader och anv�
 
 För att kunna bygga standard-följande applikationer och ha en förståelse för ramverk med kodgeneration som följer REST behöver eleverna ha en förståelse för vad REST är och kunna redogöra för arkitekturen.
 
-=== Resurs
 
-Eleverna kan redogöra för vad som menas med en resurs inom REST.
+Eleverna kan 
 
-=== RESTful routes
-
-Eleverna kan redogöra för de vanliga restful routes, och kan använda termer som verb, action, resurs, List/Crud etc som de förhåller sig till REST.
-
-De kan manuellt skapa webapplikationer som följer REST.
+* redogöra för de vanliga restful routes, och kan använda och redogöra för termer som verb, action, resurs, List/Crud etc som de förhåller sig till REST.
+* manuellt skapa endpoints som följer REST för godtyckliga resurser
