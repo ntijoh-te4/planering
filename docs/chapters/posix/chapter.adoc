@@ -42,16 +42,37 @@ ls, cat, rm, mv, cp, touch, mkdir, rmdir, less, more, file, du
 ----
 
 === Hur?
-==== Filsystemet
-En kortfattad beskrivning av Unix-filsystemet:
-----
-/var/log - loggfiler
-/etc - inställningar + startup scripts
-/proc - hårdvaruinfo. om tex. cpu osv
-/dev - enheter
-/home - alla användares hemmappar
-----
-För djupare förståelse om filsystemet, läs: https://tldp.org/LDP/sag/html/dir-tree-overview.html
+==== Filsystemet i Unix
+En kortfattad beskrivning av Unix-filsystemet. Läs https://tldp.org/LDP/sag/html/dir-tree-overview.html[kapitel 3 i The Linux System Administrator's Guide] för djupare förståelse och detaljer.
+
+[cols="1,4"]
+|===
+| Sökväg | Beskrivning
+
+|`/bin`
+|Binärfiler, dvs. program
+ 
+|`/dev`
+| Enheter, t.ex. alla partitioner, hårddiskar och USB-minne
+
+|`/etc`
+|Inställningar för t.ex. Wifi och scripts för t.ex. uppstart av servrar.
+
+|`/home`
+|Alla vanliga användares hemmappar. +
+Root-användaren har sin i `/root`.
+
+|`/mnt``
+|Alla monterade lagringsenheter
+
+|`/var/log`
+| Loggfiler
+
+|`/proc`
+|Hårdvaruinfo om alla enheter som t.ex. nätverkskort och CPU. +
+Testa: `cat /proc/cpuinfo`
+
+|===
 
 ==== Navigering, filer och mappar
 Läs om gundläggande kommandon i terminalen: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm
