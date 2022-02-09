@@ -18,6 +18,11 @@ För att kunna använda en CLI-baserad pakethanterare.
 
 .Kommandon:
 * apt-get
+* brew
+
+På MacOS är vanligaste paketsystemet https://brew.sh[Brew]. 
+
+Exempel: Söka `brew search discord`` installera `brew install discord``.
 
 == SSH
 
