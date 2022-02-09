@@ -240,12 +240,12 @@ För att kunna använda flera CLI program tillsammans.
 
 .Standard streams:
 ----
-`stdin`, `stdout`, `stderr`
+stdin, stdout, stderr
 ----
 
 .Operatorer:
 ----
-`>`, `>>`, `2>`, `<`, `|`
+>, >>, 2>, <, |
 ----
 
 När du skriver ett kommando som tex. `date` syns resultatet i något som heter `stdout`. För en dator är det nästan alltid att visa resultatet på skärmen. Eftersom `Unix` i många fall används utan skärm (tex en webbserver) vill man kanske att `stdout` ska synas i tex. en loggfil. Det vanliga sättet är använda "redirect operatorn" `>`. Testa i terminalen: `date > datum.txt` och kolla att data landade i filen med `cat datum.txt`.
@@ -327,9 +327,9 @@ För att kunna använda CLI-baserade utvecklingsverktyg.
 - &
 - &&
 
-== Scripting
+== Scripting och shellscripts
 
-Kunskap hur man använder bash scripting.
+Kunskap hur man använder bash scripting. Läs: https://www.shellscript.sh/ För att förstå grunderna i shell programmering.
 
 === Varför?
 
