@@ -1,17 +1,16 @@
 = Terminalen och POSIX
 
-Kunskaper relaterat till anvädning av terminalen. Grundläggande kunskaper om olika skal är också nödvändigt. Våra exempel utgår ifrån Zsh eller Bash.
+Kunskaper relaterat till anvädning av terminalen. Våra exempel utgår ifrån `Zsh` eller `Bash`.
 
 == Navigation
 
 Kunskap om kommandon för att navigera i terminalen och förstå absoluta och relativa sökvägar.
 
-[discrete]
 === Varför?
 
 För att kunna använda CLI-baserade utvecklingsverktyg.
 
-[discrete]
+
 === Vad?
 
 .Kommandon:
@@ -52,9 +51,6 @@ En kortfattad beskrivning av Unix-filsystemet. Läs https://tldp.org/LDP/sag/htm
 |`/bin`
 |Binärfiler, dvs. program
  
-|`/dev`
-| Enheter, t.ex. alla partitioner, hårddiskar och USB-minne
-
 |`/etc`
 |Inställningar för t.ex. Wifi och scripts för t.ex. uppstart av servrar.
 
@@ -62,8 +58,8 @@ En kortfattad beskrivning av Unix-filsystemet. Läs https://tldp.org/LDP/sag/htm
 |Alla vanliga användares hemmappar. +
 Root-användaren har sin i `/root`.
 
-|`/mnt``
-|Alla monterade lagringsenheter
+|`/mnt`
+|Lagringsenheter som t.ex. partitioner och USB-minne.
 
 |`/var/log`
 | Loggfiler
@@ -121,12 +117,11 @@ Läs om gundläggande kommandon i terminalen: https://www.fosslinux.com/43292/li
 
 Kunskap att använda en eller flera textredigare ifrån terminalen.
 
-[discrete]
 === Varför?
 
 För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
-[discrete]
+
 === Vad?
 
 * nano/vim/emacs
@@ -135,12 +130,12 @@ För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
 Kunskap om filrättigheter och kunna ändra dessa från terminalen.
 
-[discrete]
+
 === Varför?
 
 För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
-[discrete]
+
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
@@ -159,12 +154,12 @@ Kunna använda följande kommandon med vanliga växlar.
 
 Använda CLI program för filtrera text och hitta filer med specifika egenskaper.
 
-[discrete]
+
 === Varför?
 
 För att kunna söka efter text och filer i CLI-baserat gränssnitt.
 
-[discrete]
+
 === Vad?
 
 Kunna använda följande kommandon med vanliga växlar.
@@ -181,38 +176,80 @@ Kunna använda följande kommandon med vanliga växlar.
 
 Kunskap om indata/utdata till terminalen, filer och andra program.
 
-[discrete]
+
 === Varför?
 
 För att kunna använda flera CLI program tillsammans.
 
-[discrete]
+
 === Vad?
 
 .Standard streams:
-* stdin
-* stdout
-* stderr
+----
+`stdin`, `stdout`, `stderr`
+----
 
 Kunna använda följande operatorer.
 
 .Operatorer:
-* >
-* >>
-* 2>
-* <
-* |
+----
+`>`, `>>`, `2>`, `<`, `|`
+----
+
+==== Övning, pipes och operatorer
+
+Läs: https://www.redhat.com/sysadmin/pipes-command-line-linux
+
+| (pipe) används för att skicka vidare output från ett verktyg till nästa. Skapa två olika textfiler med kontakter. Arbeta med cat, sort och grep.
+
+Exempelmaterial
+----
+contacts.txt
+
+Bob Jones
+Leslie Smith
+Dana David
+Susan Gee
+Leonard Schmidt
+Linda Gray
+Terry Jones
+Colin Doe
+Jenny Case
+Terry Jones
+
+kontakter.txt
+
+Jens Berggren
+Emil Bengtsson
+Johan Eriksson
+Lana Ek
+Pauline Jakobsson
+Nikolina Gustavsson
+Linn Forsberg
+
+----
+
+Se quiz 3 i Google forms. Tar upp ungefär följande:
+
+* Hur kan du sortera en lista?
+* Hur sparar du den sorterade listan?
+* Hur sorterar du på efternamn?
+* Hur kan du vända sorteringen?
+* Hur kan du slå ihop och sortera namnen från både contacts.txt och kontakter.txt
+* Hur kan du söka bland båda listorna?
+* Vad gör kommandot: cat contacts.txt | sort | uniq ?
+
 
 == Processer
 
 Kunskap hur man interagerar med processer från terminalen och hur dessa samspelar med varandra.
 
-[discrete]
+
 === Varför?
 
 För att kunna använda CLI-baserade utvecklingsverktyg.
 
-[discrete]
+
 === Vad?
 
 .Kort kommandon:
