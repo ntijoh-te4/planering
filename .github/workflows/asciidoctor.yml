@@ -1,5 +1,4 @@
 name: build adocs
-
 on:
   push:
     branches:
