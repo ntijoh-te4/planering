@@ -1,16 +1,14 @@
 :numbered:
 :icons: font
 :toc: left
-:toclevels: 3
+:toclevels: 2
 :source-highlighter: rouge
 :docinfo: private-head
 :sourcedir: docs/chapters
-//:imagesdir: docs/chapters
+:imagesdir: img
 :code_lang: ruby
 :!figure-caption:
 :hide-uri-scheme:
-
-:imagesdir: img
 
 = TE4-Planering
 
