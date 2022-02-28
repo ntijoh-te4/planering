@@ -1,8 +1,11 @@
-= Terminalen och POSIX
+= Terminalen och Unix
 
 Kunskaper relaterat till anvädning av terminalen. Våra exempel utgår ifrån `Zsh` eller `Bash`.
 
-== Filsystem, navigation, mappar och filer
+== Intro till Unix, open source och POSIX
+#TODO: Skriv kapitel om UNIX#
+
+== Filer & mappar
 
 === Vad och varför?
 
@@ -13,34 +16,6 @@ Kunskap om kommandon för att navigera i terminalen och förstå absoluta och re
 För att kunna använda CLI-baserade utvecklingsverktyg och göra grundläggande arbete i terminalen.
 
 === Hur?
-==== Filsystemet i Unix
-Läs: https://tldp.org/LDP/sag/html/dir-tree-overview.html[kapitel 3 i The Linux System Administrator's Guide]
-
-[cols="1,4"]
-|===
-| Sökväg | Beskrivning
-
-|`/bin`
-|Binärfiler, dvs. program
- 
-|`/etc`
-|Inställningar för t.ex. Wifi och scripts för t.ex. uppstart av servrar.
-
-|`/home`
-|Alla vanliga användares hemmappar. +
-Root-användaren har sin i `/root`.
-
-|`/mnt`
-|Lagringsenheter som t.ex. partitioner och USB-minne.
-
-|`/var/log`
-| Loggfiler
-
-|`/proc`
-|Hårdvaruinfo om alla enheter som t.ex. nätverkskort och CPU. +
-Testa: `cat /proc/cpuinfo`
-
-|===
 
 ==== Terminal-kommandon för navigering, filer och mappar
 Läs: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm[FOSS Linux, Top 20 Linux Terminal Commands to try for a Beginner]
@@ -127,13 +102,42 @@ Läs: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-begin
 
 |===
 
-== CLI-baserade textredigare
+== Textredigering i terminalen
 
-För att arbeta effektivt och smidigt behöver utvecklare grundläggande redigering av textfiler från terminalen. Många olika verktyg finns och ofta återkommer de t.ex. för att skriva kommentarer till s.k. `commits` i versionshanteringsverktyg eller för att göra enkla inställningar i t.ex. en webbserver. 
+För att arbeta effektivt och smidigt behöver utvecklare grundläggande redigering av textfiler från terminalen i s.k. `cli-edotirs`. Många olika verktyg finns och ofta återkommer de t.ex. för att skriva kommentarer till s.k. `commits` i versionshanteringsverktyg eller för att göra enkla inställningar i t.ex. en webbserver. 
 
 === Vad och hur?
 
-Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod:  `nano`, `vim` eller `emacs`. Många upplever `nano` som enklast att komma igång med.
+Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod:  `nano`, `vim` eller `emacs`. Många upplever `nano` som enklast att komma igång med. Det finns mängder av guider för hur du använder dem.
+
+=== Filsystemet i Unix
+Läs: https://tldp.org/LDP/sag/html/dir-tree-overview.html[kapitel 3 i The Linux System Administrator's Guide]
+
+[cols="1,4"]
+|===
+| Sökväg | Beskrivning
+
+|`/bin`
+|Binärfiler, dvs. program
+ 
+|`/etc`
+|Inställningar för t.ex. Wifi och scripts för t.ex. uppstart av servrar.
+
+|`/home`
+|Alla vanliga användares hemmappar. +
+Root-användaren har sin i `/root`.
+
+|`/mnt`
+|Lagringsenheter som t.ex. partitioner och USB-minne.
+
+|`/var/log`
+| Loggfiler
+
+|`/proc`
+|Hårdvaruinfo om alla enheter som t.ex. nätverkskort och CPU. +
+Testa: `cat /proc/cpuinfo`
+
+|===
 
 == Unix permissions
 
