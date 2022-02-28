@@ -1,7 +1,9 @@
-:numbered:
-:icons: font
-:toc: left
+:numbered: 1
+:sectnums:
+:sectnumlevels: 2
+:toc: 
 :toclevels: 2
+:icons: font
 :source-highlighter: rouge
 :docinfo: private-head
 :sourcedir: docs/chapters
@@ -9,6 +11,7 @@
 :code_lang: ruby
 :!figure-caption:
 :hide-uri-scheme:
+
 
 = TE4-Planering
 

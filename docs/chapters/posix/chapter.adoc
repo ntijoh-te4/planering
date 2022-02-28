@@ -2,8 +2,7 @@
 
 Kunskaper relaterat till anvädning av terminalen. Våra exempel utgår ifrån `Zsh` eller `Bash`.
 
-== Intro till Unix, open source och POSIX
-#TODO: Skriv kapitel om UNIX#
+#TODO:# Skriv intro om UNIX, posix och open source
 
 == Filer & mappar
 
@@ -18,7 +17,7 @@ För att kunna använda CLI-baserade utvecklingsverktyg och göra grundläggande
 === Hur?
 
 ==== Terminal-kommandon för navigering, filer och mappar
-Läs: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm[FOSS Linux, Top 20 Linux Terminal Commands to try for a Beginner]
+icon:book[] Läs: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm[FOSS Linux, Top 20 Linux Terminal Commands to try for a Beginner]
 
 [cols=">1,3,3"]
 |===
@@ -110,8 +109,8 @@ För att arbeta effektivt och smidigt behöver utvecklare grundläggande rediger
 
 Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod:  `nano`, `vim` eller `emacs`. Många upplever `nano` som enklast att komma igång med. Det finns mängder av guider för hur du använder dem.
 
-=== Filsystemet i Unix
-Läs: https://tldp.org/LDP/sag/html/dir-tree-overview.html[kapitel 3 i The Linux System Administrator's Guide]
+== Filsystemet i Unix
+icon:book[] Läs: https://tldp.org/LDP/sag/html/dir-tree-overview.html[kapitel 3 i The Linux System Administrator's Guide]
 
 [cols="1,4"]
 |===
@@ -187,7 +186,7 @@ Användare, Grupper
 
 === Exempel
 
-Bra men svår guide om rättigheter: https://help.ubuntu.com/community/FilePermissions
+icon:book[] Läs: https://help.ubuntu.com/community/FilePermissions
 
 Kör i terminalen
 
@@ -266,13 +265,13 @@ När du skriver ett kommando som tex. `date` syns resultatet i något som heter 
 
 Inputdata eller `stdin` är för en arbetsdator normalt tangentbordet men med operatorn `<` går det att suga ut data från tex. en textfil. Prova (med exempelfilerna för kontaktlistan): `sort < contacts.txt`.
 
-Läs: https://www.redhat.com/sysadmin/redirect-operators-bash och för att fördjupa kunskaperna: https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
+icon:book[] Läs: https://www.redhat.com/sysadmin/redirect-operators-bash och för att fördjupa kunskaperna: https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux/
 
 Kunna använda följande operatorer.
 
 ==== Övning, pipes och operatorer
 
-Läs: https://www.redhat.com/sysadmin/pipes-command-line-linux
+icon:book[] Läs: https://www.redhat.com/sysadmin/pipes-command-line-linux
 
 | (pipe) används för att skicka vidare output från ett verktyg till nästa. Skapa två olika textfiler med kontakter. Arbeta med cat, sort och grep.
 
