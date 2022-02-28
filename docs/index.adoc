@@ -12,6 +12,7 @@
 :!figure-caption:
 :hide-uri-scheme:
 
+//Det går att använda ikoner från: https://fontawesome.com/v4/icons/ med t.ex. icon:heart[]
 
 = TE4-Planering
 
