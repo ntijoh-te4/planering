@@ -4,6 +4,12 @@ Unix är ett av de första operativsystemen. Det började utvecklas på 70-talet
 
 I kapitel 1 får vi allmäna Unix-kunskaper och grundläggande kunskaper för att anvädnda terminalen.
 
+* Föreläsning: Terminalen och lite om Unix
+* Övning: (finns i presentationen)
+* Katacoda CLI bootcamp övning 1-15
+* Quiz
+
+
 == Filer & mappar
 
 === Vad och varför?
@@ -138,6 +144,8 @@ Testa: `cat /proc/cpuinfo`
 
 == Unix permissions
 
+#todo: skriv kapitel om permissions#
+
 Kunskap om filrättigheter och kunna ändra dessa från terminalen.
 
 === Varför?
@@ -148,23 +156,36 @@ För att kunna manipulera filer i CLI-baserad gränssnitt utan GUI.
 
 Kunna använda följande kommandon med vanliga växlar.
 
-.Kommandon
+Koncept: `användare` och `grupper`
+
+Läs: https://help.ubuntu.com/community/FilePermissions icon:book[]
+
+==== Kommandon
 [cols=">1,3,3"]
 |===
 | Kommando | Beskrivning | Exempel
 
+|`ls -l`
+| Visar rättigheter, ägare och grupp för filer och mappar. Se kapitelt om filer.
+| 
+
 |`sudo`
-|
-|
+| För att köra ett kommando som `root`
+| `sudo ls /root`
+
+|`id`
+| Visar vilken användare du är grupper du tillhör
+|`id -p`
 
 |`chown`
-|
-|
+| Byter ägare på filer eller mappar.
+| `chown root fil1.txt` + 
+`fil1.txt` byter ägare till `root`
 
 |`chgrp`
-|
-|
-
+| Byter grupp på filer och mappar.
+| `chgrp admingroup fil1.txt` +
+`fil1.txt` byter grupp till `admingroup`
 
 |`chmod`
 |
@@ -176,23 +197,7 @@ Kunna använda följande kommandon med vanliga växlar.
 
 |===
 
-
-.Koncept
-----
-Användare, Grupper
-----
-
-=== Exempel
-
-icon:book[] Läs: https://help.ubuntu.com/community/FilePermissions
-
-Kör i terminalen
-
-* filrättigheter (ls -l / chmod)
-* användare - grupper (chown / chgrp)
-* root - sudo
-
-== Kommandon för filtrering av text och filer
+== Filtrering av text och filer
 
 Använda CLI program för filtrera text och hitta filer med specifika egenskaper.
 
@@ -206,7 +211,8 @@ För att kunna söka efter text och filer i CLI-baserat gränssnitt.
 
 Kunna använda följande kommandon med vanliga växlar.
 
-.Kommandon:
+==== Kommandon
+#todo: flera av dessa finns redan ovan, är det bäst att slå ihop eller dela upp mer tydligt?#
 [cols=">1,3,3"]
 |===
 | Kommando | Beskrivning | Exempel
