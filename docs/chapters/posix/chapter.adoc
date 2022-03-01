@@ -2,13 +2,22 @@
 
 Unix är ett av de första operativsystemen. Det började utvecklas på 70-talet och kördes då främst på stordatorer där många användare loggade in och utförde arbete samtidigt via s.k. terminaler. En stor majoritet av internet är byggt på Unix-servrar. MacOS är helt unix-kompatibelt och Linux är nästan.
 
-I kapitel 1 får vi allmäna Unix-kunskaper och grundläggande kunskaper för att anvädnda terminalen.
+Fokus är på en allmänbildning om Unix och open source och att komma igång med att anvädnda terminalen.
 
-* Föreläsning: Terminalen och lite om Unix
+.*Föreläsning: Terminalen och lite om Unix*
 * Övning: (finns i presentationen)
-* Katacoda CLI bootcamp övning 1-15
-* Quiz
+* https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: 1 - 15
+* Quiz: Terminalen 1 - Intro
 
+.*Terminalen #2*
+* Quiz: Terminalen 2 - Navigering & filhantering
+* https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: Alla från 16 ochbehöver ni, gör om 1-15 först.
+
+.*T3*
+* Terminalen 3 - Operatorer & pipes
+
+.*T4*
+* Terminalen 4 - Användare & rättigheter (kördes ej 21/22)
 
 == Filer & mappar
 
@@ -21,7 +30,9 @@ I kapitel 1 får vi allmäna Unix-kunskaper och grundläggande kunskaper för at
 === Hur?
 
 ==== Navigering, filer och mappar
-Läs: https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm[FOSS Linux, Top 20 Linux Terminal Commands to try for a Beginner] icon:book[]
+.Läs
+* https://ubuntu.com/tutorials/command-line-for-beginners#1-overview[The Linux command line for beginners - Ubuntu tutorials] icon:book[]
+* https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm[Top 20 Linux Terminal Commands to try for a Beginner - FOSS Linux] icon:book[]
 
 [cols=">1,3,3"]
 |===
