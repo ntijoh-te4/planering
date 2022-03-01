@@ -159,7 +159,7 @@ Använda CLI program för att skriva, redigera, söka, sortera, filtrera och än
 
 För att arbeta effektivt och smidigt behöver utvecklare grundläggande redigering av textfiler från terminalen i s.k. `cli-edotirs`. Många olika verktyg finns och ofta återkommer de t.ex. för att skriva kommentarer till s.k. `commits` i versionshanteringsverktyg eller för att göra enkla inställningar i t.ex. en webbserver. 
 
-==== Övning, editors
+==== Övning, editors 
 
 Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod:  `nano`, `vim` eller `emacs`. Många upplever `nano` som enklast att komma igång med. Det finns mängder av guider för hur du använder dem.
 
@@ -252,51 +252,37 @@ Output från vanliga kommandon som t.ex. `date` syns i något som heter `stdout`
 
 |===
 
-=== Övning, pipes och operatorer #TODO#
+==== Övning, operatorer
 
-#quizz:# Terminalen 3 - Operatorer & pipes
+* Quizz: Terminalen 3 - Operatorer & pipes
 
+.Exempelmaterial (spara i två textfiler)
+|===
+| contacts.txt | kontakter.txt
 
-Prova (med exempelfilerna för kontaktlistan): `sort < contacts.txt`.
+a|Bob Jones +
+Leslie Smith +
+Dana David + 
+Susan Gee + 
+Leonard Schmidt +
+Linda Gray +
+Terry Jones +
+Colin Doe +
+Jenny Case +
+Terry Jones +
 
-`|` (pipe) används för att skicka vidare output från ett verktyg till nästa. Skapa två olika textfiler med kontakter. Arbeta med `cat`, `sort`` och `grep`.
+a|Jens Berggren +
+Emil Bengtsson +
+Johan Eriksson +
+Lana Ek +
+Pauline Jakobsson +
+Nikolina Gustavsson +
+Linn Forsberg +
+Anna Svensson +
+Per Olsson +
+David Svärdsjö
 
-Exempelmaterial
-----
-contacts.txt
-
-Bob Jones
-Leslie Smith
-Dana David
-Susan Gee
-Leonard Schmidt
-Linda Gray
-Terry Jones
-Colin Doe
-Jenny Case
-Terry Jones
-
-kontakter.txt
-
-Jens Berggren
-Emil Bengtsson
-Johan Eriksson
-Lana Ek
-Pauline Jakobsson
-Nikolina Gustavsson
-Linn Forsberg
-
-----
-
-Se quiz 3 i Google forms. Tar upp ungefär följande:
-
-* Hur kan du sortera en lista?
-* Hur sparar du den sorterade listan?
-* Hur sorterar du på efternamn?
-* Hur kan du vända sorteringen?
-* Hur kan du slå ihop och sortera namnen från både contacts.txt och kontakter.txt
-* Hur kan du söka bland båda listorna?
-* Vad gör kommandot: cat contacts.txt | sort | uniq ?
+|===
 
 == Unix permissions #TODO#
 
@@ -351,8 +337,9 @@ Läs: https://help.ubuntu.com/community/FilePermissions icon:book[]
 
 |===
 
-.*T4*
-* Terminalen 4 - Användare & rättigheter (kördes ej 21/22)
+==== Övningar, rättigheter
+
+* Quizz: Terminalen 4 - Användare & rättigheter (kördes ej 21/22)
 
 == Processer #TODO#
 
