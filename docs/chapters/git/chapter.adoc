@@ -1,5 +1,6 @@
-= Git och GitHub
+= Versionshantering
 
+I Git och GitHub
 Kunskaper relaterat till versionshantering (SCM) med hjälp av git. Vetskap om att det finns alternativa VCS än git.
 Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering. I denna dokumentationen är github platformen som utgås ifrån.
 

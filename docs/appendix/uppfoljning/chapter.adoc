@@ -1,0 +1,87 @@
+= Kurser, centrallt innehåll, kunskapskrav och uppföljning
+
+[cols=">1,6,3,3"]
+|===
+| Kurs | Centralt innehåll | Behandlas | Uppföljning
+
+| `MD`
+
+`GIP`
+| `Utvecklingsmetodik, inklusive agila metoder.`
+
+`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet.`
+| <<Agil systemutveckling>>
+| 
+
+| `MD`
+|`Verktyg för projekthantering, ärendehantering och samarbete.`
+
+`Verktyg för versionshantering.`
+| <<Versionshantering>> 
+| 
+
+| `MD`
+| `Utvecklingsmiljöer och infrastrukturbehov.`
+| <<Linux och Docker>>
+| 
+
+| `MD`
+|`Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester.`
+
+`Kodkvalitet och kodstandarder.`
+| <<SDLC och DevOps>>
+| 
+
+| `MD`
+| `Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer.`
+| <<Terminalen och Unix>>
+| 
+
+| `.`
+| `.`
+| <<.>>
+| 
+
+|===
+
+.*MD, Mjukvarudesign*
+[%collapsible]
+====
+
+* https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen-i-gymnasieskolan/gymnasieprogrammen/amne?url=1530314731%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DMJK%26tos%3Dgy&sv.url=12.5dfee44715d35a5cdfa92a3[Skolverkets beskrivning, MD]
+
+.Centralt innehåll
+* [.line-through]#Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer.#
+* [.line-through]#Utvecklingsmetodik, inklusive agila metoder.#
+* [.line-through]#Utvecklingsmiljöer och infrastrukturbehov.#
+* [.line-through]#Verktyg för projekthantering, ärendehantering och samarbete.#
+* [.line-through]#Kodkvalitet och kodstandarder.#
+* [.line-through]#Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester.#
+* [.line-through]#Verktyg för versionshantering.#
+* Internationalisering och lokalisering.
+* Upprättande av teknisk dokumentation, till exempel genererad från programkodskommentarer.
+* Ergonomiska krav på datorarbetsplatsen.
+* Paketering och distribution av mjukvara.
+* Licenser och betalningsmodeller.
+====
+
+.*GIP, Gymnasieingenjören i praktiken*
+[%collapsible]
+====
+
+* https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen-i-gymnasieskolan/gymnasieprogrammen/amne?url=1530314731%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DGYN%26tos%3Dgy&sv.url=12.5dfee44715d35a5cdfa92a3[Skolverkets beskrivning, GIP]
+
+.Centralt innehåll
+* Etiska, sociala och historiska aspekter på ingenjörens roll.
+* [.line-through]#Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet.#
+* Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov.
+* Målstyrning och behovsstyrning.
+* Olika företagskulturers betydelse.
+* Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi.
+* Grundläggande juridik inom teknikområdet, till exempel avtals-, arbetsmarknads-, upphandlings- och arbetsmiljörätt.
+* Hur en projektplan upprättas och genomförs samt användbara verktyg, till exempel kalkyl och budget.
+* Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation.
+* Grupprocesser och gruppdynamik.
+* Naturvetenskapliga och tekniska teorier och metoder.
+* Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information.
+====

@@ -40,3 +40,5 @@ include::chapters/dom/chapter.adoc[leveloffset=+1]
 include::chapters/vue/chapter.adoc[leveloffset=+1]
 
 include::chapters/rails/chapter.adoc[leveloffset=+1]
+
+include::appendix/uppfoljning/chapter.adoc[leveloffset=+1]
