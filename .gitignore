@@ -1,1 +1,4 @@
 .DS_Store
+
+# HTML-filen som autogenereras ska inte checkas in men går inte att ha i gitignore pga. github workflows.
+# Lägga till *.html i .git/info/exclude
