@@ -4,12 +4,6 @@ Unix är ett av de första operativsystemen. Det började utvecklas på 70-talet
 
 Fokus är på en allmänbildning om Unix och open source och att komma igång med att anvädnda terminalen.
 
-.*T3*
-* Terminalen 3 - Operatorer & pipes
-
-.*T4*
-* Terminalen 4 - Användare & rättigheter (kördes ej 21/22)
-
 == Filer & mappar
 
 * Kunskap om kommandon för att navigera i terminalen och förstå absoluta och relativa sökvägar.
@@ -261,7 +255,10 @@ När du skriver ett kommando som tex. `date` syns resultatet i något som heter 
 
 Kunna använda följande operatorer.
 
-==== Övning, pipes och operatorer
+=== Övning, pipes och operatorer #TODO#
+
+#quizz:# Terminalen 3 - Operatorer & pipes
+
 
 Prova (med exempelfilerna för kontaktlistan): `sort < contacts.txt`.
 
@@ -357,6 +354,8 @@ Läs: https://help.ubuntu.com/community/FilePermissions icon:book[]
 
 |===
 
+.*T4*
+* Terminalen 4 - Användare & rättigheter (kördes ej 21/22)
 
 == Processer #TODO#
 
