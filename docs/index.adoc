@@ -23,8 +23,6 @@ include::chapters/linux/chapter.adoc[leveloffset=+1]
 
 include::chapters/git/chapter.adoc[leveloffset=+1]
 
-include::chapters/git/chapter.adoc[leveloffset=+1]
-
 include::chapters/agil-utveckling/chapter.adoc[leveloffset=+1]
 
 include::chapters/sdlc_devops/chapter.adoc[leveloffset=+1]
