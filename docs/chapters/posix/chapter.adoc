@@ -165,9 +165,9 @@ Arbeta i minst en av följand texteditors för att skriva en riktig text eller k
 
 #TODO:# Gör en tydligare övning
 
-=== Streams, redirects och piping
+=== Redirects, pipes & streams
 
-När du skriver ett kommando som tex. `date` syns resultatet i något som heter `stdout`. För en dator är det nästan alltid att visa resultatet på skärmen. Eftersom `Unix` i många fall används utan skärm (tex en webbserver) vill man kanske att `stdout` ska synas i tex. en loggfil. Det vanliga sättet är använda "redirect operatorn" `>`.  En annan vanlig `operator` är att vilja sortera t.ex. rader i en textfil.
+Output från vanliga kommandon som t.ex. `date` syns i något som heter `stdout`. För en vanlig dator betyder det oftast att visa resultatet på skärmen. Eftersom `Unix` i många fall används utan skärm (t.ex. en webbserver) behöver data kunna `redirectas` så att t.ex. `stdout` syns i t.ex. en loggfil. Det vanliga sättet är använda `redirect` operatorn `>`.  En annan vanlig `operator` är att vilja sortera t.ex. rader i en textfil vilket görs med `pipe`.
 
 ==== Läs
 * https://www.redhat.com/sysadmin/redirect-operators-bash[Five ways to use redirect operators in Bash - Red Hat] icon:book[]
@@ -251,9 +251,6 @@ När du skriver ett kommando som tex. `date` syns resultatet i något som heter 
 |`find ~/Desktop -name "*.png"`
 
 |===
-
-
-Kunna använda följande operatorer.
 
 === Övning, pipes och operatorer #TODO#
 
