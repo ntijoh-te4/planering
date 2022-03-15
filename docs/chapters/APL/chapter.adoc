@@ -2,27 +2,40 @@
 På TE4 har vi tio veckors arbetsplatsförlagt lärande på vårterminen
 
 == Observationsövning, APL
-Uppgiften behandlar ”soft skills”, dvs. alla de icke-tekniska och luddiga sidorna av arbetet. Syftet är att observera och bli uppmärksam på hur arbetsplatsen fungerar. Vissa av frågeställningarna kan du säkert besvara direkt, medan andra kräver en riktad observation eller att du t.ex. ställer frågor till anställda på arbetsplatsen.
+Uppgiften behandlar ”soft skills”, dvs. alla de icke-tekniska och luddiga sidorna av arbetet. Syftet är att bli uppmärksam på hur arbetsplatsen fungerar. Vissa av frågeställningarna kan du säkert besvara direkt, medan andra kräver en riktad observation eller att du t.ex. ställer frågor till anställda på arbetsplatsen.
 
-Skriv ungefär ett stycke under respektive rubrik. Punktlistorna beskriver ungefär vad du förväntas svara på. Arbeta gärna med detta dokumentet regelbundet under APL.
+.*Redovisning*
+* Mängden innehåll förväntas till ungefär ett stycke per rubrik. +
+Håll det kort och kärnfullt! Ca 30 sekunder eller 1/4 A4. 
+* Är du ensam på ditt APL-företag spelar du in video eller ljud där du svarar på frågorna.
+* Är ni mer än en på APL får ni, om ni vill, spela in ett kort samtal mellan er där ni pratar om respektive ämne. Är ni två har ni dubbelt så mycket tid till varje fråga.
+* Är det någon som hellre vill skriva text-svar går det.
+* Punktlistorna beskriver ungefär vad du förväntas svara på men begränsar er inte till dem.
+* Oavsett hur ni redovisar behöver ni observera och skriva ner stödanteckningar före ert samtal. 
 
 === Arbetssätt
 * Arbetar ni enligt någon utvecklingsmetodik som t.ex. Scrum? Eller finns det en egen variant?
 * På vilka sätt skiljer dessa metoder mot hur ni arbetat på skolan?
 
-=== Formella krav jämfört med praxis
+=== Formella krav och arbetskultur
 * Vilka delar av arbetet styrs med regelverk som t.ex. kodstandarder, checklistor eller sekretessavtal?
-* Vilka delar av arbetet styrs av "oskrivna regler" som mer “sitter i väggarna" eller arbetskultur?
+* Vilka delar av arbetet styrs av "oskrivna regler" som “sitter i väggarna"?
 
 === Beslutsfattande och anställdas inflytande
-* Vem fattar (eller var fattas) beslut och direktiv som påverkar utvecklarnas arbete?
-* Vilket inflytande har utvecklare och ”vanliga” anställda jämfört med arbetsledare och chefer?
-* Förekommer det att beslut och direktiv ifrågasätts eller motverkar varandra?
+* Vem (eller var) fattar (eller var fattas) beslut som påverkar utvecklarnas arbete?
+* Vilket inflytande har utvecklare (och andra anställda) jämfört med arbetsledare och chefer?
+* Förekommer det konflikter eller ifrågasättande kring beslut?
 
-=== Villkor för team och utvecklare
-* Vilka är de största hindren i arbetet för den enskilde utvecklaren eller teamen? Undersök aspekter som kommunikation (vilka former/verktyg används?), kompetens, resurser (materiella, personal), tidsramar, deadlines,etc.
+=== Villkor för utvecklare och team
+* Vad är de största problemen eller begränsningarna för utvecklare och team? +
+Undersök aspekter som: +
+kommunikation (vilka former / verktyg används), +
+kompetens (har alla ungefär rätt kunskaper för uppgifterna), +
+resurser (materiella, personal), +
+tidsramar, +
+deadlines, etc.
 
-=== Hållbara arbetsförhållanden
+=== Arbetsförhållanden
 * I vilken utsträckning kan individer eller teamen själva påverka arbetstakten?
 * I vilken utsträckning verkar anställda vara påverkade av stress eller oro som uppkommer av arbetet?
 * Förekommer det uttryckliga krav på ökat tempo eller övertid för att möta fastställda deadlines eller milstolpar?
@@ -30,12 +43,21 @@ Skriv ungefär ett stycke under respektive rubrik. Punktlistorna beskriver ungef
 * Belönas övertid eller extra engagemang?
 
 === Trivsel och arbetsklimat
-* Är arbetet upplagt så att man har möjligheter till samarbete och god kontakt med sina arbetskamrater?
+* Är arbetet upplagt så att man har möjligheter till samarbete?
+* Är det en god kontakt mellan arbetskamrater?
 * Ger arbetskamrater varandra stöd och hjälp om problem uppstår i arbetet?
-* Hur ser det dagliga umgänget ut på arbetsplatsen? Förekommer det t ex aktiviteter som syftar till avkoppling och gemenskap (spel, lek, after-work, etc)?
+* Hur ser det dagliga umgänget ut på arbetsplatsen? +
+Förekommer det aktiviteter för avkoppling och gemenskap (t.ex. spel, lek, after-work, gemensam träning, etc)?
 * Kan man uppfatta en tydlig sammanhållning eller vi-känsla bland arbetskamraterna?
 
-=== Konflikter och motsättningar
+=== Konflikter 
 * Kan man uppfatta motsättningar eller konflikter på arbetsplatsen?
 * Vilka aspekter av arbetet verkar konflikterna handla om? Kan man ana andra bakomliggande orsaker till konflikterna?
 * Hur hanteras konflikter av chefer och arbetsledare?
+
+=== Företagets förväntningar på dina kunskaper
+* Känns företagets förväntningar på dig rimliga? Motivera.
+* Vilka eventuella kunskaper (soft / hard - skills) saknar du?
+
+=== Övrigt
+* Finns det några andra funderingar eller tankar kring APL eller TE4.
