@@ -44,6 +44,11 @@
 
 |===
 
+#TODO:# bedömning +
+Bedömning i två axlar: Hur självständigt arbetar eleven? Hur komplexa uppgifter löser eleven?
+
+Bedömning görs i första hand på retrospektiven där eleven innan mötet arbetar med en självutvärdering.
+
 .*MD, Mjukvarudesign*
 [%collapsible]
 ====
