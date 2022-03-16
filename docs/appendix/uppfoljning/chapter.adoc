@@ -1,52 +1,70 @@
 = Kurser, centrallt innehåll, kunskapskrav och uppföljning
 
-[cols=">1,6,3,3"]
+#TODO:# Ett försök till övergripande matris för hela TE4 med koppling från övning till centralt innehåll. Frågan är om det är rätt håll att koppla eller om det är bättre att lista alla centrala innehåll och lista mot övningar och uppföljning? //Ola
+[cols="6,3,3"]
 |===
-| Kurs | Centralt innehåll | Behandlas | Uppföljning
+| Centralt innehåll | Behandlas | Uppföljning
 
-| `MD`
+| `Utvecklingsmetodik, inklusive agila metoder @MD`
 
-`GIP`
-| `Utvecklingsmetodik, inklusive agila metoder.`
-
-`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet.`
+`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
 | <<Agil systemutveckling>>
-| 
+|
 
-| `MD`
-|`Verktyg för projekthantering, ärendehantering och samarbete.`
+|`Verktyg för projekthantering, ärendehantering och samarbete @MD`
 
-`Verktyg för versionshantering.`
+`Verktyg för versionshantering @MD`
 | <<Versionshantering>> 
 | 
 
-| `MD`
-| `Utvecklingsmiljöer och infrastrukturbehov.`
+| `Utvecklingsmiljöer och infrastrukturbehov @MD`
 | <<Linux och Docker>>
 | 
 
-| `MD`
-|`Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester.`
+|`Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester @MD`
 
-`Kodkvalitet och kodstandarder.`
+`Kodkvalitet och kodstandarder @MD`
 | <<SDLC och DevOps>>
 | 
 
-| `MD`
-| `Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer.`
+| `Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer @MD`
 | <<Terminalen och Unix>>
 | 
 
-| `.`
-| `.`
-| <<.>>
+| `Målstyrning och behovsstyrning @GIP` +
+
+`Olika företagskulturers betydelse @GIP` +
+
+`Hur en projektplan upprättas och genomförs samt användbara verktyg @GIP`
+
+`Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation @GIP`
+
+`Grupprocesser och gruppdynamik @GIP`
+
+`Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information @GIP`
+
+`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
+
+`Utvecklingsmetodik, inklusive agila metoder @MD`
+
+`Verktyg för projekthantering, ärendehantering och samarbete @MD`
+
+`Verktyg för versionshantering @MD`
+
+`Kodkvalitet och kodstandarder @MD`
+| 
+| <<Observationsövning på APL>>
+
+| `Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi. @GIP` + 
+
+ `Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov. @MD`
+| _Moment 23 på Google drive_
 | 
 
 |===
 
-#TODO:# bedömning +
-Bedömning i två axlar: Hur självständigt arbetar eleven? Hur komplexa uppgifter löser eleven?
-
+.*Bedömning* #TODO#
+Bedömning i två axlar: Hur självständigt arbetar eleven? Hur komplexa uppgifter löser eleven? + 
 Bedömning görs i första hand på retrospektiven där eleven innan mötet arbetar med en självutvärdering.
 
 .*MD, Mjukvarudesign*
@@ -79,14 +97,14 @@ Bedömning görs i första hand på retrospektiven där eleven innan mötet arbe
 .Centralt innehåll
 * Etiska, sociala och historiska aspekter på ingenjörens roll.
 * [.line-through]#Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet.#
-* Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov.
-* Målstyrning och behovsstyrning.
-* Olika företagskulturers betydelse.
-* Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi.
+* [.line-through]#Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov.#
+* [.line-through]#Målstyrning och behovsstyrning.#
+* [.line-through]#Olika företagskulturers betydelse.#
+* [.line-through]#Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi.#
 * Grundläggande juridik inom teknikområdet, till exempel avtals-, arbetsmarknads-, upphandlings- och arbetsmiljörätt.
-* Hur en projektplan upprättas och genomförs samt användbara verktyg, till exempel kalkyl och budget.
-* Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation.
-* Grupprocesser och gruppdynamik.
+* [.line-through]#Hur en projektplan upprättas och genomförs samt användbara verktyg, (till exempel kalkyl och budget).#
+* [.line-through]#Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation.#
+* [.line-through]#Grupprocesser och gruppdynamik.#
 * Naturvetenskapliga och tekniska teorier och metoder.
-* Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information.
+* [.line-throug]#Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information.#
 ====

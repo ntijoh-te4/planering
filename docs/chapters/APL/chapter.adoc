@@ -1,7 +1,7 @@
 = APL
 På TE4 har vi tio veckors arbetsplatsförlagt lärande på vårterminen
 
-== Observationsövning, APL
+== Observationsövning på APL
 Uppgiften behandlar ”soft skills”, dvs. alla de icke-tekniska och luddiga sidorna av arbetet. Syftet är att bli uppmärksam på hur arbetsplatsen fungerar. Vissa av frågeställningarna kan du säkert besvara direkt, medan andra kräver en riktad observation eller att du t.ex. ställer frågor till anställda på arbetsplatsen.
 
 .*Redovisning*
