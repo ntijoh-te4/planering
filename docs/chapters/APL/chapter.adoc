@@ -61,3 +61,15 @@ Förekommer det aktiviteter för avkoppling och gemenskap (t.ex. spel, lek, afte
 
 === Övrigt
 * Finns det några andra funderingar eller tankar kring APL eller TE4.
+
+== Presentera din APL
+
+Efter APL förbereder ni en presentation om vad ni gjorde på APL för era klasskamrater. Målet är att få en inblick i varandras APL.
+
+* ca 15 miuter per APL-grupp
+
+* Vad har ni gjort?
+* Beskriv företaget, produkter, kunder, osv
+* Var har ni lärt er? (inte nödvändigtvis enbart "programmering")
+
+* Ev. något spec. ni gjort?
