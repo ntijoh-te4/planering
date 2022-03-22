@@ -1,130 +1,38 @@
 = Appendix: Kurser, centrallt innehåll, kunskapskrav och uppföljning
 
-#TODO:# Ett försök till övergripande matris för hela TE4 med koppling från övning till centralt innehåll. Frågan är om det är rätt håll att koppla eller om det är bättre att lista alla centrala innehåll och lista mot övningar och uppföljning? //Ola
-
-== Centralt innehåll -> Uppgifter / uppföljning
-
-[cols="6,3,3"]
-|===
-| Centralt innehåll | Övning | Uppföljning
-
-| `Utvecklingsmetodik, inklusive agila metoder @MD`
-
-`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
-| <<Agil systemutveckling>>
-|
-
-|`Verktyg för projekthantering, ärendehantering och samarbete @MD`
-
-`Verktyg för versionshantering @MD`
-| <<Versionshantering>> 
-| 
-
-| `Utvecklingsmiljöer och infrastrukturbehov @MD`
-| <<Linux och Docker>>
-| 
-
-|`Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester @MD`
-
-`Kodkvalitet och kodstandarder @MD`
-| <<SDLC och DevOps>>
-| 
-
-| `Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer @MD`
-| <<Terminalen och Unix>>
-| 
-
-| `Målstyrning och behovsstyrning @GIP` +
-
-`Olika företagskulturers betydelse @GIP` +
-
-`Hur en projektplan upprättas och genomförs samt användbara verktyg @GIP`
-
-`Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation @GIP`
-
-`Grupprocesser och gruppdynamik @GIP`
-
-`Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information @GIP`
-
-`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
-
-`Utvecklingsmetodik, inklusive agila metoder @MD`
-
-`Verktyg för projekthantering, ärendehantering och samarbete @MD`
-
-`Verktyg för versionshantering @MD`
-
-`Kodkvalitet och kodstandarder @MD`
-| 
-| <<Observationsövning på APL>>
-
-| `Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi. @GIP` + 
-
- `Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov. @MD`
-| _Moment 23 på Google drive_
-| 
-
-|===
-
-
-== Uppgifter / uppföljning -> Centralt innehåll
-
-[cols="3,3,6"]
-|===
-| Övning | Uppföljning | Centralt innehåll
-
-| <<Agil systemutveckling>>
-|
-| `Utvecklingsmetodik, inklusive agila metoder @MD` +
-
-`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
-
-|
-| <<Observationsövning på APL>>
-| `Målstyrning och behovsstyrning @GIP` +
-
-`Olika företagskulturers betydelse @GIP` +
-
-`Hur en projektplan upprättas och genomförs samt användbara verktyg @GIP`
-
-`Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation @GIP`
-
-`Grupprocesser och gruppdynamik @GIP`
-
-`Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information @GIP`
-
-`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
-
-`Utvecklingsmetodik, inklusive agila metoder @MD`
-
-`Verktyg för projekthantering, ärendehantering och samarbete @MD`
-
-`Verktyg för versionshantering @MD`
-
-`Kodkvalitet och kodstandarder @MD` 
-
-`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
-
-|===
-
-.*Bedömning* #TODO#
+== Bedömning #TODO#
 Bedömning i två axlar: Hur självständigt arbetar eleven? Hur komplexa uppgifter löser eleven? + 
 Bedömning görs i första hand på retrospektiven där eleven innan mötet arbetar med en självutvärdering.
 
-.*MD, Mjukvarudesign*
-[%collapsible]
-====
+=== Projekt
+==== P0 - WTF
+==== P1 - WTFv2
+==== P2 - Teacher-o-matic
+==== P3 - Log-o-matic
+==== P4 - YABS
 
-* https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen-i-gymnasieskolan/gymnasieprogrammen/amne?url=1530314731%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DMJK%26tos%3Dgy&sv.url=12.5dfee44715d35a5cdfa92a3[Skolverkets beskrivning, MD]
+== Kurser
+
+=== Mjukvarudesign, MD
+
+====
+https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen-i-gymnasieskolan/gymnasieprogrammen/amne?url=1530314731%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DMJK%26tos%3Dgy&sv.url=12.5dfee44715d35a5cdfa92a3[*Skolverkets beskrivning, MD*]
 
 .Centralt innehåll
-* [.line-through]#Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer.#
-* [.line-through]#Utvecklingsmetodik, inklusive agila metoder.#
-* [.line-through]#Utvecklingsmiljöer och infrastrukturbehov.#
-* [.line-through]#Verktyg för projekthantering, ärendehantering och samarbete.#
-* [.line-through]#Kodkvalitet och kodstandarder.#
-* [.line-through]#Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester.#
-* [.line-through]#Verktyg för versionshantering.#
+* Körmiljöer och plattformar, till exempel desktop, mobil, inbyggda system och webbapplikationer. + 
+<<Terminalen och Unix>>, `M6-GithubFlow`
+* Utvecklingsmetodik, inklusive agila metoder. +
+<<Agil systemutveckling>>, <<Observationsövning på APL>>, `M6-GithubFlow`
+* Utvecklingsmiljöer och infrastrukturbehov. +
+<<Linux och Docker>>, `M6-GithubFlow`
+* Verktyg för projekthantering, ärendehantering och samarbete. +
+<<Versionshantering>>, <<Observationsövning på APL>>, `M6-GithubFlow`
+* Kodkvalitet och kodstandarder. +
+<<SDLC och DevOps>>, <<Observationsövning på APL>>, `M6-GithubFlow`
+* Kodanalys och kvalitetskontroll, inklusive bugghantering och automatiserade tester. + 
+<<SDLC och DevOps>>, `M6-GithubFlow`
+* Verktyg för versionshantering. +
+<<Versionshantering>>, <<Observationsövning på APL>> , `M6-GithubFlow`
 * Internationalisering och lokalisering.
 * Upprättande av teknisk dokumentation, till exempel genererad från programkodskommentarer.
 * Ergonomiska krav på datorarbetsplatsen.
@@ -132,23 +40,34 @@ Bedömning görs i första hand på retrospektiven där eleven innan mötet arbe
 * Licenser och betalningsmodeller.
 ====
 
-.*GIP, Gymnasieingenjören i praktiken*
-[%collapsible]
-====
+=== Gymnasieingenjören i praktiken, GIP
 
-* https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen-i-gymnasieskolan/gymnasieprogrammen/amne?url=1530314731%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DGYN%26tos%3Dgy&sv.url=12.5dfee44715d35a5cdfa92a3[Skolverkets beskrivning, GIP]
+====
+https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen-i-gymnasieskolan/gymnasieprogrammen/amne?url=1530314731%2Fsyllabuscw%2Fjsp%2Fsubject.htm%3FsubjectCode%3DGYN%26tos%3Dgy&sv.url=12.5dfee44715d35a5cdfa92a3[*Skolverkets beskrivning, GIP*]
 
 .Centralt innehåll
-* Etiska, sociala och historiska aspekter på ingenjörens roll.
-* [.line-through]#Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet.#
-* [.line-through]#Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov.#
-* [.line-through]#Målstyrning och behovsstyrning.#
-* [.line-through]#Olika företagskulturers betydelse.#
-* [.line-through]#Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi.#
+* Etiska, sociala och historiska aspekter på ingenjörens roll. + 
+`M2.1-Vad är en ingenjör?`
+* Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet. +
+<<Agil systemutveckling>>, <<Observationsövning på APL>> , `M6-GithubFlow`
+* Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov. + 
+`M23-Entreprenörskap`
+* Målstyrning och behovsstyrning. + 
+<<Observationsövning på APL>>
+* Olika företagskulturers betydelse. + 
+<<Observationsövning på APL>>
+* Grundläggande företagsekonomiska teorier och begrepp inom området ekonomisk hållbarhet. Kalkylering, budgetering och projektekonomi. + 
+`M23-Entreprenörskap`
 * Grundläggande juridik inom teknikområdet, till exempel avtals-, arbetsmarknads-, upphandlings- och arbetsmiljörätt.
-* [.line-through]#Hur en projektplan upprättas och genomförs samt användbara verktyg, (till exempel kalkyl och budget).#
-* [.line-through]#Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation.#
-* [.line-through]#Grupprocesser och gruppdynamik.#
+* Hur en projektplan upprättas och genomförs samt användbara verktyg, (till exempel kalkyl och budget). + 
+<<Observationsövning på APL>>
+* Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation. + 
+<<Observationsövning på APL>>, `M16-konflikter`
+* Grupprocesser och gruppdynamik. + 
+<<Observationsövning på APL>>, `M4-Grupprocesser`, `M16-konflikter`
 * Naturvetenskapliga och tekniska teorier och metoder.
-* [.line-throug]#Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information.#
+* Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information. + 
+<<Observationsövning på APL>>
 ====
+
+`M14-JWT`
