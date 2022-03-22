@@ -1,9 +1,12 @@
-= Kurser, centrallt innehåll, kunskapskrav och uppföljning
+= Appendix: Kurser, centrallt innehåll, kunskapskrav och uppföljning
 
 #TODO:# Ett försök till övergripande matris för hela TE4 med koppling från övning till centralt innehåll. Frågan är om det är rätt håll att koppla eller om det är bättre att lista alla centrala innehåll och lista mot övningar och uppföljning? //Ola
+
+== Centralt innehåll -> Uppgifter / uppföljning
+
 [cols="6,3,3"]
 |===
-| Centralt innehåll | Behandlas | Uppföljning
+| Centralt innehåll | Övning | Uppföljning
 
 | `Utvecklingsmetodik, inklusive agila metoder @MD`
 
@@ -60,6 +63,47 @@
  `Entreprenörskap och företagande inom teknikområdet med fokus på dess villkor, förutsättningar och behov. @MD`
 | _Moment 23 på Google drive_
 | 
+
+|===
+
+
+== Uppgifter / uppföljning -> Centralt innehåll
+
+[cols="3,3,6"]
+|===
+| Övning | Uppföljning | Centralt innehåll
+
+| <<Agil systemutveckling>>
+|
+| `Utvecklingsmetodik, inklusive agila metoder @MD` +
+
+`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
+
+|
+| <<Observationsövning på APL>>
+| `Målstyrning och behovsstyrning @GIP` +
+
+`Olika företagskulturers betydelse @GIP` +
+
+`Hur en projektplan upprättas och genomförs samt användbara verktyg @GIP`
+
+`Grundläggande teorier om ledarskap och organisation, till exempel hur beslutsfattande sker i en organisation @GIP`
+
+`Grupprocesser och gruppdynamik @GIP`
+
+`Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information @GIP`
+
+`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
+
+`Utvecklingsmetodik, inklusive agila metoder @MD`
+
+`Verktyg för projekthantering, ärendehantering och samarbete @MD`
+
+`Verktyg för versionshantering @MD`
+
+`Kodkvalitet och kodstandarder @MD` 
+
+`Systemtänkande samt olika metoder och begrepp som är gemensamma och användbara för det ingenjörsmässiga arbetet @GIP`
 
 |===
 
