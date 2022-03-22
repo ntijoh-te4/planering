@@ -68,6 +68,7 @@ https://www.skolverket.se/undervisning/gymnasieskolan/laroplan-program-och-amnen
 * Naturvetenskapliga och tekniska teorier och metoder.
 * Kommunikationsstrategier samt kommunikations-, dokumentations- och presentationsteknik för att förmedla teknik och information. + 
 <<Observationsövning på APL>>
+
 ====
 
 `M14-JWT`
