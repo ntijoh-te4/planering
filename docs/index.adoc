@@ -8,13 +8,6 @@
 :!figure-caption:
 :hide-uri-scheme:
 
-//Har experimenterat m. följande:
-//:numbered: 1
-//:sectnums:
-//:sectnumlevels: 2
-//:toclevels: 2
-//Det går att använda ikoner från: https://fontawesome.com/v4/icons/ med t.ex. icon:heart[]
-
 = TE4-boken
 NTI Gymnasiet Johanneberg
 

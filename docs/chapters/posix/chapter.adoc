@@ -10,23 +10,15 @@ Fokus är på en allmänbildning om Unix och open source och att komma igång me
 * Kunskap om olika filtyper, metadata och förståelse att allting är filer i unix. Använda kommandon för att manipulera filer genom följande operationer.
 * För att kunna använda CLI-baserade utvecklingsverktyg och göra grundläggande arbete i terminalen.
 
-=== Föreläsningar
+=== icon:building[] Föreläsningar
 * Terminalen och lite om Unix
 
-=== Övningar
-
-==== Terminalen 1
+=== icon:graduation-cap[] Övning - Terminalen 1
 * Gör övningen från första presentationen om terminalen
 * https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: 1 - 15
 * Quiz: Terminalen 1 - Intro
 
-==== Terminalen 2
-* https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: Alla från 16. Behöver ni så gör om 1-15 först.
-* Quiz: Terminalen 2 - Navigering & filhantering
-
-=== Läs
-
-==== Terminalen
+=== Läs (om terminalen)
 * https://ubuntu.com/tutorials/command-line-for-beginners#1-overview[The Linux command line for beginners - Ubuntu tutorials] icon:book[]
 * https://www.fosslinux.com/43292/linux-terminal-commands-to-try-for-a-beginner.htm[Top 20 Linux Terminal Commands to try for a Beginner - FOSS Linux] icon:book[]
 
@@ -146,6 +138,11 @@ Testa: `cat /proc/cpuinfo`
 
 |===
 
+
+=== icon:graduation-cap[] Övning - Terminalen 2
+* https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: Alla från 16. Behöver ni så gör om 1-15 först.
+* Quiz: Terminalen 2 - Navigering & filhantering
+
 == Redigera text, söka i filer och streams
 
 Använda CLI program för att skriva, redigera, söka, sortera, filtrera och ändra text. Samt att söka efter filer med specifika egenskaper.
@@ -159,7 +156,7 @@ Använda CLI program för att skriva, redigera, söka, sortera, filtrera och än
 
 För att arbeta effektivt och smidigt behöver utvecklare grundläggande redigering av textfiler från terminalen i s.k. `cli-edotirs`. Många olika verktyg finns och ofta återkommer de t.ex. för att skriva kommentarer till s.k. `commits` i versionshanteringsverktyg eller för att göra enkla inställningar i t.ex. en webbserver. 
 
-==== Övning, editors 
+==== icon:graduation-cap[] Övning, editors 
 
 Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod:  `nano`, `vim` eller `emacs`. Många upplever `nano` som enklast att komma igång med. Det finns mängder av guider för hur du använder dem.
 
@@ -252,10 +249,6 @@ Output från vanliga kommandon som t.ex. `date` syns i något som heter `stdout`
 
 |===
 
-==== Övning, operatorer
-
-* Quizz: Terminalen 3 - Operatorer & pipes
-
 .Exempelmaterial (spara i två textfiler)
 |===
 | contacts.txt | kontakter.txt
@@ -283,6 +276,10 @@ Per Olsson +
 David Svärdsjö
 
 |===
+
+==== icon:graduation-cap[] Övning, operatorer
+
+* Quizz: Terminalen 3 - Operatorer & pipes
 
 == Unix permissions #TODO#
 
