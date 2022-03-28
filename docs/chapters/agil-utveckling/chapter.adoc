@@ -108,7 +108,7 @@ Uppgiften för kollegan är då att ställa frågor så fort något är oklart e
 
 Ni får eventuellt en enkel struktur för DoD på köpet? Dessutom får fler chansen att se all kod.
 
-== Uppgifter 1 - Agila metoder
+== Uppgifter 1 - agila metoder
 Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gång vi ses går vi igenom dem uppifrån och ner. Varje grupp kommer vara delaktig i diskussionen. Träna på att hitta kärnan i era argument - dvs. försök hålla det kort och exakt.
 
 * Vad är en Sprint?
@@ -122,7 +122,7 @@ Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gån
 * Beskriv, efter det ni lärt er om agila metoder, hur ni skulle vilja lägga upp arbetet för ert nästa projekt.
 * Har ni några tankar om vattenfallsmetoden?
 
-== Uppgifter 2 - Agila metoder
+== Uppgift 2 - agila metoder
 Återgå och utveckla era svar i uppgifter 1 när ni gör uppgifter 2. Diskutera och reflektera.
 
 * Se en kort repetition: https://www.youtube.com/watch?v=1iccpf2eN1Q
@@ -135,20 +135,10 @@ Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gån
 * Hur kan ni använda code review i era projekt?
 * Andra funderingar om Agile? Vilka nya kunskaper om agile har ni fått nu?
 
+== Uppgift 3 - agila metoder
 
-== Varför?
+Läs:
+ * https://www.scrum.org/resources/scrum-glossary
+ * https://www.agilealliance.org/agile101/agile-glossary/
 
-För att kunna arbeta iterativt och att kvalitetssäkra funktionalitet innan den integreras.
-
-== Vad?
-
-Eleverna jobbar enligt agila principer och förstår och tillämpar praxis som grundar sig i utvecklingsmetodiken DevOps.
-
-.Praxis
-* CI
-* CD
-* TLD/TDD
-* PP
-
-.Verktyg
-- Github actions
+Plocka upp de fem ord eller koncept du viste minst om, läs på och förbered att berätta för dina klasskamrater. 
