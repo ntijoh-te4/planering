@@ -138,7 +138,8 @@ Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gån
 == Uppgift 3 - agila metoder
 
 Läs:
- * https://www.scrum.org/resources/scrum-glossary
- * https://www.agilealliance.org/agile101/agile-glossary/
+
+* https://www.scrum.org/resources/scrum-glossary
+* https://www.agilealliance.org/agile101/agile-glossary/
 
 Plocka upp de fem ord eller koncept du viste minst om, läs på och förbered att berätta för dina klasskamrater. 
