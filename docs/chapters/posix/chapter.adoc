@@ -4,6 +4,8 @@ Unix är ett av de första operativsystemen. Det började utvecklas på 70-talet
 
 Fokus är på en allmänbildning om Unix och open source och att komma igång med att anvädnda terminalen.
 
+För Windows finns WSL och Cygwin.
+
 == Filer & mappar
 
 * Kunskap om kommandon för att navigera i terminalen och förstå absoluta och relativa sökvägar.
@@ -15,7 +17,7 @@ Fokus är på en allmänbildning om Unix och open source och att komma igång me
 
 === icon:graduation-cap[] Övning - Terminalen 1
 * Gör övningen från första presentationen om terminalen
-* https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: 1 - 15
+* https://cli-boot.camp/[command-line bootcamp], Övning: 1 - 15
 * Quiz: Terminalen 1 - Intro
 
 === Läs (om terminalen)
@@ -140,7 +142,7 @@ Testa: `cat /proc/cpuinfo`
 
 
 === icon:graduation-cap[] Övning - Terminalen 2
-* https://www.katacoda.com/sjnewhouse/scenarios/cli_bootcamp[Katacoda - Basic Linux and the Command Line], Övning: Alla från 16. Behöver ni så gör om 1-15 först.
+* https://cli-boot.camp/[command-line bootcamp], Övning: Alla från 16. Behöver ni så gör om 1-15 först.
 * Quiz: Terminalen 2 - Navigering & filhantering
 
 == Redigera text, söka i filer och streams
