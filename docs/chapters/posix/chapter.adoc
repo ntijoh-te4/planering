@@ -17,7 +17,7 @@ För Windows finns WSL och Cygwin.
 
 === icon:graduation-cap[] Övning - Terminalen 1
 * Gör övningen från första presentationen om terminalen
-* https://cli-boot.camp/[command-line bootcamp], Övning: 1 - 15
+* https://cli-boot.camp/[command-line bootcamp], Övning: 1 - 15. Gör övningarna i din egen terminal snarare än i webbläsaren.
 * Quiz: Terminalen 1 - Intro
 
 === Läs (om terminalen)
