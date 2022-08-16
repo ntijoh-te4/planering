@@ -29,23 +29,23 @@ För Windows finns WSL och Cygwin.
 | Kommando | Beskrivning | Exempel
 
 | `cd`
-| Förflyttning genom mappar
+| `Change Directory` Förflyttning genom mappar
 | `cd ~/Desktop`
 
 | `pwd`
-| Visar aktuell mapp
+| `Pathname Working Directory` Visar aktuell mapp
 | `pwd`
 
 | `ls`
-| Listar filer och mappar
+| `LiSt` Listar filer och mappar
 | `ls` och `ls ~`
 
 | `cat`
-| Visa innehållet i en fil
+| `ConCAtenate` Visar innehållet i en fil
 | `cat fil.txt`
 
 | `cp`
-| Skapa kopior av filer och mappar
+| `CoPy` Skapa kopior av filer och mappar
 | `cp fil1.txt fil2.txt`
 
 | `less` & `more`
@@ -53,31 +53,31 @@ För Windows finns WSL och Cygwin.
 | `less fil1.txt`
 
 | `du`
-| Visar hur mycket plats filer och mappar ta upp
+| `Disk Usage` Visar hur mycket plats filer och mappar ta upp
 | `du -h ~/Desktop`
 
 | `df`
-| Visar hur mycket ledig plats som finns
+| `Disk Free` Visar hur mycket ledig plats som finns
 | `df -h ~`
 
 | `touch`
-| Skapar en fil
+| Uppdaterar senast ändrat datum eller skapar en ny tom fil
 | `touch nyfil.txt`
 
 | `mkdir`
-| Skapar en ny mapp
+| `MaKe DIRectory` Skapar en ny mapp
 | `mkdir ny-mapp`
 
 | `rmdir`
-| Tar bort en mapp om den är tom. Se `rm`.
+| `ReMove DIRectory` Tar bort en mapp om den är tom. Se `rm`.
 | `rmdir ny-mapp`
 
 | `rm`
-| Tar bort filer eller mappar. Kan göras rekursivt.
+| `ReMove` Tar bort filer eller mappar. Kan göras rekursivt.
 | `rm fil1.txt`
 
 | `mv`
-| Flyttar (eller byter namn) på en fil eller map 
+| `MoVe` Flyttar (eller byter namn) på en fil eller map 
 | `mv fil.txt ~/Desktop/fil.txt`
 
 | `clear`
@@ -89,7 +89,7 @@ För Windows finns WSL och Cygwin.
 | `man cd`
 
 | `du`
-| Räknar hur stor en fil eller mapp är. https://www.oreilly.com/library/view/macintosh-terminal-pocket/9781449328962/re31.html[Läs mer]
+| `Disk Usage` Räknar hur stor en fil eller mapp är. https://www.oreilly.com/library/view/macintosh-terminal-pocket/9781449328962/re31.html[Läs mer]
 | `du fil.txt`
 
 | `file`
@@ -102,8 +102,8 @@ För Windows finns WSL och Cygwin.
 körs med: `lista``
 
 |`history`
+| Visar vilka kommandon du kört i terminalen
 |
-|`Visar vilka kommandon du kört i terminalen`
 
 |`echo`
 | Skriver ut en sträng, vanligt använt för statusuppdateringar i t.ex. shellscripts.
