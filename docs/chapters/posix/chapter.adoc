@@ -160,7 +160,7 @@ För att arbeta effektivt och smidigt behöver utvecklare grundläggande rediger
 
 ==== icon:graduation-cap[] Övning, editors 
 
-Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod:  `nano`, `vim` eller `emacs`. Många upplever `nano` som enklast att komma igång med. Det finns mängder av guider för hur du använder dem.
+Arbeta i minst en av följand texteditors för att skriva en riktig text eller kod: `pico` (eller `nano`), `vim` eller `emacs`. Många upplever `pico` / `nano` som enklast. Det finns mängder av guider för hur du använder dem.
 
 === Redirects, pipes & streams
 

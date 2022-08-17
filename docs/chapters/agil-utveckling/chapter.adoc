@@ -65,7 +65,7 @@ Exakta kriterierna skiljer sig nog alltid mellan olika produkter och företag. D
 
 Om man tex arbetat på en sprint item och säger att den är klar kanske klar kan betyda att alla tester ska vara körda och fungera eller att förändringen måste godkännas av en kollega (sk. peer review / code review).
 
-image::https://raw.githubusercontent.com/ntijoh-te4/agil-utveckling/main/img/geek-poke_scrum-wall-table.jpg[]
+image::geek-poke-doad.jpg[]
 
 === Velocity (tidsuppskattning)
 I nästan alla projekt behövs någon form av tidsupskattning. I Scrum-språk översätter vi det till mängden backlog items teamet klarar att göra färdigt under en sprint.
