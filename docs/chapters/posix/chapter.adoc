@@ -61,7 +61,7 @@ För Windows finns WSL och Cygwin.
 | `df -h ~`
 
 | `touch`
-| Uppdaterar senast ändrat datum eller skapar en ny tom fil
+| Skapa en ny tom fil eller uppdatera senast ändrat datum 
 | `touch nyfil.txt`
 
 | `mkdir`
