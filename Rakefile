@@ -12,18 +12,18 @@ task :build do
 end
 
 task :publish do
+  sh 'git checkout master'
   Rake::Task["build"].execute
   sh 'git status'
   puts "Add/Commit files? (Y/n) "
   if STDIN.gets.chomp.downcase != 'n'
     puts 'git commit message: '
     msg = STDIN.gets.chomp
-    sh 'git checkout main'
     sh 'git add .'
     sh "git commit -m '#{msg}'"
     sh 'git checkout gh-pages'
-    sh 'git merge main'
-    sh 'git checkout main'
+    sh 'git merge master'
+    sh 'git checkout master'
     sh 'git push --all'
   end
 
