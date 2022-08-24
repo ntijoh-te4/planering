@@ -139,7 +139,7 @@ Kodgranskning ska vara något enkelt och kan fungera så här:
 Det är dessutom en ide för `DoD` och fler får chansen att se mer kod.
 
 == Uppgifter 1 - Agila metoder
-Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gång vi ses går vi igenom dem uppifrån och ner. Varje grupp kommer vara delaktig i diskussionen. Träna på att hitta kärnan i era argument - dvs. försök hålla det kort och exakt.
+Förklara följande med dina egna ord. Undvik att sväva ut. Försök hålla det kort och koncist.
 
 * Vad är en Sprint?
 * Förklara de olika rollerna i Scrum: `Product owner`, `Scrum master` och `Scrum team`
@@ -147,9 +147,9 @@ Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gån
 * Vad är en `product backlog` och vad är en `sprint backlog`?
 * Vad menas med `minimum viable product` (`MVP`)? Ibland används även `minimum viable feature`.
 * Vad menas med `definition of done` (`DoD`)?
-* Förklara med egna ord vad som menas med att arbeta agilt. Reflektera och diskutera kring varför jag säger att det är en kultur snarare än metod att arbeta (eller vara) agilt?
+* Förklara med egna ord vad som menas med att arbeta agilt. Diskutera om det är en kultur, ett sätt att arbeta eller om man måste vara agil?
 * Diskutera för och nackledar med `Scrum` jämfört med `Kanban`. För ert team men också från eventuella tidigare erfarenheter av arbete eller hur ni tänker er att arbetet på ett företag med minst ett scrum team kan gå till.
-* Beskriv, efter det ni lärt er om agila metoder, hur ni skulle vilja lägga upp arbetet för ert nästa projekt.
+* Hur skulle ni vilja lägga upp arbetet för ert nästa projekt.
 * Har ni några tankar om vattenfallsmetoden?
 
 == Uppgift 2 - agila metoder
