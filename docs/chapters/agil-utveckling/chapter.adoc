@@ -1,31 +1,33 @@
 = Agil systemutveckling
 
-Den största delen av agil utveckling handlar om att få in en sundare arbetskultur. Fokus är att förbättra sammarbetet mellan olika delar av verksamheten för att tillsammans ansvara för att t.ex. prioritera och välja ut de viktigaste delarna av arbetet.
+Agil utveckling handlar om arbetskultur med fokus att förbättra sammarbetet mellan olika delar av verksamheten för att tillsammans ansvara för att att bygga en så bra produkt som möjligt. Det betyder att både utvecklingsteam och affären arbetar och ansvarar tillsammans med att prioritera och välja ut de viktigaste delarna av arbetet.
 
-Klassiskt har metoder för (mjukvaru)utveckling kommit från utveckling i av andra (fysiska) produkter som t.ex. att bygga en bil eller en bro. En bil designas för att sedan byggas exakt likadana kopior av. Mjukvara behöver oftast inte dupliceras på de sättet utan kan eller behöver istället fortsätta utvecklas under hela livscykeln. Skillnaden mellan mjukvara och hårdvara är stor.
+Klassiskt har metoder för mjukvaruutveckling kommit från utveckling av andra (fysiska) produkter som t.ex. att bygga en bil eller en bro. En bil designas för att sedan byggas exakt likadana kopior av. Mjukvara behöver oftast inte dupliceras på de sättet. Produkten kan istället fortsätta att utvecklas under hela livscykeln. Skillnaden mellan mjukvara och hårdvara är stor.
 
-En klassisk utvecklingsmetod är Vattenfallsmetoden. En av grundidéerna är att minimera sena ändringar eftersom det kan kosta väldigt mycket pengar att tex. förändra en hel fabrik sent i processen. Fokus är att bli klar med varje fas innan nästa påbörjas. Utvecklingen sker sekvensielt i ungefär dessa steg:
+En klassisk utvecklingsmetod är `vattenfallsmetoden` där fokus ligger på att minimera sena ändringar eftersom det kan kosta väldigt mycket pengar att tex. förändra en hel fabrik sent i processen. Varje fas blir färdig innan nästa påbörjas. Utvecklingen sker sekvensielt ungefär i dessa steg:
 
 image::agil-vattenfall.png[]
 
-Ett av de absolut största problemet med att använda en såpass tung eller stelbent process för att bygga mjukvara är att steget från krav färdig produkt blir långt. Ofta vet varken team eller kund vad de vill ha förrän efter produkten är färdig och då är det oftast tungt och dyrt att att ändra.
+Ett av problemen med att använda en så stelbent process för att bygga mjukvara är att steget från krav färdig produkt blir långt. Ofta vet varken team eller kund vad de vill ha förrän efter produkten är färdig och då är det oftast dyrt att att ändra.
 
-En väldigt viktig del i utveckling är att förstå vad det var man behövde bygga. Ofta blir det tydligt för kund, utvecklare och team efter att produkten är byggd :)
+I alla agila metoder arbetar istället företaget för att hela tiden utveckla och leverera nästa fungerande produkt så fort som möjligt. För att göra det måste man arbeta i korta itterationer där fokus är att bryta ner varje större uppgift till lagom stora steg att visa kunden som då kan delta i stärre utsträckning. I varje steg går det att känna på produkten och försöka försäkra sig om att man är på väg åt rätt håll.
 
-I alla agila metoder vänder man på steken och försöker hela tiden utveckla och leverera nästa fungerande produkt så fort som möjligt. Då behöver man arbeta i korta itterationer där fokus är att bryta ner varje större uppgift till lagom stora steg att visa kunden (som kan vara mer närvarande i alla stegen). I varje steg går det då att känna på produkten och försöka försäkra sig om att man är på väg åt rätt håll.
-
-Längden på en utvecklingsiteration beror på men ofta från några dagar till några veckor. Det finns troligen lika många olika varianter på agila arbetsmetoder som det finns projekt eller företag. Lär er koncepten.
+Längden på en utvecklingsiteration är olika men ofta från några dagar till några veckor. Det finns lika många olika varianter på agila arbetsmetoder som det finns projekt eller företag.
 
 image::agil-spiral.png[]
 
 .Läs
 
-* https://en.wikipedia.org/wiki/Agile_software_development
-* https://en.wikipedia.org/wiki/Waterfall_model
+* https://en.wikipedia.org/wiki/Agile_software_development[Agile software development på Wikipedia] icon:book[]
+* https://en.wikipedia.org/wiki/Waterfall_model[Waterfall model på Wikipedia] icon:book[]
 
 == Kanban
 
-Kanban är en slags agil metod från Japan och blev känd från Toyota. Den sk. Kanban-boarden kommer härifrån likaså Cards. Se https://www.youtube.com/watch?v=iVaFVa7HYj4[Atlassians förklaring av att arbeta iterativt]. Även om de pratar om Kanban i videon gäller koncepten. Videon är vald för att den tydligt och enkelt visar hur todos kan hanteras med post-it-lappar. Scrums (nedan) motsvarighet till Kanban-tavlan heter Sprint backlog.
+`Kanban` är en agil metod från Japan och blev känd från Toyota. Den sk. `kanban-boarden` kommer härifrån. Se https://www.youtube.com/watch?v=iVaFVa7HYj4[Atlassians förklaring av att arbeta iterativt]. Även om de pratar om `Kanban` i videon gäller koncepten. Videon är vald för att den tydligt och enkelt visar hur todos kan hanteras med post-it-lappar. 
+
+`Scrums` (nedan) motsvarighet till `kanban-tavlan` heter `sprint backlog`.
+
+Läs: https://en.wikipedia.org/wiki/Kanban_(development)[Kanban på Wikipedia] icon:book[]
 
 image::agile-kanban-board-wikipedia.jpg[]
 
@@ -33,30 +35,59 @@ image::agile-kanban-board-wikipedia.jpg[]
 
 Scrum är en av de mest använda agila arbetsmetoden i mjukvaruprojekt. Den bestämmer i större detalj hur arbetet går till.
 
-Läs
+Läs: https://hyper.peterhagander.se/content/Scrum_broschyr.pdf[Scrum på 5 minuter] icon:book[]
 
-* https://hyper.peterhagander.se/content/Scrum_broschyr.pdf[Scrum på 5 minuter]
-* https://en.wikipedia.org/wiki/Kanban_(development)[Kanban på Wikipedia]
 
 === Roller i Scrum
-*Product owner (PO)* är personen som i första hand ansvarar för att ta fram och prioritera de övergripande förändringar som ska göras i en produkt. Om andra personer (som tex. en utvecklare) vill göra en förändring sker det oftast i samtal med PO. Hen representerar kunderna. Kan (lite humoristiskt) ses som en kombination av coach, fixare och dörrvakt.
+*Product owner (PO)* är personen som i första hand ansvarar för att ta fram och prioritera de övergripande förändringar som ska göras i en produkt. Om andra personer (som tex. en utvecklare) vill göra en förändring sker det oftast i samtal med `PO`. Hen representerar kunderna. 
 
-*Scrum master (SM)* är personen som hjälper utvecklingsteamet att arbeta så effektivt som möjligt. Ofta, men inte allid, är SM del av utvecklingsteamet.
+PO ansvarar för att hålla product backlog uppdaterad och prioritera vad som är viktigast att arbeta med just nu.
 
-*Scrum team* är personerna som arbetar med att utveckla produkten. Ofta en grupp om 5-9 personer.
+*Scrum master (SM)* är personen som hjälper utvecklingsteamet att arbeta så effektivt som möjligt. Ofta, men inte allid, är `SM` del av utvecklingsteamet och kan ses som en kombination av coach, fixare och dörrvakt.
+
+SM ansvarar bland annat för att kalla till sprint demo.
+
+*Scrum team* (utvecklare) är personerna som arbetar med att utveckla produkten. Ofta en grupp om 5-9 personer.
+
+Viktigt för teamet är att de lär sig ta på sig lagom mycket arbete under ett sprintmöte så att de kan leverera vad de lovat.
 
 === Arbetsgången i Scrum (förenklad)
-Arbetet sker i Sprints vilka är ungefär 2v långa (varierar beroende på projektstorlek). Det första som händer när en sprint startar är att PO tillsammans med utvecklarna och SM kommer överens om vad som ska göras under nästa sprint. De väljer ut lagom många Product backlog items från en Product backlog och lägger in på sin Sprint backlog. En grov estimering av varje item görs när den läggs till Sprint backlog. PO ansvarar för att hålla uppdaterad och prioritera Product backlog med alla de förändringar som behöver göras i produkten.
+Arbetet sker i `sprints` som är ungefär två veckor långa.
 
-En Sprint backlog liknar ofta en Kanban-board och kan gärna göras med post-it-lappar som flyttas i kolumner från vänster till höger.
+Det första som händer när en `sprint` börjar är att `PO` tillsammans med `SM` och utvecklare på ett `sprint planning meeting` kommer överens om vad som ska göras under nästa `sprint`. De väljer ut lagom många `product backlog items` (från `product backlog`) och lägger på sin `sprint backlog`. En grov estimering av varje `item` görs. 
 
-Efter prioriteringarna kan utvecklarna börja arbeta och meningen är att de under sprinten ska få ganska lugn och ro. Är det ändringar eller omprioriteringar som behöver göras ansvarar SM för samtalet med PO eller om det är andra saker som behöver fixas.
+En `sprint backlog` liknar ofta en `Kanban-board` och kan gärna göras med post-it-lappar som flyttas i kolumner från vänster till höger.
 
-Arbetet varje dag börjar med ett kort möte (ca 10 min) kallat Daily scrum eller Standup meeting där alla utvecklare en i taget kan ställa frågor eller uppdatera statusen på sitt arbete och om det finns något nytt problem som dykt upp hanteras det här.
+Efter prioriteringarna kan utvecklarna börja arbeta på sprinten och meningen är att de ska kunna arbeta i lugn och ro. Är det ändringar som måste göras under en sprint är det i första hand i samtal mellan `SM` och `PO`.
 
-När sprinten är slut har utvecklare, SM och PO ett möte med en demo och utvärdering (retrospective) av arbetet i sprinten. En unik sak med Scrum är att här utvärderas även hur många items utvecklarna hann med under sprinten. Finns det items kvar betyder det att gruppen tagit på sig för mycket arbete för sprinten och mängden arbete utvecklarna kan ta på sig justeras ner till nästa sprint. Detta kallas i Scrum för Velocity men mer om det senare.
+Arbetet varje dag börjar med ett `standup meeting` (ett ca 10 min långt möte) där alla utvecklare, en i taget, svarar på ungefär dessa frågor:
+
+* _Igår gjorde jag…_
+* _Idag ska jag…_
+* _Jag har problem med…_
+
+När sprinten är slut har utvecklare, `SM` och `PO` ett möte med en demo och retrospective (utvärdering) av sprinten. 
+
+Finns det `items` kvar på `sprint backlog` har utvecklarna tagit på sig för mycket arbete för sprinten och mängden arbete utvecklarna kan ta på sig minskas till nästa sprint. Har utvecklarna tagit på sig mer arbete under sprinten ökas antalet poäng de kan ta under nästa sprint. Detta kallas för teames `velocity`.
 
 image::agile-scrum.png[]
+
+=== Velocity
+I nästan alla projekt behövs någon form av tidsupskattning. I Scrum-språk översätter vi det till mängden `items` teamet klarar att göra *färdigt* under en `sprint`. Endast helt färdiga `items` räknas. `Velocityn` uppdateras efter varje sprint.
+
+Inför varje sprint samlas `PO` och scrum teamet i ett sprint planning meeting där de väljer ut och estimerar rätt mängd `items` från `product backlog`. `PO` ansvarar för att prioritera och teamet för att ta på sig lagom mycket arbete.
+
+`PO` kan sedan göra beräkningar och översätta velocity till en grov kalenderplanering utifrån hur många poäng alla `items` i `product backlog har`. Detta visas ibland i en `burndown chart`. Varje gång en `item` ändras, läggs till eller tas bort från `product backlog` justeras tiden kvar.
+
+-
+
+Efter varje sprint räknar man ihop hur många `items` som uppfyller `DoD` under `sprinten`. Summan av poängen är teamets `velocity` för nästa `sprint`. Itterativt justerar man teamets `velocity` efter varje sprint. Vill man kan man sedan göra medelvärde på `velocity` över tid i ett `velocity chart`.
+
+Sätter teamet poäng på alla `items` i hela `backloggen` kan man isåfall räkna ut från `velocity` hur många `sprintar` som är kvar i en `burn down chart`. Behövs det kan även en projektledare utifrån de göra en grov beräkning på när arbetet kan vara färdigt.
+
+Idén är att man istället för att gissa frammåt använder sig av riktig erfarenhet från tidigare sprintar för att göra en uppskattning.
+
+-
 
 === Definition of Done (DoD)
 För att kunna veta när något räknas som färdigt (och för att kunna göra en tidsuppskattnin) måste alla inblandade komma överens om vad som räknas som färdigt. Detta gäller normalt för alla förändringar i mjukvaran.
@@ -67,12 +98,7 @@ Om man tex arbetat på en sprint item och säger att den är klar kanske klar ka
 
 image::geek-poke-doad.jpg[]
 
-=== Velocity (tidsuppskattning)
-I nästan alla projekt behövs någon form av tidsupskattning. I Scrum-språk översätter vi det till mängden backlog items teamet klarar att göra färdigt under en sprint.
-
-Inför varje sprint samlas PO och scrum teamet i ett sprint planning meeting där de väljer ut och estimerar rätt mängd items från product backlog. PO ansvarar för att prioritera och teamet för att ta på sig lagom mycket arbete.
-
-==== Story point
+=== Story point
 För att få reda på hur stor en item är används ofta story points istället för timmar, dagar eller veckor. Det är ett relativt mått där fokus ligger mer i att förstå komplexiteten för en issue än att sätta ett exakt datum den är färdig. Det finns många saker som måste göras på ett arbete förutom just att producera kod (svara på mail, möten, teambuilding, etc.) så exakta datum är väldigt svåra att hålla.
 
 image::agile-planning-poker.jpg[]
@@ -100,13 +126,6 @@ Planning poker är en metod för att gissa storlek på de items som ska göras. 
 Det finns även andra skalor som t.ex. t-shirt-storlek (`XS` - `XL`).
 
 Förutom ett sätt att estimera är dessutom planning poker ett team-building-event som förtydligar processen och svårigheten i att sätta rätt poäng på en uppgift.
-
-==== Velocity
-Efter varje sprint räknar man ihop hur många `items` som uppfyller `DoD` under `sprinten`. Summan av poängen är teamets `velocity` för nästa `sprint`. Itterativt justerar man teamets `velocity` efter varje sprint. Vill man kan man sedan göra medelvärde på `velocity` över tid i ett `velocity chart`.
-
-Sätter teamet poäng på alla `items` i hela `backloggen` kan man isåfall räkna ut från `velocity` hur många `sprintar` som är kvar i en `burn down chart`. Behövs det kan även en projektledare utifrån de göra en grov beräkning på när arbetet kan vara färdigt.
-
-Idén är att man istället för att gissa frammåt använder sig av riktig erfarenhet från tidigare sprintar för att göra en uppskattning.
 
 === Code review / kodgranskning
 Kodgranskning är inte något obligatoriskt moment i Scrum eller någan annan Agile-metod. Det är snarare ett vanligt verktyg för att hitta fel.
