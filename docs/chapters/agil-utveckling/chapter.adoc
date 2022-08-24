@@ -83,14 +83,14 @@ Planning poker är en metod för att gissa storlek på de items som ska göras. 
 |===
 | Kort | Beskrivning
 
-| `0`
+| `0` 
 | Redan färdig
 
 | `1/2`, `1`, `2`, `3`, `5`, `8`, `13`
 | Poäng
 
 | `20`, `40`, `100`, `?`
-| En item för stor för att tidsuppskattas. Även ? betyder att uppgiften behöver mer arbete med innan den går att uppskatta. Kanske blir första uppgiften för att komma frammåt att ta reda på vad itemen innebär?
+| En item för stor för att tidsuppskattas. Även `?` betyder att uppgiften behöver mer arbete med innan den går att uppskatta. Kanske blir första uppgiften för att komma frammåt att ta reda på vad itemen innebär?
 
 | ☕️ 
 | Trött! Ge mig kaffe! 
@@ -139,17 +139,26 @@ Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gån
 * Har ni några tankar om vattenfallsmetoden?
 
 == Uppgift 2 - agila metoder
-Återgå och utveckla era svar i uppgifter 1 när ni gör uppgifter 2. Diskutera och reflektera.
+Återgå och utveckla era svar från uppgifter #1 när ni gör uppgifter #2. Fokus är diskution och reflektion.
 
 * Se en kort repetition: https://www.youtube.com/watch?v=1iccpf2eN1Q
-* Varför behövs både en Product Backlog och Sprint Backlog?
-* Ibland kan man höra någon säga: _"produktägaren lägger sig inte i under sprinten"_. De är inte nödvändigtvis 100% sant men ambitionen är sann. Varför tror ni det är så upplägget är?
-* När kan en feature räknas som färdig (DoD)? Fundera ut några konkreta exempel.
-* Skulle ni helst vilja arbeta mer som Scrum el. Kanban i nästa projekt? Motivera.
-* Om vi är överens om att vara agil handlar om att ha en flexibel arbetsprocess - vad betyder det i verkligheten? Hur påverkar det era projekt? Hur påverkar de ert tillvägagångssätt? Se: https://www.youtube.com/watch?v=J9UjD_cKpnc Han säger typ: _“Change our mindset from: A leads to be B leads to C leads to Done to A-B-C-learn-repeat"_ Vad säger han egentligen i videon? Diskutera.
-* Hur skulle ert arbete se ut om vi skulle tvinga er att arbeta strikt enl. Vattenfallsmodellen i nästa projekt? Hur skulle arbetsdagarna, från start till slut, se ut? Vad tror ni skulle vara lättare / svårare i en sån modell? Förklara, reflektera och motivera.
-* Hur kan ni använda code review i era projekt?
-* Andra funderingar om Agile? Vilka nya kunskaper om agile har ni fått nu?
+* Varför behövs både en `product backlog` och `sprint backlog`?
+* Ibland kan man höra någon säga: _"produktägaren lägger sig inte i under sprinten"_. De är inte nödvändigtvis 100% sant men ambitionen är sann. Varför tror ni upplägget är så?
+* När kan en `feature` räknas som färdig (`DoD`)? Fundera ut några konkreta exempel.
+* Skulle ni helst vilja arbeta mer som `Scrum` el. `Kanban` i nästa projekt? Motivera.
+* Om vi är överens om att vara agil handlar om att ha en flexibel arbetsprocess. + 
+Vad betyder det i verkligheten? +
+Hur påverkar det era projekt? +
+Hur påverkar de ert tillvägagångssätt? +
+* Se: https://www.youtube.com/watch?v=J9UjD_cKpnc +
+_“Changed mindset. From: *A* leads to be *B* leads to *C* leads to *done*. To *A* -> *B* -> *C* -> *learn* -> *repeat*"_ +
+Vad säger han egentligen i videon? Diskutera.
+* Hur skulle ert arbete se ut om vi skulle tvinga er att arbeta strikt enligt `vattenfallsmodellen` i nästa projekt? +
+Hur skulle arbetsdagarna, från start till slut, se ut? +
+Vad tror ni skulle vara lättare / svårare? +
+Förklara, diskutera, reflektera och motivera.
+* Hur kan ni använda `code review` i era projekt?
+* Andra funderingar om `agile`? Vilka nya kunskaper har ni fått nu?
 
 == Uppgift 3 - agila metoder
 
