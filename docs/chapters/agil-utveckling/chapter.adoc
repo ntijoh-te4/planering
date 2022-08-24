@@ -66,57 +66,44 @@ Arbetet varje dag börjar med ett `standup meeting` (ett ca 10 min långt möte)
 * _Idag ska jag…_
 * _Jag har problem med…_
 
+Meningen med dagliga mötet är att alla ska få en bild av hur långt de kommit och vad som är viktigast för att nå målet med `sprinten` och få alla `items` att nå `DoD`.
+
 När sprinten är slut har utvecklare, `SM` och `PO` ett möte med en demo och retrospective (utvärdering) av sprinten. 
 
 Finns det `items` kvar på `sprint backlog` har utvecklarna tagit på sig för mycket arbete för sprinten och mängden arbete utvecklarna kan ta på sig minskas till nästa sprint. Har utvecklarna tagit på sig mer arbete under sprinten ökas antalet poäng de kan ta under nästa sprint. Detta kallas för teames `velocity`.
 
 image::agile-scrum.png[]
 
-=== Velocity
-I nästan alla projekt behövs någon form av tidsupskattning. I Scrum-språk översätter vi det till mängden `items` teamet klarar att göra *färdigt* under en `sprint`. Endast helt färdiga `items` räknas. `Velocityn` uppdateras efter varje sprint.
-
-Inför varje sprint samlas `PO` och scrum teamet i ett sprint planning meeting där de väljer ut och estimerar rätt mängd `items` från `product backlog`. `PO` ansvarar för att prioritera och teamet för att ta på sig lagom mycket arbete.
-
-`PO` kan sedan göra beräkningar och översätta velocity till en grov kalenderplanering utifrån hur många poäng alla `items` i `product backlog har`. Detta visas ibland i en `burndown chart`. Varje gång en `item` ändras, läggs till eller tas bort från `product backlog` justeras tiden kvar.
-
--
-
-Efter varje sprint räknar man ihop hur många `items` som uppfyller `DoD` under `sprinten`. Summan av poängen är teamets `velocity` för nästa `sprint`. Itterativt justerar man teamets `velocity` efter varje sprint. Vill man kan man sedan göra medelvärde på `velocity` över tid i ett `velocity chart`.
-
-Sätter teamet poäng på alla `items` i hela `backloggen` kan man isåfall räkna ut från `velocity` hur många `sprintar` som är kvar i en `burn down chart`. Behövs det kan även en projektledare utifrån de göra en grov beräkning på när arbetet kan vara färdigt.
-
-Idén är att man istället för att gissa frammåt använder sig av riktig erfarenhet från tidigare sprintar för att göra en uppskattning.
-
--
-
 === Definition of Done (DoD)
-För att kunna veta när något räknas som färdigt (och för att kunna göra en tidsuppskattnin) måste alla inblandade komma överens om vad som räknas som färdigt. Detta gäller normalt för alla förändringar i mjukvaran.
+För att kunna veta när en feature är klar måste alla inblandade komma överens om vad som räknas som färdigt. När något är färdigt borde det betyda att inte mer tid behöver läggas på just den funktionen och om något fel hittas fixas det genom att en ny `item` läggs till `product backlog`.
 
-Exakta kriterierna skiljer sig nog alltid mellan olika produkter och företag. Det viktigaste är att alla förstår vad de innebär.
+Om man t.ex. gjort färdigt en `sprint item` kan det betyda att alla tester ska vara körda och fungera och att förändringen godkännats av en kollega i en `peer review` eller `code review`.
 
-Om man tex arbetat på en sprint item och säger att den är klar kanske klar kan betyda att alla tester ska vara körda och fungera eller att förändringen måste godkännas av en kollega (sk. peer review / code review).
+Exakta kriterierna skiljer sig mellan olika produkter och företag. Det viktigaste är att alla, inklusive `PO` förstår vad de innebär.
+
+En sak som ibland händer är att en `item` är färdig på fredagen men att en utvecklare ändå måste göra buggfixar på måndagen och tisdagen. För att få en rättvis bild bör måndagen och tisdagens arbete räknas in i hur många poäng `itemen` tog att göra färdigt.
 
 image::geek-poke-doad.jpg[]
 
 === Story point
-För att få reda på hur stor en item är används ofta story points istället för timmar, dagar eller veckor. Det är ett relativt mått där fokus ligger mer i att förstå komplexiteten för en issue än att sätta ett exakt datum den är färdig. Det finns många saker som måste göras på ett arbete förutom just att producera kod (svara på mail, möten, teambuilding, etc.) så exakta datum är väldigt svåra att hålla.
+För att få reda på hur stor en `item` är används ofta story points istället för timmar, dagar eller veckor. Det är ett relativt mått där fokus ligger mer i att förstå komplexiteten än att sätta ett exakt datum den är färdig. Det finns många saker som måste göras på ett arbete förutom just att producera kod (svara på mail, möten, teambuilding, etc.) eller så blir personal sjuk eller måste vara hemma med sjuka barn. Exakta datum är svåra att hålla.
 
 image::agile-planning-poker.jpg[]
 
-Planning poker är en metod för att gissa storlek på de items som ska göras. En item i taget läggs fram, varje medlem i teamet får sedan gissa hur stor denna uppgiften än. För planning poker använder man en kortlek med olika poäng som t.ex:
+Planning poker är en metod för att gissa storlek på de `items` som ska göras. En `item` i taget läggs fram, varje medlem i teamet får sedan gissa hur stor denna uppgiften än. För planning poker använder man en kortlek med olika poäng som t.ex:
 
 [cols=">1,3"]
 |===
 | Kort | Beskrivning
 
 | `0` 
-| Redan färdig
+| Redan färdig eller på något sätt ogiltig
 
 | `1/2`, `1`, `2`, `3`, `5`, `8`, `13`
 | Poäng
 
 | `20`, `40`, `100`, `?`
-| En item för stor för att tidsuppskattas. Även `?` betyder att uppgiften behöver mer arbete med innan den går att uppskatta. Kanske blir första uppgiften för att komma frammåt att ta reda på vad itemen innebär?
+| En `item` för stor för att tidsuppskattas. Även `?` betyder att mer arbete behövs innan det går att tidsuppskatta. Kanske blir första `itemen` att ta reda på vad den innebär?
 
 | ☕️ 
 | Trött! Ge mig kaffe! 
@@ -125,23 +112,31 @@ Planning poker är en metod för att gissa storlek på de items som ska göras. 
 
 Det finns även andra skalor som t.ex. t-shirt-storlek (`XS` - `XL`).
 
-Förutom ett sätt att estimera är dessutom planning poker ett team-building-event som förtydligar processen och svårigheten i att sätta rätt poäng på en uppgift.
+Förutom ett sätt att estimera är dessutom planning poker ett team-building-event som förtydligar processen och svårigheten i att sätta rätt poäng på en `item`.
+
+=== Velocity
+I nästan alla projekt behövs någon form av tidsupskattning eller i Scrum-språk - mängden `items` teamet klarar att göra *färdigt* under en `sprint`. Endast helt färdiga `items` räknas. `Velocityn` uppdateras efter varje sprint.
+
+Inför varje `sprint` samlas `PO` och scrum teamet i ett `sprint planning meeting` där de väljer ut rätt mängd `items` från `product backlog`. `PO` ansvarar för att prioritera och teamet för att ta på sig lagom mycket arbete.
+
+Efter varje sprint räknar man ihop hur många `items` som uppfyller `DoD` under `sprinten`. Summan av poängen är teamets `velocity` för nästa `sprint`. Itterativt justerar man teamets `velocity` efter varje sprint. Vill man kan man sedan göra medelvärde på `velocity` över tid i ett `velocity chart`.
+
+Sätter teamet poäng på alla `items` i hela `product backlog` kan `PO` räkna ut hur många `sprintar` som är kvar i en `burn down chart`. Behövs det kan även en projektledare utifrån de göra en grov beräkning på när arbetet kan vara färdigt. Varje gång en `item` ändras, läggs till eller tas bort från `product backlog` justeras tiden kvar.
+
+Idén är att man istället för att gissa frammåt använder sig av riktig erfarenhet från tidigare sprintar för att göra en så bra uppskattning man kan.
 
 === Code review / kodgranskning
-Kodgranskning är inte något obligatoriskt moment i Scrum eller någan annan Agile-metod. Det är snarare ett vanligt verktyg för att hitta fel.
+Kodgranskning är ett verktyg för att hitta fel och inte något obligatoriskt moment i `Scrum`.
 
-De finns många olika sätt att granska kod men förslagsvis måste alla kodändringar granskas av någon som inte jobbat med koden när varje sprint item flyttas från doing till done.
-
-För att förtydliga arbetet föreslår vi att ni lägger till en kolumn på er kanban-board som ni döper till review eller testing. När en item är kodad hamnar den först i den nya kolumnen för att sedan granskas av en kollega innan den blir färdig.
+De finns många olika sätt att granska kod men förslagsvis måste alla kodändringar granskas av någon som inte jobbat med koden när varje `sprint item` flyttas från `doing` till `done`. Lägg gärna till en `review` eller `testing` kolumn på `kanban-tavlan` dit `items` som väntar på testning läggs innan de når `done`.
 
 Kodgranskning ska vara något enkelt och kan fungera så här:
 
-* Den som skrivit koden visar ändringarna inkl. commit messages osv för en kollega som sitter bredvid.
-Uppgiften för kollegan är då att ställa frågor så fort något är oklart eller verkar märkligt.
-* I bästa fall hittar kollegan (eller den som skrivit koden) fel i koden som antingen lagas direkt eller om det är ett större fel flyttas ditt item tillbaka från testing till doing.
-* Uppgiften är att hitta fel. Ju tidigare ett fel hittas desto enklare / billigare är det att laga.
+* Den som skrivit koden visar ändringarna inkl. `commit messages` i Git osv. för en kollega. Uppgiften för kollegan är att ställa frågor så fort något är oklart eller verkar märkligt.
+* I bästa fall hittar ni fel i koden som antingen lagas direkt, eller om det är ett större fel flyttas `itemen` tillbaka från `testing` till `doing`.
+* Uppgiften är att hitta fel. Ju tidigare ett fel hittas desto enklare och billigare är det att laga.
 
-Ni får eventuellt en enkel struktur för DoD på köpet? Dessutom får fler chansen att se all kod.
+Det är dessutom en ide för `DoD` och fler får chansen att se mer kod.
 
 == Uppgifter 1 - Agila metoder
 Förklara följande med dina egna ord. Skriv ner det i ett dokument. Nästa gång vi ses går vi igenom dem uppifrån och ner. Varje grupp kommer vara delaktig i diskussionen. Träna på att hitta kärnan i era argument - dvs. försök hålla det kort och exakt.
@@ -181,9 +176,9 @@ Förklara, diskutera, reflektera och motivera.
 
 == Uppgift 3 - agila metoder
 
-Läs:
-
-* https://www.scrum.org/resources/scrum-glossary
-* https://www.agilealliance.org/agile101/agile-glossary/
+.Läs
+ * https://amazing-outcomes.de/en/blog/a-short-story-about-a-scrum-team[A Short Story About a Scrum Team - Amazing outcomes] icon:book[]
+ * https://www.scrum.org/resources/scrum-glossary[Scrum glossary - scrum.org] icon:book[]
+ * https://www.agilealliance.org/agile101/agile-glossary/[Agile glossary - Agile alliance] icon:book[]
 
 Plocka upp de fem ord eller koncept du viste minst om, läs på och förbered att berätta för dina klasskamrater. 

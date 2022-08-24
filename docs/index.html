@@ -2062,6 +2062,9 @@ git status</pre>
 </ul>
 </div>
 <div class="paragraph">
+<p>Meningen med dagliga mötet är att alla ska få en bild av hur långt de kommit och vad som är viktigast för att nå målet med <code>sprinten</code> och få alla <code>items</code> att nå <code>DoD</code>.</p>
+</div>
+<div class="paragraph">
 <p>När sprinten är slut har utvecklare, <code>SM</code> och <code>PO</code> ett möte med en demo och retrospective (utvärdering) av sprinten.</p>
 </div>
 <div class="paragraph">
@@ -2074,42 +2077,18 @@ git status</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_velocity">Velocity</h4>
-<div class="paragraph">
-<p>I nästan alla projekt behövs någon form av tidsupskattning. I Scrum-språk översätter vi det till mängden <code>items</code> teamet klarar att göra <strong>färdigt</strong> under en <code>sprint</code>. Endast helt färdiga <code>items</code> räknas. <code>Velocityn</code> uppdateras efter varje sprint.</p>
-</div>
-<div class="paragraph">
-<p>Inför varje sprint samlas <code>PO</code> och scrum teamet i ett sprint planning meeting där de väljer ut och estimerar rätt mängd <code>items</code> från <code>product backlog</code>. <code>PO</code> ansvarar för att prioritera och teamet för att ta på sig lagom mycket arbete.</p>
-</div>
-<div class="paragraph">
-<p><code>PO</code> kan sedan göra beräkningar och översätta velocity till en grov kalenderplanering utifrån hur många poäng alla <code>items</code> i <code>product backlog har</code>. Detta visas ibland i en <code>burndown chart</code>. Varje gång en <code>item</code> ändras, läggs till eller tas bort från <code>product backlog</code> justeras tiden kvar.</p>
-</div>
-<div class="paragraph">
-<p>-</p>
-</div>
-<div class="paragraph">
-<p>Efter varje sprint räknar man ihop hur många <code>items</code> som uppfyller <code>DoD</code> under <code>sprinten</code>. Summan av poängen är teamets <code>velocity</code> för nästa <code>sprint</code>. Itterativt justerar man teamets <code>velocity</code> efter varje sprint. Vill man kan man sedan göra medelvärde på <code>velocity</code> över tid i ett <code>velocity chart</code>.</p>
-</div>
-<div class="paragraph">
-<p>Sätter teamet poäng på alla <code>items</code> i hela <code>backloggen</code> kan man isåfall räkna ut från <code>velocity</code> hur många <code>sprintar</code> som är kvar i en <code>burn down chart</code>. Behövs det kan även en projektledare utifrån de göra en grov beräkning på när arbetet kan vara färdigt.</p>
-</div>
-<div class="paragraph">
-<p>Idén är att man istället för att gissa frammåt använder sig av riktig erfarenhet från tidigare sprintar för att göra en uppskattning.</p>
-</div>
-<div class="paragraph">
-<p>-</p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="_definition_of_done_dod">Definition of Done (DoD)</h4>
 <div class="paragraph">
-<p>För att kunna veta när något räknas som färdigt (och för att kunna göra en tidsuppskattnin) måste alla inblandade komma överens om vad som räknas som färdigt. Detta gäller normalt för alla förändringar i mjukvaran.</p>
+<p>För att kunna veta när en feature är klar måste alla inblandade komma överens om vad som räknas som färdigt. När något är färdigt borde det betyda att inte mer tid behöver läggas på just den funktionen och om något fel hittas fixas det genom att en ny <code>item</code> läggs till <code>product backlog</code>.</p>
 </div>
 <div class="paragraph">
-<p>Exakta kriterierna skiljer sig nog alltid mellan olika produkter och företag. Det viktigaste är att alla förstår vad de innebär.</p>
+<p>Om man t.ex. gjort färdigt en <code>sprint item</code> kan det betyda att alla tester ska vara körda och fungera och att förändringen godkännats av en kollega i en <code>peer review</code> eller <code>code review</code>.</p>
 </div>
 <div class="paragraph">
-<p>Om man tex arbetat på en sprint item och säger att den är klar kanske klar kan betyda att alla tester ska vara körda och fungera eller att förändringen måste godkännas av en kollega (sk. peer review / code review).</p>
+<p>Exakta kriterierna skiljer sig mellan olika produkter och företag. Det viktigaste är att alla, inklusive <code>PO</code> förstår vad de innebär.</p>
+</div>
+<div class="paragraph">
+<p>En sak som ibland händer är att en <code>item</code> är färdig på fredagen men att en utvecklare ändå måste göra buggfixar på måndagen och tisdagen. För att få en rättvis bild bör måndagen och tisdagens arbete räknas in i hur många poäng <code>itemen</code> tog att göra färdigt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2120,7 +2099,7 @@ git status</pre>
 <div class="sect3">
 <h4 id="_story_point">Story point</h4>
 <div class="paragraph">
-<p>För att få reda på hur stor en item är används ofta story points istället för timmar, dagar eller veckor. Det är ett relativt mått där fokus ligger mer i att förstå komplexiteten för en issue än att sätta ett exakt datum den är färdig. Det finns många saker som måste göras på ett arbete förutom just att producera kod (svara på mail, möten, teambuilding, etc.) så exakta datum är väldigt svåra att hålla.</p>
+<p>För att få reda på hur stor en <code>item</code> är används ofta story points istället för timmar, dagar eller veckor. Det är ett relativt mått där fokus ligger mer i att förstå komplexiteten än att sätta ett exakt datum den är färdig. Det finns många saker som måste göras på ett arbete förutom just att producera kod (svara på mail, möten, teambuilding, etc.) eller så blir personal sjuk eller måste vara hemma med sjuka barn. Exakta datum är svåra att hålla.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2128,7 +2107,7 @@ git status</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Planning poker är en metod för att gissa storlek på de items som ska göras. En item i taget läggs fram, varje medlem i teamet får sedan gissa hur stor denna uppgiften än. För planning poker använder man en kortlek med olika poäng som t.ex:</p>
+<p>Planning poker är en metod för att gissa storlek på de <code>items</code> som ska göras. En <code>item</code> i taget läggs fram, varje medlem i teamet får sedan gissa hur stor denna uppgiften än. För planning poker använder man en kortlek med olika poäng som t.ex:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -2144,7 +2123,7 @@ git status</pre>
 <tbody>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock"><code>0</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Redan färdig</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Redan färdig eller på något sätt ogiltig</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock"><code>1/2</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>5</code>, <code>8</code>, <code>13</code></p></td>
@@ -2152,7 +2131,7 @@ git status</pre>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock"><code>20</code>, <code>40</code>, <code>100</code>, <code>?</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En item för stor för att tidsuppskattas. Även <code>?</code> betyder att uppgiften behöver mer arbete med innan den går att uppskatta. Kanske blir första uppgiften för att komma frammåt att ta reda på vad itemen innebär?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En <code>item</code> för stor för att tidsuppskattas. Även <code>?</code> betyder att mer arbete behövs innan det går att tidsuppskatta. Kanske blir första <code>itemen</code> att ta reda på vad den innebär?</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-top"><p class="tableblock">☕️</p></td>
@@ -2164,19 +2143,34 @@ git status</pre>
 <p>Det finns även andra skalor som t.ex. t-shirt-storlek (<code>XS</code> - <code>XL</code>).</p>
 </div>
 <div class="paragraph">
-<p>Förutom ett sätt att estimera är dessutom planning poker ett team-building-event som förtydligar processen och svårigheten i att sätta rätt poäng på en uppgift.</p>
+<p>Förutom ett sätt att estimera är dessutom planning poker ett team-building-event som förtydligar processen och svårigheten i att sätta rätt poäng på en <code>item</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_velocity">Velocity</h4>
+<div class="paragraph">
+<p>I nästan alla projekt behövs någon form av tidsupskattning eller i Scrum-språk - mängden <code>items</code> teamet klarar att göra <strong>färdigt</strong> under en <code>sprint</code>. Endast helt färdiga <code>items</code> räknas. <code>Velocityn</code> uppdateras efter varje sprint.</p>
+</div>
+<div class="paragraph">
+<p>Inför varje <code>sprint</code> samlas <code>PO</code> och scrum teamet i ett <code>sprint planning meeting</code> där de väljer ut rätt mängd <code>items</code> från <code>product backlog</code>. <code>PO</code> ansvarar för att prioritera och teamet för att ta på sig lagom mycket arbete.</p>
+</div>
+<div class="paragraph">
+<p>Efter varje sprint räknar man ihop hur många <code>items</code> som uppfyller <code>DoD</code> under <code>sprinten</code>. Summan av poängen är teamets <code>velocity</code> för nästa <code>sprint</code>. Itterativt justerar man teamets <code>velocity</code> efter varje sprint. Vill man kan man sedan göra medelvärde på <code>velocity</code> över tid i ett <code>velocity chart</code>.</p>
+</div>
+<div class="paragraph">
+<p>Sätter teamet poäng på alla <code>items</code> i hela <code>product backlog</code> kan <code>PO</code> räkna ut hur många <code>sprintar</code> som är kvar i en <code>burn down chart</code>. Behövs det kan även en projektledare utifrån de göra en grov beräkning på när arbetet kan vara färdigt. Varje gång en <code>item</code> ändras, läggs till eller tas bort från <code>product backlog</code> justeras tiden kvar.</p>
+</div>
+<div class="paragraph">
+<p>Idén är att man istället för att gissa frammåt använder sig av riktig erfarenhet från tidigare sprintar för att göra en så bra uppskattning man kan.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_code_review_kodgranskning">Code review / kodgranskning</h4>
 <div class="paragraph">
-<p>Kodgranskning är inte något obligatoriskt moment i Scrum eller någan annan Agile-metod. Det är snarare ett vanligt verktyg för att hitta fel.</p>
+<p>Kodgranskning är ett verktyg för att hitta fel och inte något obligatoriskt moment i <code>Scrum</code>.</p>
 </div>
 <div class="paragraph">
-<p>De finns många olika sätt att granska kod men förslagsvis måste alla kodändringar granskas av någon som inte jobbat med koden när varje sprint item flyttas från doing till done.</p>
-</div>
-<div class="paragraph">
-<p>För att förtydliga arbetet föreslår vi att ni lägger till en kolumn på er kanban-board som ni döper till review eller testing. När en item är kodad hamnar den först i den nya kolumnen för att sedan granskas av en kollega innan den blir färdig.</p>
+<p>De finns många olika sätt att granska kod men förslagsvis måste alla kodändringar granskas av någon som inte jobbat med koden när varje <code>sprint item</code> flyttas från <code>doing</code> till <code>done</code>. Lägg gärna till en <code>review</code> eller <code>testing</code> kolumn på <code>kanban-tavlan</code> dit <code>items</code> som väntar på testning läggs innan de når <code>done</code>.</p>
 </div>
 <div class="paragraph">
 <p>Kodgranskning ska vara något enkelt och kan fungera så här:</p>
@@ -2184,19 +2178,18 @@ git status</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Den som skrivit koden visar ändringarna inkl. commit messages osv för en kollega som sitter bredvid.
-Uppgiften för kollegan är då att ställa frågor så fort något är oklart eller verkar märkligt.</p>
+<p>Den som skrivit koden visar ändringarna inkl. <code>commit messages</code> i Git osv. för en kollega. Uppgiften för kollegan är att ställa frågor så fort något är oklart eller verkar märkligt.</p>
 </li>
 <li>
-<p>I bästa fall hittar kollegan (eller den som skrivit koden) fel i koden som antingen lagas direkt eller om det är ett större fel flyttas ditt item tillbaka från testing till doing.</p>
+<p>I bästa fall hittar ni fel i koden som antingen lagas direkt, eller om det är ett större fel flyttas <code>itemen</code> tillbaka från <code>testing</code> till <code>doing</code>.</p>
 </li>
 <li>
-<p>Uppgiften är att hitta fel. Ju tidigare ett fel hittas desto enklare / billigare är det att laga.</p>
+<p>Uppgiften är att hitta fel. Ju tidigare ett fel hittas desto enklare och billigare är det att laga.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Ni får eventuellt en enkel struktur för DoD på köpet? Dessutom får fler chansen att se all kod.</p>
+<p>Det är dessutom en ide för <code>DoD</code> och fler får chansen att se mer kod.</p>
 </div>
 </div>
 </div>
@@ -2290,16 +2283,17 @@ Förklara, diskutera, reflektera och motivera.</p>
 </div>
 <div class="sect2">
 <h3 id="_uppgift_3_agila_metoder">Uppgift 3 - agila metoder</h3>
-<div class="paragraph">
-<p>Läs:</p>
-</div>
 <div class="ulist">
+<div class="title">Läs</div>
 <ul>
 <li>
-<p><a href="https://www.scrum.org/resources/scrum-glossary" class="bare">www.scrum.org/resources/scrum-glossary</a></p>
+<p><a href="https://amazing-outcomes.de/en/blog/a-short-story-about-a-scrum-team">A Short Story About a Scrum Team - Amazing outcomes</a> <span class="icon"><i class="fa fa-book"></i></span></p>
 </li>
 <li>
-<p><a href="https://www.agilealliance.org/agile101/agile-glossary/" class="bare">www.agilealliance.org/agile101/agile-glossary/</a></p>
+<p><a href="https://www.scrum.org/resources/scrum-glossary">Scrum glossary - scrum.org</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+</li>
+<li>
+<p><a href="https://www.agilealliance.org/agile101/agile-glossary/">Agile glossary - Agile alliance</a> <span class="icon"><i class="fa fa-book"></i></span></p>
 </li>
 </ul>
 </div>
