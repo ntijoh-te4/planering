@@ -3,11 +3,7 @@
 Kunskaper om versionshantering (SCM) med hjälp av Git. Vetskap om att det finns alternativa VCS än git.
 Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering.
 
-Här använder vi Github men kunskaperna är generella så platform går att byta till t.ex. Bitbucket.
-
-== Grundläggande Git-kunskaper
-
-.Versionshantering?
+Här använder vi Github men kunskaperna är generella så platform går att byta till t.ex. https://bitbucket.org[Bitbucket].
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
 
@@ -16,45 +12,9 @@ Följande videos (~5min / video) är en kort intro till versionshantering och Gi
 * https://git-scm.com/video/get-going[Börja med Git]
 * https://git-scm.com/video/quick-wins[Fördelar med Git] (denna kan ni bara skumma, minst viktig av dessa 4)
 
-.Läs
-* https://www.youtube.com/watch?v=USjZcfj8yxE\[Kort, övergripande beskrivning]
-* https://git-scm.com/book/[Den officiella Git-boken]
-* https://education.github.com/git-cheat-sheet-education.pdf[Git cheat sheet]
-* https://www.youtube.com/watch?v=RGOj5yH7evk[Lång genomgång av massa Git och GitHub]
-* https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60[Git Commit Best Practices] - Github gist
-
-.Quiz
-* Git quiz 1
-
-== Arbetsmetoder med Git flow
-
-.Miniövningar
-* Ni som inte känner att ni kan göra mer med Git flow / pull requests / issues - uppgiften. Bygg ett shell-script som uppdaterar alla era Git-repositories (dvs kör git pull).
-* Ni som är klara med både scriptet och github flow. Bygg ett script som gör GitHub issues från alla TODO-markeringar i er kod. Ni kan tex använda detta: https://github.com/marketplace/actions/todo-to-issue
-
-.Föreläsningar
-Projekthantering - GitHub flow
-
-.GitHub project management
-Tl;DR.
-Använd Github Project Boards som kanban
-
-Skapa issues för allt.
-Assigna medlemmar till issues.
-Skapa en branch för varje issue du jobbar med. Följ en naming convention.
-Skapa en pull request för din branch.
-Pull requests måste genomgå code review.
-
-* https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart
-* https://docs.github.com/en/get-started/quickstart/github-flow
-* https://docs.github.com/en/issues/organizing-your-work-with-project-boards
-* https://deepsource.io/blog/git-branch-naming-conventions/
-
-== Git övningar
-
 Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (`add` och `commit`) som sedan laddas upp (`push`) och ner (`pull`).
 
-=== 1. Skapa och ladda ner ett repository på Github
+== 1. Skapa och ladda ner ett repository på Github
 Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till learning-vcs.git. Du kan göra det privat. Lämna övriga saker.
 
 Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo git clone git@github.com:olantig/learning-vcs.git Glöm inte ersätta olantig med din användare.
@@ -63,7 +23,7 @@ Kolla statusen med: git status
 
 För att senare uppdatera / ladda ner ändringar från samma repository används: git pull
 
-=== 2. Lägg in en ny fil till i repository
+== 2. Lägg in en ny fil till i repository
 Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
 
 Kör följande:
@@ -78,7 +38,7 @@ Vad gör kommandona?
 
 Kör du koden `git add .` eller `git add *` så lägger du till alla ändringar till alla filer du har gjort.
 
-=== 3. Uppdatera en fil
+== 3. Uppdatera en fil
 Öppna filen `fil1.txt` i din texteditor med t.ex. `nano fil1.txt`. Lägg till innehåll, och spara med `CTRL o`, stäng med `CTRL x`.
 
 Vad säger: `git status`?
@@ -89,12 +49,24 @@ Vad säger: `git status?`
 
 Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`git add`) och sedan sparar du det (`git commit`). Det går att kombinera de två med `git commit -am "Här skriver du kommentaren"`
 
-==== 4. Ladda upp dina filer till Github
+== 4. Ladda upp dina filer till Github
 Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna finns där.
 
 Se historiken med `git log --oneline` eller överkursvarianten: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
 
-=== Delade repositories
+== Läs
+* https://www.youtube.com/watch?v=USjZcfj8yxE\[Kort, övergripande beskrivning] icon:book[]
+* https://git-scm.com/book/[Den officiella Git-boken] icon:book[]
+* https://education.github.com/git-cheat-sheet-education.pdf[Git cheat sheet] icon:book[]
+* https://www.youtube.com/watch?v=RGOj5yH7evk[Lång genomgång - Git och GitHub] icon:book[]
+* https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60[Git Commit Best Practices - Github gist] icon:book[]
+
+.icon:graduation-cap[] Quiz
+* Git quiz 1
+
+---
+
+== Dela kod i Git - Delade repositories / branching & merging
 Det finns minst två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
 
 I större projekt används oftast `fork and pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna `merge`.
@@ -127,7 +99,33 @@ När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den 
 
 `git diff` visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.
 
-=== SSH och SSH-nycklar
+Det går att använda VSCode som merge-verktyg: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
+
+=== Arbetsmetoder med Git flow
+
+.Föreläsningar
+Projekthantering - GitHub flow
+
+.GitHub project management
+Tl;DR.
+Använd Github Project Boards som kanban
+
+Skapa issues för allt.
+Assigna medlemmar till issues.
+Skapa en branch för varje issue du jobbar med. Följ en naming convention.
+Skapa en pull request för din branch.
+Pull requests måste genomgå code review.
+
+* https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart
+* https://docs.github.com/en/get-started/quickstart/github-flow
+* https://docs.github.com/en/issues/organizing-your-work-with-project-boards
+* https://deepsource.io/blog/git-branch-naming-conventions/
+
+.Miniövningar när allt annat är färdigt
+* Ni som inte känner att ni kan göra mer med Git flow / pull requests / issues - uppgiften. Bygg ett shell-script som uppdaterar alla era Git-repositories (dvs kör git pull).
+* Ni som är klara med både scriptet och github flow. Bygg ett script som gör GitHub issues från alla TODO-markeringar i er kod. Ni kan tex använda detta: https://github.com/marketplace/actions/todo-to-issue
+
+== SSH och SSH-nycklar
 För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.
 
 Läs:
@@ -135,6 +133,32 @@ Läs:
 * https://en.wikipedia.org/wiki/Secure_Shell
 * https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh
 * Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+== Git extra
+
+I Git har vi några saker kvar.
+Ni måste inte bli experter på alla dessa koncept men ni ska minst förstå hur de används för att enkelt kunna sätta er in i det senare. Vi kommer hålla små workshops med följande olika verktyg:
+
+* Ändra historik i efterhand: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History 
+* git-cherry-pick: https://git-scm.com/docs/git-cherry-pick
+* git-bisect: https://git-scm.com/docs/git-bisect
+* GitHub CLI: https://github.com/cli/cli
+* git-stash: https://git-scm.com/docs/git-stash
+
+.Er uppgift
+
+1). Lär er använda de verktyg ni fått.
+
+2). Lär era klasskamrater använda verktyget. +
+Svara minst på följande frågor:
+
+ * Vad är det? / Vad används det till?
+ * Hur funkar det? / Hur använder man det?
+ * Varför använder man det?
+
+3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.
+
+---
 
 == Git teori
 
@@ -262,26 +286,3 @@ För att kunna uppbehålla en konsekvent kodstandard och kodkvalité genom manue
 * gh pr create
 
 
-== Git extra
-
-I Git har vi några saker kvar.
-Ni måste inte bli experter på alla dessa koncept men ni ska minst förstå hur de används för att enkelt kunna sätta er in i det senare. Vi kommer hålla små workshops med följande olika verktyg:
-
-* Ändra historik i efterhand: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History 
-* git-cherry-pick: https://git-scm.com/docs/git-cherry-pick
-* git-bisect: https://git-scm.com/docs/git-bisect
-* GitHub CLI: https://github.com/cli/cli
-* git-stash: https://git-scm.com/docs/git-stash
-
-.Er uppgift
-
-1). Lär er använda de verktyg ni fått.
-
-2). Lär era klasskamrater använda verktyget. +
-Svara minst på följande frågor:
-
- * Vad är det? / Vad används det till?
- * Hur funkar det? / Hur använder man det?
- * Varför använder man det?
-
-3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.
