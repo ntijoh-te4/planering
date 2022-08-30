@@ -1,8 +1,11 @@
-= Versionshantering
+= Versionshantering i Git och GitHub
 
-I Git och GitHub
-Kunskaper relaterat till versionshantering (SCM) med hjälp av git. Vetskap om att det finns alternativa VCS än git.
-Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering. I denna dokumentationen är github platformen som utgås ifrån.
+Kunskaper om versionshantering (SCM) med hjälp av Git. Vetskap om att det finns alternativa VCS än git.
+Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering.
+
+Här använder vi Github men kunskaperna är generella så platform går att byta till t.ex. Bitbucket.
+
+== Grundläggande Git-kunskaper
 
 .Versionshantering?
 
@@ -21,34 +24,13 @@ Följande videos (~5min / video) är en kort intro till versionshantering och Gi
 * https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60[Git Commit Best Practices] - Github gist
 
 .Quiz
-1) Git + SSH quiz 1
+* Git quiz 1
+
+== Arbetsmetoder med Git flow
 
 .Miniövningar
 * Ni som inte känner att ni kan göra mer med Git flow / pull requests / issues - uppgiften. Bygg ett shell-script som uppdaterar alla era Git-repositories (dvs kör git pull).
 * Ni som är klara med både scriptet och github flow. Bygg ett script som gör GitHub issues från alla TODO-markeringar i er kod. Ni kan tex använda detta: https://github.com/marketplace/actions/todo-to-issue
-
--
-
-I Git har vi några saker kvar.
-Ni måste inte bli experter på alla dessa koncept men ni ska minst förstå hur de används för att enkelt kunna sätta er in i det senare.
-
-* Ändra historik i efterhand: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History 
-* git-cherry-pick: https://git-scm.com/docs/git-cherry-pick
-* git-bisect: https://git-scm.com/docs/git-bisect
-* GitHub CLI: https://github.com/cli/cli
-* git-stash: https://git-scm.com/docs/git-stash
-
-Vi kommer hålla små workshops med de olika verktygen.
-
-1). Lär er använda de verktyg ni fått.
-
-2). Lär era klasskamrater använda verktyget. 
-Svara typ på frågor som:
-Vad är det? / Vad används det till?
-Hur funkar det? / Hur använder man det?
-Varför använder man det?
-
-3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.
 
 .Föreläsningar
 Projekthantering - GitHub flow
@@ -278,3 +260,28 @@ För att kunna uppbehålla en konsekvent kodstandard och kodkvalité genom manue
 
 .Kommandon:
 * gh pr create
+
+
+== Git extra
+
+I Git har vi några saker kvar.
+Ni måste inte bli experter på alla dessa koncept men ni ska minst förstå hur de används för att enkelt kunna sätta er in i det senare. Vi kommer hålla små workshops med följande olika verktyg:
+
+* Ändra historik i efterhand: https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History 
+* git-cherry-pick: https://git-scm.com/docs/git-cherry-pick
+* git-bisect: https://git-scm.com/docs/git-bisect
+* GitHub CLI: https://github.com/cli/cli
+* git-stash: https://git-scm.com/docs/git-stash
+
+.Er uppgift
+
+1). Lär er använda de verktyg ni fått.
+
+2). Lär era klasskamrater använda verktyget. +
+Svara minst på följande frågor:
+
+ * Vad är det? / Vad används det till?
+ * Hur funkar det? / Hur använder man det?
+ * Varför använder man det?
+
+3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.
