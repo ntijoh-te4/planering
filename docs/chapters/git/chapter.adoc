@@ -7,64 +7,68 @@ Här använder vi Github men kunskaperna är generella så platform går att byt
 
 Följande videos (~5min / video) är en kort intro till versionshantering och Git.
 
-* https://git-scm.com/video/what-is-version-control[Vad är versionshantering?]
-* https://git-scm.com/video/what-is-git[Vad är Git?]
-* https://git-scm.com/video/get-going[Börja med Git]
-* https://git-scm.com/video/quick-wins[Fördelar med Git] (denna kan ni bara skumma, minst viktig av dessa 4)
+* https://git-scm.com/video/what-is-version-control[Vad är versionshantering?] icon:play[]
+* https://git-scm.com/video/what-is-git[Vad är Git?] icon:play[]
+* https://git-scm.com/video/get-going[Börja med Git] icon:play[]
+* https://git-scm.com/video/quick-wins[Fördelar med Git] icon:play[] (denna kan ni bara skumma, minst viktig av dessa 4)
 
 Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (`add` och `commit`) som sedan laddas upp (`push`) och ner (`pull`).
 
-== 1. Skapa och ladda ner ett repository på Github
-Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till learning-vcs.git. Du kan göra det privat. Lämna övriga saker.
+== Att använda Git icon:map[]
 
-Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo git clone git@github.com:olantig/learning-vcs.git Glöm inte ersätta olantig med din användare.
+=== 1. Skapa och ladda ner ett repository på Github
+Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs`. Gör det privat och låt övrigt vara. Addressen till repositoriet finns både via `HTTPS` och `SSH`. Väljer du `HTTPS` får du göra `authentiseringen` (inloggningen) i webbläsaren, annars måste du skapa `SSH-nycklar` manuellt och ladda upp till ditt Github-konto.
 
-Kolla statusen med: git status
+Använd kommandot `git clone` i terminalen för att hämta ett repository till mappen du står i. Glöm inte ersätta `ntijoh-ola-lindberg` med din användare. 
 
-För att senare uppdatera / ladda ner ändringar från samma repository används: git pull
-
-== 2. Lägg in en ny fil till i repository
-Skapa filen `fil1.txt` (med `touch fil1.txt` eller en editor) i din projektmapp
-
-Kör följande:
 ----
-git status
-git add fil1.txt
-git status
-git commit -m “Skapade dokumentet”
-git status
+git clone https://github.com/ntijoh-ola-lindberg/learning-vcs.git
 ----
-Vad gör kommandona?
 
-Kör du koden `git add .` eller `git add *` så lägger du till alla ändringar till alla filer du har gjort.
+För att se vilka filer som ändrats jämfört med filerna på servern används kommmandot `git status` och för att ladda ner uppdateringar från servern `git pull`.
 
-== 3. Uppdatera en fil
-Öppna filen `fil1.txt` i din texteditor med t.ex. `nano fil1.txt`. Lägg till innehåll, och spara med `CTRL o`, stäng med `CTRL x`.
+icon:book[] Manualsidor: `man git-clone`, `man git-status`, `man git-pull`
 
-Vad säger: `git status`?
+=== 2. Lägg in en ny fil till i repository
+Skapa filen `fil1.txt` och kolla status (`git status`). Din nya fil står som `Untracked` vilket betyder att den finns lokalt i mappen men `git` vet inte om att den finns.
 
-Kör: `git commit -m "Skrev första stycket"` Sparas dina ändringa till repositoriet?
+Lägg till filen till `git` med `git add fil1.txt` vilket gör att `git` vet att filen finns. Med `git status` ser du att filen nu står som `Changes to be committed`.
 
-Vad säger: `git status?`
+En `commit` betyder att nuvarande version av filen är lagrad till `git`. Det går först nu att backa ändringar. Normalt görs en `commit` minst varje gånge en `todo` är avklarad. Lägg till filen med `git commit -m "Skapade dokumentet"`. 
 
-Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (`git add`) och sedan sparar du det (`git commit`). Det går att kombinera de två med `git commit -am "Här skriver du kommentaren"`
+Kolla status (`git status`). Din lokala version av repot är nu före serverns version av repot. Dina ändringar och versioner finns lokalt på datorn men inte på servern.
 
-== 4. Ladda upp dina filer till Github
-Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna finns där.
+icon:book[] Manualsidor: `man git-add`, `man git-commit`
+
+=== 3. Uppdatera en fil
+Öppna, ändra och spara filen `fil1.txt`. Vad säger: `git status`?
+
+Kör: `git commit -m "Skrev första stycket"` Sparas ändringarna till repositoriet?
+
+Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas med `git add` och sedan sparar du versionen med `git commit`. Kombinera de med `git commit -am "Skrev första stycket"`
+
+=== 4. Ladda upp dina filer till Github
+Ladda upp dina ändringar till Github med: `git push`. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna syns.
 
 Se historiken med `git log --oneline` eller överkursvarianten: `git log --graph --decorate --abbrev-commit --all --pretty=oneline`
 
+icon:book[] Manualsidor: `man git-push` & `man git-log`
+
 == Läs
-* https://www.youtube.com/watch?v=USjZcfj8yxE\[Kort, övergripande beskrivning] icon:book[]
-* https://git-scm.com/book/[Den officiella Git-boken] icon:book[]
 * https://education.github.com/git-cheat-sheet-education.pdf[Git cheat sheet] icon:book[]
-* https://www.youtube.com/watch?v=RGOj5yH7evk[Lång genomgång - Git och GitHub] icon:book[]
-* https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60[Git Commit Best Practices - Github gist] icon:book[]
+* https://git-scm.com/book/[Den officiella Git-boken] icon:book[]
+* https://www.youtube.com/watch?v=USjZcfj8yxE\[Kort, övergripande beskrivning] icon:play[]
+* https://www.youtube.com/watch?v=RGOj5yH7evk[Lång genomgång - Git och GitHub] icon:play[]
+* https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60[Git Commit Best Practices - Github gist] icon:play[]
 
-.icon:graduation-cap[] Quiz
-* Git quiz 1
+== Git 1 övningar + quiz icon:graduation-cap[]
 
----
+ * Gör några ändringar till i din fil. Ladda upp några versioner. Kolla på github så du ser alla versioner.
+ * Lägg till fler filer och mappar. Kolla på Github så du ser dem.
+ * Vad gör: `git add .` och `git add *` ?
+ * Gör Git quiz 1
+
+-
 
 == Dela kod i Git - Delade repositories / branching & merging
 Det finns minst två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.

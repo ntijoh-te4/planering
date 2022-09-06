@@ -466,11 +466,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_versionshantering_i_git_och_github">Versionshantering i Git och GitHub</a>
 <ul class="sectlevel2">
-<li><a href="#_1_skapa_och_ladda_ner_ett_repository_på_github">1. Skapa och ladda ner ett repository på Github</a></li>
-<li><a href="#_2_lägg_in_en_ny_fil_till_i_repository">2. Lägg in en ny fil till i repository</a></li>
-<li><a href="#_3_uppdatera_en_fil">3. Uppdatera en fil</a></li>
-<li><a href="#_4_ladda_upp_dina_filer_till_github">4. Ladda upp dina filer till Github</a></li>
+<li><a href="#_att_använda_git">Att använda Git <span class="icon"><i class="fa fa-map"></i></span></a></li>
 <li><a href="#_läs_4">Läs</a></li>
+<li><a href="#_git_1_övningar_quiz">Git 1 övningar + quiz <span class="icon"><i class="fa fa-graduation-cap"></i></span></a></li>
 <li><a href="#_dela_kod_i_git_delade_repositories_branching_merging">Dela kod i Git - Delade repositories / branching &amp; merging</a></li>
 <li><a href="#_ssh_och_ssh_nycklar">SSH och SSH-nycklar</a></li>
 <li><a href="#_git_extra">Git extra</a></li>
@@ -1395,16 +1393,16 @@ Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projek
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://git-scm.com/video/what-is-version-control">Vad är versionshantering?</a></p>
+<p><a href="https://git-scm.com/video/what-is-version-control">Vad är versionshantering?</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
 <li>
-<p><a href="https://git-scm.com/video/what-is-git">Vad är Git?</a></p>
+<p><a href="https://git-scm.com/video/what-is-git">Vad är Git?</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
 <li>
-<p><a href="https://git-scm.com/video/get-going">Börja med Git</a></p>
+<p><a href="https://git-scm.com/video/get-going">Börja med Git</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
 <li>
-<p><a href="https://git-scm.com/video/quick-wins">Fördelar med Git</a> (denna kan ni bara skumma, minst viktig av dessa 4)</p>
+<p><a href="https://git-scm.com/video/quick-wins">Fördelar med Git</a> <span class="icon"><i class="fa fa-play"></i></span> (denna kan ni bara skumma, minst viktig av dessa 4)</p>
 </li>
 </ul>
 </div>
@@ -1412,69 +1410,68 @@ Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projek
 <p>Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (<code>add</code> och <code>commit</code>) som sedan laddas upp (<code>push</code>) och ner (<code>pull</code>).</p>
 </div>
 <div class="sect2">
-<h3 id="_1_skapa_och_ladda_ner_ett_repository_på_github">1. Skapa och ladda ner ett repository på Github</h3>
+<h3 id="_att_använda_git">Att använda Git <span class="icon"><i class="fa fa-map"></i></span></h3>
+<div class="sect3">
+<h4 id="_1_skapa_och_ladda_ner_ett_repository_på_github">1. Skapa och ladda ner ett repository på Github</h4>
 <div class="paragraph">
-<p>Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till learning-vcs.git. Du kan göra det privat. Lämna övriga saker.</p>
+<p>Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till <code>learning-vcs</code>. Gör det privat och låt övrigt vara. Addressen till repositoriet finns både via <code>HTTPS</code> och <code>SSH</code>. Väljer du <code>HTTPS</code> får du göra <code>authentiseringen</code> (inloggningen) i webbläsaren, annars måste du skapa <code>SSH-nycklar</code> manuellt och ladda upp till ditt Github-konto.</p>
 </div>
 <div class="paragraph">
-<p>Öppna en mapp där du brukar spara dina projekt i terminalen. Hämta hem ditt nya repo git clone <a href="mailto:git@github.com">git@github.com</a>:olantig/learning-vcs.git Glöm inte ersätta olantig med din användare.</p>
-</div>
-<div class="paragraph">
-<p>Kolla statusen med: git status</p>
-</div>
-<div class="paragraph">
-<p>För att senare uppdatera / ladda ner ändringar från samma repository används: git pull</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_2_lägg_in_en_ny_fil_till_i_repository">2. Lägg in en ny fil till i repository</h3>
-<div class="paragraph">
-<p>Skapa filen <code>fil1.txt</code> (med <code>touch fil1.txt</code> eller en editor) i din projektmapp</p>
-</div>
-<div class="paragraph">
-<p>Kör följande:</p>
+<p>Använd kommandot <code>git clone</code> i terminalen för att hämta ett repository till mappen du står i. Glöm inte ersätta <code>ntijoh-ola-lindberg</code> med din användare.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>git status
-git add fil1.txt
-git status
-git commit -m “Skapade dokumentet”
-git status</pre>
+<pre>git clone https://github.com/ntijoh-ola-lindberg/learning-vcs.git</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Vad gör kommandona?</p>
+<p>För att se vilka filer som ändrats jämfört med filerna på servern används kommmandot <code>git status</code> och för att ladda ner uppdateringar från servern <code>git pull</code>.</p>
 </div>
 <div class="paragraph">
-<p>Kör du koden <code>git add .</code> eller <code>git add *</code> så lägger du till alla ändringar till alla filer du har gjort.</p>
+<p><span class="icon"><i class="fa fa-book"></i></span> Manualsidor: <code>man git-clone</code>, <code>man git-status</code>, <code>man git-pull</code></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_3_uppdatera_en_fil">3. Uppdatera en fil</h3>
+<div class="sect3">
+<h4 id="_2_lägg_in_en_ny_fil_till_i_repository">2. Lägg in en ny fil till i repository</h4>
 <div class="paragraph">
-<p>Öppna filen <code>fil1.txt</code> i din texteditor med t.ex. <code>nano fil1.txt</code>. Lägg till innehåll, och spara med <code>CTRL o</code>, stäng med <code>CTRL x</code>.</p>
-</div>
-<div class="paragraph">
-<p>Vad säger: <code>git status</code>?</p>
+<p>Skapa filen <code>fil1.txt</code> och kolla status (<code>git status</code>). Din nya fil står som <code>Untracked</code> vilket betyder att den finns lokalt i mappen men <code>git</code> vet inte om att den finns.</p>
 </div>
 <div class="paragraph">
-<p>Kör: <code>git commit -m "Skrev första stycket"</code> Sparas dina ändringa till repositoriet?</p>
+<p>Lägg till filen till <code>git</code> med <code>git add fil1.txt</code> vilket gör att <code>git</code> vet att filen finns. Med <code>git status</code> ser du att filen nu står som <code>Changes to be committed</code>.</p>
 </div>
 <div class="paragraph">
-<p>Vad säger: <code>git status?</code></p>
+<p>En <code>commit</code> betyder att nuvarande version av filen är lagrad till <code>git</code>. Det går först nu att backa ändringar. Normalt görs en <code>commit</code> minst varje gånge en <code>todo</code> är avklarad. Lägg till filen med <code>git commit -m "Skapade dokumentet"</code>.</p>
 </div>
 <div class="paragraph">
-<p>Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas (<code>git add</code>) och sedan sparar du det (<code>git commit</code>). Det går att kombinera de två med <code>git commit -am "Här skriver du kommentaren"</code></p>
+<p>Kolla status (<code>git status</code>). Din lokala version av repot är nu före serverns version av repot. Dina ändringar och versioner finns lokalt på datorn men inte på servern.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_4_ladda_upp_dina_filer_till_github">4. Ladda upp dina filer till Github</h3>
 <div class="paragraph">
-<p>Ladda upp dina ändringar till Github med: <code>git push</code>. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna finns där.</p>
+<p><span class="icon"><i class="fa fa-book"></i></span> Manualsidor: <code>man git-add</code>, <code>man git-commit</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_3_uppdatera_en_fil">3. Uppdatera en fil</h4>
+<div class="paragraph">
+<p>Öppna, ändra och spara filen <code>fil1.txt</code>. Vad säger: <code>git status</code>?</p>
+</div>
+<div class="paragraph">
+<p>Kör: <code>git commit -m "Skrev första stycket"</code> Sparas ändringarna till repositoriet?</p>
+</div>
+<div class="paragraph">
+<p>Att spara ändringar i git är en tvåstegsraket. Först lägger du till vad som ska sparas med <code>git add</code> och sedan sparar du versionen med <code>git commit</code>. Kombinera de med <code>git commit -am "Skrev första stycket"</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_4_ladda_upp_dina_filer_till_github">4. Ladda upp dina filer till Github</h4>
+<div class="paragraph">
+<p>Ladda upp dina ändringar till Github med: <code>git push</code>. Försäkra dig om att de finns genom att öppna webbläsaren och se att ändringarna syns.</p>
 </div>
 <div class="paragraph">
 <p>Se historiken med <code>git log --oneline</code> eller överkursvarianten: <code>git log --graph --decorate --abbrev-commit --all --pretty=oneline</code></p>
+</div>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-book"></i></span> Manualsidor: <code>man git-push</code> &amp; <code>man git-log</code></p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1482,31 +1479,44 @@ git status</pre>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://www.youtube.com/watch?v=USjZcfj8yxE\">Kort, övergripande beskrivning</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+<p><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git cheat sheet</a> <span class="icon"><i class="fa fa-book"></i></span></p>
 </li>
 <li>
 <p><a href="https://git-scm.com/book/">Den officiella Git-boken</a> <span class="icon"><i class="fa fa-book"></i></span></p>
 </li>
 <li>
-<p><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git cheat sheet</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+<p><a href="https://www.youtube.com/watch?v=USjZcfj8yxE\">Kort, övergripande beskrivning</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
 <li>
-<p><a href="https://www.youtube.com/watch?v=RGOj5yH7evk">Lång genomgång - Git och GitHub</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+<p><a href="https://www.youtube.com/watch?v=RGOj5yH7evk">Lång genomgång - Git och GitHub</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
 <li>
-<p><a href="https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60">Git Commit Best Practices - Github gist</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+<p><a href="https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60">Git Commit Best Practices - Github gist</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_git_1_övningar_quiz">Git 1 övningar + quiz <span class="icon"><i class="fa fa-graduation-cap"></i></span></h3>
 <div class="ulist">
-<div class="title"><span class="icon"><i class="fa fa-graduation-cap"></i></span> Quiz</div>
 <ul>
 <li>
-<p>Git quiz 1</p>
+<p>Gör några ändringar till i din fil. Ladda upp några versioner. Kolla på github så du ser alla versioner.</p>
+</li>
+<li>
+<p>Lägg till fler filer och mappar. Kolla på Github så du ser dem.</p>
+</li>
+<li>
+<p>Vad gör: <code>git add .</code> och <code>git add *</code> ?</p>
+</li>
+<li>
+<p>Gör Git quiz 1</p>
 </li>
 </ul>
 </div>
-<hr>
+<div class="paragraph">
+<p>-</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_dela_kod_i_git_delade_repositories_branching_merging">Dela kod i Git - Delade repositories / branching &amp; merging</h3>
