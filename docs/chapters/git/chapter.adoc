@@ -77,6 +77,9 @@ Kallas också `Shared repository model` eller `Centralized workflow`.
 
 Läs: https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow[Centralized Workflow - Bitbucket] icon:book[]
 
+=== Delat repository övningar icon:graduation-cap[]
+Skapa ett repository som ni delar mellan er. Utforska och arbeta med det. Skapa skapa merge-konflikter och lär er verktygen för att lösa dem.
+
 === Merga filer i Git #todo#
 Det går att använda VSCode som diff / merge-verktyg: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
 
