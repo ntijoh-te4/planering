@@ -19,3 +19,7 @@ Kör `rake build` för att manuellt bygga boken.
  * icon:graduation-cap[] För övningar, uppgifter & quiz
  * icon:book[] För artiklar & läs-material
  * icon:building[] För föreläsningar
+ * icon:comment[]
+ * icon:map[] För saker att utforska
+ * icon:sticky-note[]
+ * icon:wrench[]
