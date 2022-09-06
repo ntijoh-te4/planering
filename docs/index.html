@@ -464,9 +464,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_docker">Docker</a></li>
 </ul>
 </li>
-<li><a href="#_versionshantering_i_git_och_github">Versionshantering i Git och GitHub</a>
+<li><a href="#_versionshantering">Versionshantering</a>
 <ul class="sectlevel2">
-<li><a href="#_att_använda_git">Att använda Git <span class="icon"><i class="fa fa-map"></i></span></a></li>
+<li><a href="#_how_to_git_github">How-to: Git &amp; GitHub <span class="icon"><i class="fa fa-map"></i></span></a></li>
 <li><a href="#_läs_4">Läs</a></li>
 <li><a href="#_git_1_övningar_quiz">Git 1 övningar + quiz <span class="icon"><i class="fa fa-graduation-cap"></i></span></a></li>
 <li><a href="#_dela_kod_i_git_delade_repositories_branching_merging">Dela kod i Git - Delade repositories / branching &amp; merging</a></li>
@@ -1378,17 +1378,16 @@ Behöver du så läs: <a href="https://www.shellscript.sh/" class="bare">www.she
 </div>
 </div>
 <div class="sect1">
-<h2 id="_versionshantering_i_git_och_github">Versionshantering i Git och GitHub</h2>
+<h2 id="_versionshantering">Versionshantering</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Kunskaper om versionshantering (SCM) med hjälp av Git. Vetskap om att det finns alternativa VCS än git.
-Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering.</p>
+<p>För att skapa spårbarhet och enkelare kunna hitta när ett fel tillkom i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation). Git är det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github.</p>
 </div>
 <div class="paragraph">
-<p>Här använder vi Github men kunskaperna är generella så platform går att byta till t.ex. <a href="https://bitbucket.org">Bitbucket</a>.</p>
+<p>Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (<code>add</code> &amp; <code>commit</code>). Sedan laddas alla versioner upp och till servern (<code>push</code>) och ner (<code>pull</code>) från servern.</p>
 </div>
 <div class="paragraph">
-<p>Följande videos (~5min / video) är en kort intro till versionshantering och Git.</p>
+<p>Se följande tre videos för en överblick av versionshantering och Git:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1401,16 +1400,13 @@ Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projek
 <li>
 <p><a href="https://git-scm.com/video/get-going">Börja med Git</a> <span class="icon"><i class="fa fa-play"></i></span></p>
 </li>
-<li>
-<p><a href="https://git-scm.com/video/quick-wins">Fördelar med Git</a> <span class="icon"><i class="fa fa-play"></i></span> (denna kan ni bara skumma, minst viktig av dessa 4)</p>
-</li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (<code>add</code> och <code>commit</code>) som sedan laddas upp (<code>push</code>) och ner (<code>pull</code>).</p>
-</div>
 <div class="sect2">
-<h3 id="_att_använda_git">Att använda Git <span class="icon"><i class="fa fa-map"></i></span></h3>
+<h3 id="_how_to_git_github">How-to: Git &amp; GitHub <span class="icon"><i class="fa fa-map"></i></span></h3>
+<div class="paragraph">
+<p>En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.</p>
+</div>
 <div class="sect3">
 <h4 id="_1_skapa_och_ladda_ner_ett_repository_på_github">1. Skapa och ladda ner ett repository på Github</h4>
 <div class="paragraph">
@@ -3443,7 +3439,7 @@ Förekommer det aktiviteter för avkoppling och gemenskap (t.ex. spel, lek, afte
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-03-28 13:29:57 +0200
+Last updated 2022-08-08 08:51:04 +0200
 </div>
 </div>
 </body>

@@ -1,20 +1,19 @@
-= Versionshantering i Git och GitHub
+= Versionshantering
 
-Kunskaper om versionshantering (SCM) med hjälp av Git. Vetskap om att det finns alternativa VCS än git.
-Kunskaper relaterat till jobba mot en centraliserad platform för SCM och projekthantering.
+För att skapa spårbarhet och enkelare kunna hitta när ett fel tillkom i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation). Git är det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github. 
 
-Här använder vi Github men kunskaperna är generella så platform går att byta till t.ex. https://bitbucket.org[Bitbucket].
+Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (`add` & `commit`). Sedan laddas alla versioner upp och till servern (`push`) och ner (`pull`) från servern.
 
-Följande videos (~5min / video) är en kort intro till versionshantering och Git.
+Se följande tre videos för en överblick av versionshantering och Git:
 
 * https://git-scm.com/video/what-is-version-control[Vad är versionshantering?] icon:play[]
 * https://git-scm.com/video/what-is-git[Vad är Git?] icon:play[]
 * https://git-scm.com/video/get-going[Börja med Git] icon:play[]
-* https://git-scm.com/video/quick-wins[Fördelar med Git] icon:play[] (denna kan ni bara skumma, minst viktig av dessa 4)
 
-Git är ett distribuerat versionssystem vilket betyder att all data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator (`add` och `commit`) som sedan laddas upp (`push`) och ner (`pull`).
 
-== Att använda Git icon:map[]
+
+== How-to: Git & GitHub icon:map[]
+En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.
 
 === 1. Skapa och ladda ner ett repository på Github
 Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs`. Gör det privat och låt övrigt vara. Addressen till repositoriet finns både via `HTTPS` och `SSH`. Väljer du `HTTPS` får du göra `authentiseringen` (inloggningen) i webbläsaren, annars måste du skapa `SSH-nycklar` manuellt och ladda upp till ditt Github-konto.
