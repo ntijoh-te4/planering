@@ -17,7 +17,7 @@ Det kan ibland uppstå problem med att `merga` kod även med Github och vi komme
 En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.
 
 === 1. Skapa och ladda ner ett repository på Github
-Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs`. Gör det privat och låt övrigt vara. Addressen till repositoriet finns både via `HTTPS` och `SSH`. Väljer du `HTTPS` får du göra `authentiseringen` (inloggningen) i webbläsaren, annars måste du skapa `SSH-nycklar` manuellt och ladda upp till ditt Github-konto.
+Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs`. Lägg till README-filen (viktigt), Gör det privat och låt övrigt vara. Addressen till repositoriet finns både via `HTTPS` och `SSH`. Väljer du `HTTPS` får du göra `authentiseringen` (inloggningen) i webbläsaren, annars måste du skapa `SSH-nycklar` manuellt och ladda upp till ditt Github-konto.
 
 Använd kommandot `git clone` i terminalen för att hämta ett repository till mappen du står i. Glöm inte ersätta `ntijoh-ola-lindberg` med din användare. 
 
