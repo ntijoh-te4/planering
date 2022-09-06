@@ -1,18 +1,19 @@
 = Versionshantering
+För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca tio år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github. 
 
-För att skapa spårbarhet och enkelare kunna hitta när ett fel tillkom i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation). Git är det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github. 
+Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (`add` & `commit`). Sedan laddas alla versioner upp och till servern (`push`) och ner (`pull`) från servern. 
 
-Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (`add` & `commit`). Sedan laddas alla versioner upp och till servern (`push`) och ner (`pull`) från servern.
+Det kan ibland uppstå problem med att `merga` kod även med Github och vi kommer ta upp strategier för det senare. Långt innan Git använde man istället system som låste filer som ändrades i tills den som ändrat släppt låset. 
 
-Se följande tre videos för en överblick av versionshantering och Git:
+[NOTE] 
+.En kort intro till versionshantering & Git
+==== 
+* https://git-scm.com/video/what-is-version-control[Vad är versionshantering?]
+* https://git-scm.com/video/what-is-git[Vad är Git?] 
+* https://git-scm.com/video/get-going[Börja med Git]
+====
 
-* https://git-scm.com/video/what-is-version-control[Vad är versionshantering?] icon:play[]
-* https://git-scm.com/video/what-is-git[Vad är Git?] icon:play[]
-* https://git-scm.com/video/get-going[Börja med Git] icon:play[]
-
-
-
-== How-to: Git & GitHub icon:map[]
+== How-to: Intro till Git icon:map[]
 En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.
 
 === 1. Skapa och ladda ner ett repository på Github
@@ -53,38 +54,43 @@ Se historiken med `git log --oneline` eller överkursvarianten: `git log --graph
 
 icon:book[] Manualsidor: `man git-push` & `man git-log`
 
-== Läs
-* https://education.github.com/git-cheat-sheet-education.pdf[Git cheat sheet] icon:book[]
-* https://git-scm.com/book/[Den officiella Git-boken] icon:book[]
-* https://www.youtube.com/watch?v=USjZcfj8yxE\[Kort, övergripande beskrivning] icon:play[]
-* https://www.youtube.com/watch?v=RGOj5yH7evk[Lång genomgång - Git och GitHub] icon:play[]
-* https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60[Git Commit Best Practices - Github gist] icon:play[]
+.Läs icon:book[]
+* https://education.github.com/git-cheat-sheet-education.pdf[Git cheat sheet]
+* https://git-scm.com/book/[Den officiella Git-boken]
 
-== Git 1 övningar + quiz icon:graduation-cap[]
+=== Git 1 övningar + quiz icon:graduation-cap[]
 
  * Gör några ändringar till i din fil. Ladda upp några versioner. Kolla på github så du ser alla versioner.
  * Lägg till fler filer och mappar. Kolla på Github så du ser dem.
  * Vad gör: `git add .` och `git add *` ?
  * Gör Git quiz 1
 
--
-
-== Dela kod i Git - Delade repositories / branching & merging
+== Arbeta med delad kod i Git
 Det finns minst två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.
 
-I större projekt används oftast `fork and pull` där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna `merge`.
+I större projekt används oftast `forks` där vem som helst kan göra en kopia (`fork`) på ett repository, arbeta i det och sedan be projektet `merga` in in ändringarna med en `pull request`.
 
-Läs:
+=== Delat repository
+I Githubs gränssnitt lägger ni till de användare som ska kunna skriva repositoriet. Fördelen är att det är väldigt enkelt. Nackdelen är att det inte finns någon speciell strategi för att hantera `merge conflicts`. De hanteras bäst genom att alla `pushar` och `pullar` kod ofta.
 
-* https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models
-* https://www.atlassian.com/git/tutorials/comparing-workflows
+Kallas också `Shared repository model` eller `Centralized workflow`.
 
-=== Branching och merging
-Läs:
-* https://www.atlassian.com/git/tutorials/using-branches/git-checkout
-* https://www.atlassian.com/git/tutorials/using-branches/git-merge
+Läs: https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow[Centralized Workflow - Bitbucket] icon:book[]
 
+=== Merga filer i Git #todo#
+Det går att använda VSCode som diff / merge-verktyg: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
+
+=== Github flow
 När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
+
+Ungefär samma strategier kallas också för `Feature branch workflow`, `Branching och merging` eller `Fork and pull`. 
+
+.Läs icon:book[]
+* https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow[Feature branch workflow - Bitbucket]  
+* https://www.atlassian.com/git/tutorials/using-branches/git-checkout[Git checkout branch - Bitbucket]
+* https://www.atlassian.com/git/tutorials/using-branches/git-merge[Git merge - Bitbucket]
+
+==== How-to: Github flow icon:map[] #todo#
 
 Som standard på Github får alla repositories en branch som heter `main`.
 
@@ -101,8 +107,6 @@ image::git-merge-exempel-konflikt.png[]
 När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.
 
 `git diff` visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.
-
-Det går att använda VSCode som merge-verktyg: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
 
 === Arbetsmetoder med Git flow
 
@@ -128,15 +132,6 @@ Pull requests måste genomgå code review.
 * Ni som inte känner att ni kan göra mer med Git flow / pull requests / issues - uppgiften. Bygg ett shell-script som uppdaterar alla era Git-repositories (dvs kör git pull).
 * Ni som är klara med både scriptet och github flow. Bygg ett script som gör GitHub issues från alla TODO-markeringar i er kod. Ni kan tex använda detta: https://github.com/marketplace/actions/todo-to-issue
 
-== SSH och SSH-nycklar
-För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.
-
-Läs:
-
-* https://en.wikipedia.org/wiki/Secure_Shell
-* https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh
-* Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-
 == Git extra
 
 I Git har vi några saker kvar.
@@ -160,132 +155,3 @@ Svara minst på följande frågor:
  * Varför använder man det?
 
 3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.
-
----
-
-== Git teori
-
-Kunskaper om designen bakom git och vilka datastrukturer som används.
-
-Kunskaper om att jobba mot en centraliserad remote (client-server).
-
-=== Varför?
-
-För att kunna förstå teorin bakom kommandon som används.
-
-För att kunna dela kod med andra utvecklare.
-
-=== Vad?
-
-.Koncept:
-* Datastrukturer
-   - Mutable index
-   - Object database
-* Refs
-   - HEAD
-   - branches
-   - tags
-* Remotes
-* Bare repositories
-
-.Kommandon:
-* git remote
-* git fetch
-* git push
-* git pull
-* git clone
-* gh repo create
-
-
-== Git CLI
-
-Kunskap om vanliga kommandon och växlar för git.
-
-=== Varför?
-
-Git är i grunden terminalbaserat. Många grafiska utvecklingsverktyg saknar funktionalitet från Git CLI.
-
-=== Vad?
-
-.Kommandon
-* git status
-* git add
-* git reset
-* git commit
-* git restore
-* git log
-* git branch
-* git checkout
-* git rm
-* git merge
-* git rebase
-* git stash
-* git cherry-pick
-
-== Git arbetssätt
-
-Kunskaper om att använda git som ett kollaborativt verktyg genom ett arbetsflöde.
-
-=== Varför?
-
-För att kunna jobba på samma kodbas med flera utvecklare.
-
-=== Vad?
-
-Kunna jobba med branches och git flow. Lösa merge conflicts.
-
-.Branches:
-* master
-* develop
-* feature
-* release
-* hotfix
-
-.Koncept:
-* Merge conflicts
-* Diverging git history
-
-== Issues
-
-För att skapa tasks med labels och en assignee i github platformen.
-
-=== Varför?
-
-För att kunna jobba med issue tracking i git flow arbetsflödet.
-
-=== Vad?
-
-.Koncept
-
-* Github issues
-
-== Projects
-
-Verktyg för projekthantering och skapa kanban boards för organisera issues.
-
-=== Varför?
-
-För att kunna spåra status av issues.
-
-=== Vad?
-
-.Koncept:
-* Project boards
-
-== Pull requests
-
-Kunskaper om hur pull/merge requests används.
-
-=== Varför?
-
-För att kunna uppbehålla en konsekvent kodstandard och kodkvalité genom manuella och automatiserade code reviews.
-
-=== Vad?
-
-.Koncept:
-* Pull requesuts
-
-.Kommandon:
-* gh pr create
-
-

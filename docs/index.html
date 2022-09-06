@@ -466,18 +466,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_versionshantering">Versionshantering</a>
 <ul class="sectlevel2">
-<li><a href="#_how_to_git_github">How-to: Git &amp; GitHub <span class="icon"><i class="fa fa-map"></i></span></a></li>
-<li><a href="#_läs_4">Läs</a></li>
-<li><a href="#_git_1_övningar_quiz">Git 1 övningar + quiz <span class="icon"><i class="fa fa-graduation-cap"></i></span></a></li>
-<li><a href="#_dela_kod_i_git_delade_repositories_branching_merging">Dela kod i Git - Delade repositories / branching &amp; merging</a></li>
-<li><a href="#_ssh_och_ssh_nycklar">SSH och SSH-nycklar</a></li>
+<li><a href="#_how_to_intro_till_git">How-to: Intro till Git <span class="icon"><i class="fa fa-map"></i></span></a></li>
+<li><a href="#_arbeta_med_delad_kod_i_git">Arbeta med delad kod i Git</a></li>
 <li><a href="#_git_extra">Git extra</a></li>
-<li><a href="#_git_teori">Git teori</a></li>
-<li><a href="#_git_cli">Git CLI</a></li>
-<li><a href="#_git_arbetssätt">Git arbetssätt</a></li>
-<li><a href="#_issues">Issues</a></li>
-<li><a href="#_projects">Projects</a></li>
-<li><a href="#_pull_requests">Pull requests</a></li>
 </ul>
 </li>
 <li><a href="#_agil_systemutveckling">Agil systemutveckling</a>
@@ -1261,6 +1252,25 @@ Behöver du så läs: <a href="https://www.shellscript.sh/" class="bare">www.she
 <div class="paragraph">
 <p>Kunskap om SSH (secure shell) och förståelse för uppkoppling till server via terminalen.</p>
 </div>
+<div class="paragraph">
+<p>För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.</p>
+</div>
+<div class="paragraph">
+<p>Läs:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Secure_Shell" class="bare">en.wikipedia.org/wiki/Secure_Shell</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh" class="bare">docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh</a></p>
+</li>
+<li>
+<p>Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" class="bare">docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p>
+</li>
+</ul>
+</div>
 <h4 id="_varför_2" class="discrete">Varför?</h4>
 <div class="paragraph">
 <p>För att kunna administrera system från en annan dator.</p>
@@ -1381,29 +1391,41 @@ Behöver du så läs: <a href="https://www.shellscript.sh/" class="bare">www.she
 <h2 id="_versionshantering">Versionshantering</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>För att skapa spårbarhet och enkelare kunna hitta när ett fel tillkom i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation). Git är det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github.</p>
+<p>För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca tio år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github.</p>
 </div>
 <div class="paragraph">
 <p>Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (<code>add</code> &amp; <code>commit</code>). Sedan laddas alla versioner upp och till servern (<code>push</code>) och ner (<code>pull</code>) från servern.</p>
 </div>
 <div class="paragraph">
-<p>Se följande tre videos för en överblick av versionshantering och Git:</p>
+<p>Det kan ibland uppstå problem med att <code>merga</code> kod även med Github och vi kommer ta upp strategier för det senare. Långt innan Git använde man istället system som låste filer som ändrades i tills den som ändrat släppt låset.</p>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">En kort intro till versionshantering &amp; Git</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://git-scm.com/video/what-is-version-control">Vad är versionshantering?</a> <span class="icon"><i class="fa fa-play"></i></span></p>
+<p><a href="https://git-scm.com/video/what-is-version-control">Vad är versionshantering?</a></p>
 </li>
 <li>
-<p><a href="https://git-scm.com/video/what-is-git">Vad är Git?</a> <span class="icon"><i class="fa fa-play"></i></span></p>
+<p><a href="https://git-scm.com/video/what-is-git">Vad är Git?</a></p>
 </li>
 <li>
-<p><a href="https://git-scm.com/video/get-going">Börja med Git</a> <span class="icon"><i class="fa fa-play"></i></span></p>
+<p><a href="https://git-scm.com/video/get-going">Börja med Git</a></p>
 </li>
 </ul>
 </div>
+</td>
+</tr>
+</table>
+</div>
 <div class="sect2">
-<h3 id="_how_to_git_github">How-to: Git &amp; GitHub <span class="icon"><i class="fa fa-map"></i></span></h3>
+<h3 id="_how_to_intro_till_git">How-to: Intro till Git <span class="icon"><i class="fa fa-map"></i></span></h3>
 <div class="paragraph">
 <p>En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.</p>
 </div>
@@ -1468,32 +1490,20 @@ Behöver du så läs: <a href="https://www.shellscript.sh/" class="bare">www.she
 <div class="paragraph">
 <p><span class="icon"><i class="fa fa-book"></i></span> Manualsidor: <code>man git-push</code> &amp; <code>man git-log</code></p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_läs_4">Läs</h3>
 <div class="ulist">
+<div class="title">Läs <span class="icon"><i class="fa fa-book"></i></span></div>
 <ul>
 <li>
-<p><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git cheat sheet</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+<p><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git cheat sheet</a></p>
 </li>
 <li>
-<p><a href="https://git-scm.com/book/">Den officiella Git-boken</a> <span class="icon"><i class="fa fa-book"></i></span></p>
-</li>
-<li>
-<p><a href="https://www.youtube.com/watch?v=USjZcfj8yxE\">Kort, övergripande beskrivning</a> <span class="icon"><i class="fa fa-play"></i></span></p>
-</li>
-<li>
-<p><a href="https://www.youtube.com/watch?v=RGOj5yH7evk">Lång genomgång - Git och GitHub</a> <span class="icon"><i class="fa fa-play"></i></span></p>
-</li>
-<li>
-<p><a href="https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60">Git Commit Best Practices - Github gist</a> <span class="icon"><i class="fa fa-play"></i></span></p>
+<p><a href="https://git-scm.com/book/">Den officiella Git-boken</a></p>
 </li>
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_git_1_övningar_quiz">Git 1 övningar + quiz <span class="icon"><i class="fa fa-graduation-cap"></i></span></h3>
+<div class="sect3">
+<h4 id="_git_1_övningar_quiz">Git 1 övningar + quiz <span class="icon"><i class="fa fa-graduation-cap"></i></span></h4>
 <div class="ulist">
 <ul>
 <li>
@@ -1510,41 +1520,58 @@ Behöver du så läs: <a href="https://www.shellscript.sh/" class="bare">www.she
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>-</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_dela_kod_i_git_delade_repositories_branching_merging">Dela kod i Git - Delade repositories / branching &amp; merging</h3>
+<h3 id="_arbeta_med_delad_kod_i_git">Arbeta med delad kod i Git</h3>
 <div class="paragraph">
 <p>Det finns minst två olika modeller för att samarbeta via Github. Ni kan antingen bjuda in alla som arbetar på projektet som collaborators via Github webbsidan. Detta funkar bäst till mindre projekt eller framförallt till projekt med färre deltagare.</p>
 </div>
 <div class="paragraph">
-<p>I större projekt används oftast <code>fork and pull</code> där vem som helst kan göra en kopia på ett repository, arbeta i det och sedan be projektet lägga in in ändringarna <code>merge</code>.</p>
-</div>
-<div class="paragraph">
-<p>Läs:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models" class="bare">docs.github.com/en/github/collaborating-with-pull-requests/getting-started/about-collaborative-development-models</a></p>
-</li>
-<li>
-<p><a href="https://www.atlassian.com/git/tutorials/comparing-workflows" class="bare">www.atlassian.com/git/tutorials/comparing-workflows</a></p>
-</li>
-</ul>
+<p>I större projekt används oftast <code>forks</code> där vem som helst kan göra en kopia (<code>fork</code>) på ett repository, arbeta i det och sedan be projektet <code>merga</code> in in ändringarna med en <code>pull request</code>.</p>
 </div>
 <div class="sect3">
-<h4 id="_branching_och_merging">Branching och merging</h4>
+<h4 id="_delat_repository">Delat repository</h4>
 <div class="paragraph">
-<p>Läs:
-* <a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout" class="bare">www.atlassian.com/git/tutorials/using-branches/git-checkout</a>
-* <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge" class="bare">www.atlassian.com/git/tutorials/using-branches/git-merge</a></p>
+<p>I Githubs gränssnitt lägger ni till de användare som ska kunna skriva repositoriet. Fördelen är att det är väldigt enkelt. Nackdelen är att det inte finns någon speciell strategi för att hantera <code>merge conflicts</code>. De hanteras bäst genom att alla <code>pushar</code> och <code>pullar</code> kod ofta.</p>
 </div>
+<div class="paragraph">
+<p>Kallas också <code>Shared repository model</code> eller <code>Centralized workflow</code>.</p>
+</div>
+<div class="paragraph">
+<p>Läs: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">Centralized Workflow - Bitbucket</a> <span class="icon"><i class="fa fa-book"></i></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_merga_filer_i_git_todo">Merga filer i Git <mark>todo</mark></h4>
+<div class="paragraph">
+<p>Det går att använda VSCode som diff / merge-verktyg: <a href="https://www.roboleary.net/vscode/2020/09/15/vscode-git.html" class="bare">www.roboleary.net/vscode/2020/09/15/vscode-git.html</a></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_github_flow">Github flow</h4>
 <div class="paragraph">
 <p>När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.</p>
 </div>
+<div class="paragraph">
+<p>Ungefär samma strategier kallas också för <code>Feature branch workflow</code>, <code>Branching och merging</code> eller <code>Fork and pull</code>.</p>
+</div>
+<div class="ulist">
+<div class="title">Läs <span class="icon"><i class="fa fa-book"></i></span></div>
+<ul>
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">Feature branch workflow - Bitbucket</a></p>
+</li>
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-checkout">Git checkout branch - Bitbucket</a></p>
+</li>
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Git merge - Bitbucket</a></p>
+</li>
+</ul>
+</div>
+<div class="sect4">
+<h5 id="_how_to_github_flow_todo">How-to: Github flow <span class="icon"><i class="fa fa-map"></i></span> <mark>todo</mark></h5>
 <div class="paragraph">
 <p>Som standard på Github får alla repositories en branch som heter <code>main</code>.</p>
 </div>
@@ -1571,8 +1598,6 @@ Behöver du så läs: <a href="https://www.shellscript.sh/" class="bare">www.she
 <div class="paragraph">
 <p><code>git diff</code> visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.</p>
 </div>
-<div class="paragraph">
-<p>Det går att använda VSCode som merge-verktyg: <a href="https://www.roboleary.net/vscode/2020/09/15/vscode-git.html" class="bare">www.roboleary.net/vscode/2020/09/15/vscode-git.html</a></p>
 </div>
 </div>
 <div class="sect3">
@@ -1623,28 +1648,6 @@ Pull requests måste genomgå code review.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_ssh_och_ssh_nycklar">SSH och SSH-nycklar</h3>
-<div class="paragraph">
-<p>För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.</p>
-</div>
-<div class="paragraph">
-<p>Läs:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://en.wikipedia.org/wiki/Secure_Shell" class="bare">en.wikipedia.org/wiki/Secure_Shell</a></p>
-</li>
-<li>
-<p><a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh" class="bare">docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh</a></p>
-</li>
-<li>
-<p>Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: <a href="https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent" class="bare">docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
 <h3 id="_git_extra">Git extra</h3>
 <div class="paragraph">
 <p>I Git har vi några saker kvar.
@@ -1692,276 +1695,6 @@ Svara minst på följande frågor:</p>
 </div>
 <div class="paragraph">
 <p>3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.</p>
-</div>
-<hr>
-</div>
-<div class="sect2">
-<h3 id="_git_teori">Git teori</h3>
-<div class="paragraph">
-<p>Kunskaper om designen bakom git och vilka datastrukturer som används.</p>
-</div>
-<div class="paragraph">
-<p>Kunskaper om att jobba mot en centraliserad remote (client-server).</p>
-</div>
-<div class="sect3">
-<h4 id="_varför_5">Varför?</h4>
-<div class="paragraph">
-<p>För att kunna förstå teorin bakom kommandon som används.</p>
-</div>
-<div class="paragraph">
-<p>För att kunna dela kod med andra utvecklare.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vad_5">Vad?</h4>
-<div class="ulist">
-<div class="title">Koncept:</div>
-<ul>
-<li>
-<p>Datastrukturer</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Mutable index</p>
-</li>
-<li>
-<p>Object database</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Refs</p>
-<div class="ulist">
-<ul>
-<li>
-<p>HEAD</p>
-</li>
-<li>
-<p>branches</p>
-</li>
-<li>
-<p>tags</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Remotes</p>
-</li>
-<li>
-<p>Bare repositories</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<div class="title">Kommandon:</div>
-<ul>
-<li>
-<p>git remote</p>
-</li>
-<li>
-<p>git fetch</p>
-</li>
-<li>
-<p>git push</p>
-</li>
-<li>
-<p>git pull</p>
-</li>
-<li>
-<p>git clone</p>
-</li>
-<li>
-<p>gh repo create</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_git_cli">Git CLI</h3>
-<div class="paragraph">
-<p>Kunskap om vanliga kommandon och växlar för git.</p>
-</div>
-<div class="sect3">
-<h4 id="_varför_6">Varför?</h4>
-<div class="paragraph">
-<p>Git är i grunden terminalbaserat. Många grafiska utvecklingsverktyg saknar funktionalitet från Git CLI.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vad_6">Vad?</h4>
-<div class="ulist">
-<div class="title">Kommandon</div>
-<ul>
-<li>
-<p>git status</p>
-</li>
-<li>
-<p>git add</p>
-</li>
-<li>
-<p>git reset</p>
-</li>
-<li>
-<p>git commit</p>
-</li>
-<li>
-<p>git restore</p>
-</li>
-<li>
-<p>git log</p>
-</li>
-<li>
-<p>git branch</p>
-</li>
-<li>
-<p>git checkout</p>
-</li>
-<li>
-<p>git rm</p>
-</li>
-<li>
-<p>git merge</p>
-</li>
-<li>
-<p>git rebase</p>
-</li>
-<li>
-<p>git stash</p>
-</li>
-<li>
-<p>git cherry-pick</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_git_arbetssätt">Git arbetssätt</h3>
-<div class="paragraph">
-<p>Kunskaper om att använda git som ett kollaborativt verktyg genom ett arbetsflöde.</p>
-</div>
-<div class="sect3">
-<h4 id="_varför_7">Varför?</h4>
-<div class="paragraph">
-<p>För att kunna jobba på samma kodbas med flera utvecklare.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vad_7">Vad?</h4>
-<div class="paragraph">
-<p>Kunna jobba med branches och git flow. Lösa merge conflicts.</p>
-</div>
-<div class="ulist">
-<div class="title">Branches:</div>
-<ul>
-<li>
-<p>master</p>
-</li>
-<li>
-<p>develop</p>
-</li>
-<li>
-<p>feature</p>
-</li>
-<li>
-<p>release</p>
-</li>
-<li>
-<p>hotfix</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<div class="title">Koncept:</div>
-<ul>
-<li>
-<p>Merge conflicts</p>
-</li>
-<li>
-<p>Diverging git history</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_issues">Issues</h3>
-<div class="paragraph">
-<p>För att skapa tasks med labels och en assignee i github platformen.</p>
-</div>
-<div class="sect3">
-<h4 id="_varför_8">Varför?</h4>
-<div class="paragraph">
-<p>För att kunna jobba med issue tracking i git flow arbetsflödet.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vad_8">Vad?</h4>
-<div class="ulist">
-<div class="title">Koncept</div>
-<ul>
-<li>
-<p>Github issues</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_projects">Projects</h3>
-<div class="paragraph">
-<p>Verktyg för projekthantering och skapa kanban boards för organisera issues.</p>
-</div>
-<div class="sect3">
-<h4 id="_varför_9">Varför?</h4>
-<div class="paragraph">
-<p>För att kunna spåra status av issues.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vad_9">Vad?</h4>
-<div class="ulist">
-<div class="title">Koncept:</div>
-<ul>
-<li>
-<p>Project boards</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_pull_requests">Pull requests</h3>
-<div class="paragraph">
-<p>Kunskaper om hur pull/merge requests används.</p>
-</div>
-<div class="sect3">
-<h4 id="_varför_10">Varför?</h4>
-<div class="paragraph">
-<p>För att kunna uppbehålla en konsekvent kodstandard och kodkvalité genom manuella och automatiserade code reviews.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_vad_10">Vad?</h4>
-<div class="ulist">
-<div class="title">Koncept:</div>
-<ul>
-<li>
-<p>Pull requesuts</p>
-</li>
-</ul>
-</div>
-<div class="ulist">
-<div class="title">Kommandon:</div>
-<ul>
-<li>
-<p>gh pr create</p>
-</li>
-</ul>
-</div>
 </div>
 </div>
 </div>
@@ -2340,11 +2073,11 @@ Förklara, diskutera, reflektera och motivera.</p>
 <div class="paragraph">
 <p>Inbegriper planerings, analys och design fas från SDLC. Under processen deltar eleverna i alla scrum cermonier för sprintar.</p>
 </div>
-<h4 id="_varför_11" class="discrete">Varför?</h4>
+<h4 id="_varför_5" class="discrete">Varför?</h4>
 <div class="paragraph">
 <p>För att jobba i sprintar krävs en sprintplanering. Tanken är att jobba i cycklar för att i slutet av varje sprint ha en fungerande produkt.</p>
 </div>
-<h4 id="_vad_11" class="discrete">Vad?</h4>
+<h4 id="_vad_5" class="discrete">Vad?</h4>
 <div class="ulist">
 <div class="title">Begrepp</div>
 <ul>
@@ -2383,11 +2116,11 @@ Förklara, diskutera, reflektera och motivera.</p>
 <div class="paragraph">
 <p>Inbegriper utvecklingsfasen från SDLC. Jobbet som innefattas är utveckling av funktionalitet, dokumentation, felsökning samt buggfixar.</p>
 </div>
-<h4 id="_varför_12" class="discrete">Varför?</h4>
+<h4 id="_varför_6" class="discrete">Varför?</h4>
 <div class="paragraph">
 <p>För att kunna implementera planerad funktionalitet.</p>
 </div>
-<h4 id="_vad_12" class="discrete">Vad?</h4>
+<h4 id="_vad_6" class="discrete">Vad?</h4>
 <div class="paragraph">
 <p>Jobba både självständigt och kollaborativt med ny funktionalitet eller utarbeta/förändra existerande funktionalitet. Jobbet sker iterativt enligt planeringsfasen och flera prototyper skapas under utvecklingsfasen. Elever dokumenterar sitt arbete kontinuerligt genom kodkommentarer, commitmeddelanden samt via projekthanteringsverktyg. Eleverna tillämpar strategier som exemepelvis divide and conquer för att bryta ner ett problem i mindre delar.</p>
 </div>
@@ -2425,11 +2158,11 @@ Förklara, diskutera, reflektera och motivera.</p>
 <div class="paragraph">
 <p>Inbegriper testningsfasen från SDLC. Jobbet som innefattas är att skriva olika typer av tester (både enhetstester och integrationstester).</p>
 </div>
-<h4 id="_varför_13" class="discrete">Varför?</h4>
+<h4 id="_varför_7" class="discrete">Varför?</h4>
 <div class="paragraph">
 <p>För att kunna verifiera implementerad funktionalitet.</p>
 </div>
-<h4 id="_vad_13" class="discrete">Vad?</h4>
+<h4 id="_vad_7" class="discrete">Vad?</h4>
 <div class="paragraph">
 <p>Förmåga att skriva tester som verifierar funktionalitet utan att testa implementationen. Eleverna skriver tester som är oberoende av ordningen dem körs i.</p>
 </div>
@@ -3439,7 +3172,7 @@ Förekommer det aktiviteter för avkoppling och gemenskap (t.ex. spel, lek, afte
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-08 08:51:04 +0200
+Last updated 2022-03-28 13:29:57 +0200
 </div>
 </div>
 </body>

@@ -28,6 +28,14 @@ Exempel: Söka `brew search discord`` installera `brew install discord``.
 
 Kunskap om SSH (secure shell) och förståelse för uppkoppling till server via terminalen.
 
+För att kunna använda Git helt från terminalen behöver du logga in med SSH-nycklar. Det är ett säkert sätt att autentisera dig. Du skapar en privat och en publik nyckel, den publika laddas upp till Github och den privata sparar du på din dator. När du loggar in förstår Github vem du är automatiskt.
+
+Läs:
+
+* https://en.wikipedia.org/wiki/Secure_Shell
+* https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/about-ssh
+* Om du använt Github desktop KANSKE den har skapat och lagt till nycklarna utan att du märkt det. Då kan du nog använda dem. Annars får vi skapa nya nycklar: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
 [discrete]
 === Varför?
 
