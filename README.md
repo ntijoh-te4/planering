@@ -20,6 +20,6 @@ Kör `rake build` för att manuellt bygga boken.
  * icon:book[] För artiklar & läs-material
  * icon:building[] För föreläsningar
  * icon:comment[]
- * icon:map[] För saker att utforska
+ * icon:map[] För saker att utforska eller typ tutorial
  * icon:sticky-note[]
  * icon:wrench[]
