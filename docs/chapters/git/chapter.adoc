@@ -77,7 +77,7 @@ Kallas också `Shared repository model` eller `Centralized workflow`.
 
 Läs: https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow[Centralized Workflow - Bitbucket] icon:book[]
 
-=== Merga filer i Git #todo: #
+=== Merga filer i Git #todo#
 Det går att använda VSCode som diff / merge-verktyg: https://www.roboleary.net/vscode/2020/09/15/vscode-git.html
 
 === Github flow
