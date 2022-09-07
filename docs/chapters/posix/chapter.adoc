@@ -380,8 +380,17 @@ Läs på om `Load average`
 
 För att kunna använda utveckla CLI-baserade verktyg behövs kunskap hur man använder och skriver scripts. 
 
-icon:graduation-cap[] Arbeta med: https://exercism.org/tracks/bash[Bash-spåret på Exercism]. +
-Behöver du så läs: https://www.shellscript.sh/  icon:book[]
+icon:graduation-cap[] Övningar
+
+* Gör ett script som kan göra en zip-fil döpt till tex. dagens datum + klockslag från en mapp på din dator. +
+Inspiration: https://ubuntu.com/server/docs/backups-shell-scripts[Shell scripts - Ubuntu]
+* Arbeta med: https://exercism.org/tracks/bash[Bash-spåret på Exercism]
+
+icon:book[] Hitta någon lämplig guide för att läsa om Shellscripts. Tex:
+
+* https://linuxconfig.org/bash-scripting-tutorial-for-beginners[Bash scripting for beginners - Linuxconfig]
+* https://tldp.org/LDP/Bash-Beginners-Guide/html/[Officiella bosh-guiden]
+* https://www.shellscript.sh/
 
 [cols=">1,3,3"]
 |===
