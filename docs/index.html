@@ -1416,6 +1416,50 @@ Inspiration: <a href="https://ubuntu.com/server/docs/backups-shell-scripts">Shel
 <div class="sect1">
 <h2 id="_versionshantering">Versionshantering</h2>
 <div class="sectionbody">
+<details>
+<summary class="title">Planering Git</summary>
+<div class="content">
+<div class="ulist">
+<div class="title">Tillfälle 1</div>
+<ul>
+<li>
+<p>Genomgång och intro till versionshantering</p>
+</li>
+<li>
+<p>Genomgång av flödet från att skapa ett repository i Github webbsidan till att lösa merge-problem i delade repositories.</p>
+</li>
+<li>
+<p>Övning: Eleverna skapar repositories där de skapar och löser merge-konflikter.</p>
+</li>
+<li>
+<p>Arbeta med materialet till Github flow</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Tillfälle 2</div>
+<ul>
+<li>
+<p>Kort om Github issues + Github project boards</p>
+</li>
+<li>
+<p>Eleverna arbetar med Git för källkod och om de vill <code>Issues</code> + <code>Github project boards</code> projekt 1</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Tillfälle 3</div>
+<ul>
+<li>
+<p>Github flow: genomngång + övningar</p>
+</li>
+<li>
+<p>Workshop: git extras</p>
+</li>
+</ul>
+</div>
+</div>
+</details>
 <div class="paragraph">
 <p>För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca tio år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github.</p>
 </div>
@@ -1425,15 +1469,8 @@ Inspiration: <a href="https://ubuntu.com/server/docs/backups-shell-scripts">Shel
 <div class="paragraph">
 <p>Det kan ibland uppstå problem med att <code>merga</code> kod även med Github och vi kommer ta upp strategier för det senare. Långt innan Git använde man istället system som låste filer som ändrades i tills den som ändrat släppt låset.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="title">En kort intro till versionshantering &amp; Git</div>
 <div class="ulist">
+<div class="title">En kort intro till versionshantering &amp; Git <span class="icon"><i class="fa fa-play"></i></span></div>
 <ul>
 <li>
 <p><a href="https://git-scm.com/video/what-is-version-control">Vad är versionshantering?</a></p>
@@ -1446,14 +1483,32 @@ Inspiration: <a href="https://ubuntu.com/server/docs/backups-shell-scripts">Shel
 </li>
 </ul>
 </div>
-</td>
-</tr>
-</table>
-</div>
 <div class="sect2">
 <h3 id="_how_to_intro_till_git">How-to: Intro till Git <span class="icon"><i class="fa fa-map"></i></span></h3>
 <div class="paragraph">
 <p>En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Problem med inloggning eller authentisering?</div>
+<div class="paragraph">
+<p>Beroende på om ni loggat in i Github tidigare har authentiseringen lagrats på olika ställen i din dator. Det enklaste sättet att fixa det verkar vara att använda <code>github-cli</code> som ni installerar med <code>brew install gh</code>.</p>
+</div>
+<div class="paragraph">
+<p>Logga ut: <code>gh auth logout</code>
+Logga in: <code>gh auth login</code></p>
+</div>
+<div class="paragraph">
+<p><span class="icon"><i class="fa fa-book"></i></span> Manualsidor: <code>man gh-auth</code></p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="_1_skapa_och_ladda_ner_ett_repository_på_github">1. Skapa och ladda ner ett repository på Github</h4>
