@@ -468,7 +468,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_how_to_intro_till_git">How-to: Intro till Git <span class="icon"><i class="fa fa-map"></i></span></a></li>
 <li><a href="#_arbeta_med_delad_kod_i_git">Arbeta med delad kod i Git</a></li>
-<li><a href="#_git_extra">Git extra</a></li>
+<li><a href="#_git_history_cherry_pick_bisect_stash">Git: History, cherry pick, bisect, stash</a></li>
 </ul>
 </li>
 <li><a href="#_agil_systemutveckling">Agil systemutveckling</a>
@@ -1465,7 +1465,7 @@ Inspiration: <a href="https://ubuntu.com/server/docs/backups-shell-scripts">Shel
 <div class="title">Tillfälle 4</div>
 <ul>
 <li>
-<p>Workshop: git extras</p>
+<p>Workshop: History, cherry pick, bisect, stash</p>
 </li>
 </ul>
 </div>
@@ -1633,17 +1633,17 @@ Logga in: <code>gh auth login</code></p>
 <div class="paragraph">
 <p>Läs: <a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">Centralized Workflow - Bitbucket</a> <span class="icon"><i class="fa fa-book"></i></span></p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_delat_repository_övningar">Delat repository övningar <span class="icon"><i class="fa fa-graduation-cap"></i></span></h4>
+<div class="sect4">
+<h5 id="_övningar_delat_repository">Övningar - delat repository <span class="icon"><i class="fa fa-graduation-cap"></i></span></h5>
 <div class="paragraph">
 <p>Skapa ett repository som ni delar mellan er. Utforska och arbeta med det. Skapa skapa merge-konflikter och lär er verktygen för att lösa dem.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_merga_filer_i_git_todo">Merga filer i Git <mark>todo</mark></h4>
+<div class="sect4">
+<h5 id="_merga_filer_i_git_todo">Merga filer i Git <mark>todo</mark></h5>
 <div class="paragraph">
 <p>Det går att använda VSCode som diff / merge-verktyg: <a href="https://www.roboleary.net/vscode/2020/09/15/vscode-git.html" class="bare">www.roboleary.net/vscode/2020/09/15/vscode-git.html</a></p>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -1677,103 +1677,103 @@ Logga in: <code>gh auth login</code></p>
 </ul>
 </div>
 <div class="sect4">
+<h5 id="_github_flow_tldr">Github flow - Tl;DR</h5>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Använd Github Project Boards som kanban</p>
+</li>
+<li>
+<p>Skapa issues för allt som ska ändras</p>
+</li>
+<li>
+<p>Assigna medlemmar till issues</p>
+</li>
+<li>
+<p>Skapa en branch för varje issue du jobbar med. Följ en naming convention i projektet.</p>
+</li>
+<li>
+<p>Skapa en pull request för din branch.</p>
+</li>
+<li>
+<p>Pull requests måste genomgå code review.</p>
+</li>
+</ol>
+</div>
+<div class="ulist">
+<div class="title">Läs <span class="icon"><i class="fa fa-book"></i></span></div>
+<ul>
+<li>
+<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart">Quickstart for GitHub Issues</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/en/issues/organizing-your-work-with-project-boards">Organizing your work with projects</a></p>
+</li>
+<li>
+<p><a href="https://deepsource.io/blog/git-branch-naming-conventions/">Git branch naming conventions</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
 <h5 id="_how_to_github_flow">How-to: Github flow <span class="icon"><i class="fa fa-map"></i></span></h5>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
 <p>Som standard på Github får alla repositories en branch som heter <code>main</code>.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>Skapa en ny och byt aktiv branch till din nya med kommandot: <code>git checkout -b ny-branch</code>. Se vilka branches som finns i repositoryt på din dator: <code>git branch</code>. Byter tillbaka till main: <code>git checkout main</code>.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>När du arbetat färdigt gör du som vanligt, <code>git commit -ma "Ny feature"</code>. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: <code>git push --set-upstream origin ny-branch</code>.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>När du arbetat färdigt i din nya branch är det dags att merga den till main. I många projekt är detta en tvåstegsraket. Först öppnas en Pull Request. Efter review mergas den. För att skapa <code>pull requests</code> anväds <a href="https://cli.github.com/manual/gh_pr_create"><code>gh pr create ny-pull-request</code></a> men oftast behövs mer information som t.ex. kommentarer och många använder github.com för att göra <code>PR</code>.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>När du mergat din branch kan du ta bort den med <code>git branch -d ny-branch</code>. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p><code>git diff</code> visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.</p>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_arbetsmetoder_med_git_flow">Arbetsmetoder med Git flow</h4>
-<div class="paragraph">
-<div class="title">GitHub project management</div>
-<p>Tl;DR.
-Använd Github Project Boards som kanban</p>
-</div>
-<div class="paragraph">
-<p>Skapa issues för allt.
-Assigna medlemmar till issues.
-Skapa en branch för varje issue du jobbar med. Följ en naming convention.
-Skapa en pull request för din branch.
-Pull requests måste genomgå code review.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart" class="bare">docs.github.com/en/issues/tracking-your-work-with-issues/quickstart</a></p>
-</li>
-<li>
-<p><a href="https://docs.github.com/en/get-started/quickstart/github-flow" class="bare">docs.github.com/en/get-started/quickstart/github-flow</a></p>
-</li>
-<li>
-<p><a href="https://docs.github.com/en/issues/organizing-your-work-with-project-boards" class="bare">docs.github.com/en/issues/organizing-your-work-with-project-boards</a></p>
-</li>
-<li>
-<p><a href="https://deepsource.io/blog/git-branch-naming-conventions/" class="bare">deepsource.io/blog/git-branch-naming-conventions/</a></p>
 </li>
 </ul>
 </div>
-<div class="ulist">
-<div class="title">Miniövningar när allt annat är färdigt</div>
-<ul>
-<li>
-<p>Ni som inte känner att ni kan göra mer med Git flow / pull requests / issues - uppgiften. Bygg ett shell-script som uppdaterar alla era Git-repositories (dvs kör git pull).</p>
-</li>
-<li>
-<p>Ni som är klara med både scriptet och github flow. Bygg ett script som gör GitHub issues från alla TODO-markeringar i er kod. Ni kan tex använda detta: <a href="https://github.com/marketplace/actions/todo-to-issue" class="bare">github.com/marketplace/actions/todo-to-issue</a></p>
-</li>
-</ul>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_git_extra">Git extra</h3>
-<div class="paragraph">
-<p>I Git har vi några saker kvar.
-Ni måste inte bli experter på alla dessa koncept men ni ska minst förstå hur de används för att enkelt kunna sätta er in i det senare. Vi kommer hålla små workshops med följande olika verktyg:</p>
-</div>
+<h3 id="_git_history_cherry_pick_bisect_stash">Git: History, cherry pick, bisect, stash</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Ändra historik i efterhand: <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History" class="bare">git-scm.com/book/en/v2/Git-Tools-Rewriting-History</a></p>
+<p><a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">Rewrite git history</a></p>
 </li>
 <li>
-<p>git-cherry-pick: <a href="https://git-scm.com/docs/git-cherry-pick" class="bare">git-scm.com/docs/git-cherry-pick</a></p>
+<p><a href="https://git-scm.com/docs/git-cherry-pick">Cherry pick</a></p>
 </li>
 <li>
-<p>git-bisect: <a href="https://git-scm.com/docs/git-bisect" class="bare">git-scm.com/docs/git-bisect</a></p>
+<p><a href="https://git-scm.com/docs/git-bisect">Bisect</a></p>
 </li>
 <li>
-<p>GitHub CLI: <a href="https://github.com/cli/cli" class="bare">github.com/cli/cli</a></p>
+<p><a href="https://git-scm.com/docs/git-stash">Stash</a></p>
 </li>
 <li>
-<p>git-stash: <a href="https://git-scm.com/docs/git-stash" class="bare">git-scm.com/docs/git-stash</a></p>
+<p><a href="https://github.com/cli/cli">GitHub CLI</a></p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<div class="title">Er uppgift</div>
-<p>1). Lär er använda de verktyg ni fått.</p>
-</div>
-<div class="paragraph">
-<p>2). Lär era klasskamrater använda verktyget.<br>
-Svara minst på följande frågor:</p>
-</div>
+<div class="olist arabic">
+<div class="title">Övningar <span class="icon"><i class="fa fa-graduation-cap"></i></span></div>
+<ol class="arabic">
+<li>
+<p>Lär er använda ett av verktygen ovan</p>
+</li>
+<li>
+<p>Lär era klasskamrater använda verktyget. + Svara minst på följande frågor:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1787,8 +1787,11 @@ Svara minst på följande frågor:</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>3). Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.</p>
+</li>
+<li>
+<p>Gör en kort demo när ni använder verktyget. Gärna i terminalen. Men inget måste.</p>
+</li>
+</ol>
 </div>
 </div>
 </div>
