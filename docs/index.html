@@ -1451,8 +1451,19 @@ Inspiration: <a href="https://ubuntu.com/server/docs/backups-shell-scripts">Shel
 <div class="title">Tillfälle 3</div>
 <ul>
 <li>
-<p>Github flow: genomngång + övningar</p>
+<p>Versionsnummer</p>
 </li>
+<li>
+<p>Github flow</p>
+</li>
+<li>
+<p>Genomngång + övningar</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Tillfälle 4</div>
+<ul>
 <li>
 <p>Workshop: git extras</p>
 </li>
@@ -1644,6 +1655,14 @@ Logga in: <code>gh auth login</code></p>
 <p>Ungefär samma strategier kallas också för <code>Feature branch workflow</code>, <code>Branching och merging</code> eller <code>Fork and pull</code>.</p>
 </div>
 <div class="ulist">
+<div class="title">Föreläsning <span class="icon"><i class="fa fa-building"></i></span></div>
+<ul>
+<li>
+<p>Versionsnummer &amp; GitHub flow</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
 <div class="title">Läs <span class="icon"><i class="fa fa-book"></i></span></div>
 <ul>
 <li>
@@ -1658,7 +1677,7 @@ Logga in: <code>gh auth login</code></p>
 </ul>
 </div>
 <div class="sect4">
-<h5 id="_how_to_github_flow_todo">How-to: Github flow <span class="icon"><i class="fa fa-map"></i></span> <mark>todo</mark></h5>
+<h5 id="_how_to_github_flow">How-to: Github flow <span class="icon"><i class="fa fa-map"></i></span></h5>
 <div class="paragraph">
 <p>Som standard på Github får alla repositories en branch som heter <code>main</code>.</p>
 </div>
@@ -1669,15 +1688,7 @@ Logga in: <code>gh auth login</code></p>
 <p>När du arbetat färdigt gör du som vanligt, <code>git commit -ma "Ny feature"</code>. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: <code>git push --set-upstream origin ny-branch</code>.</p>
 </div>
 <div class="paragraph">
-<p>När du arbetat färdigt i din nya branch är det dags att merga den till main.</p>
-</div>
-<div class="paragraph">
-<p>Byt aktiv branch till main (<code>git checkout main</code>) och merga med: <code>git merge ny-branch</code>. Git försöker slå ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Då får du en sk. merge-konflikt (se bild).</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/git-merge-exempel-konflikt.png" alt="git merge exempel konflikt">
-</div>
+<p>När du arbetat färdigt i din nya branch är det dags att merga den till main. I många projekt är detta en tvåstegsraket. Först öppnas en Pull Request. Efter review mergas den. För att skapa <code>pull requests</code> anväds <a href="https://cli.github.com/manual/gh_pr_create"><code>gh pr create ny-pull-request</code></a> men oftast behövs mer information som t.ex. kommentarer och många använder github.com för att göra <code>PR</code>.</p>
 </div>
 <div class="paragraph">
 <p>När du mergat din branch kan du ta bort den med <code>git branch -d ny-branch</code>. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.</p>
@@ -1689,10 +1700,6 @@ Logga in: <code>gh auth login</code></p>
 </div>
 <div class="sect3">
 <h4 id="_arbetsmetoder_med_git_flow">Arbetsmetoder med Git flow</h4>
-<div class="paragraph">
-<div class="title">Föreläsningar</div>
-<p>Projekthantering - GitHub flow</p>
-</div>
 <div class="paragraph">
 <div class="title">GitHub project management</div>
 <p>Tl;DR.
@@ -3259,7 +3266,7 @@ Förekommer det aktiviteter för avkoppling och gemenskap (t.ex. spel, lek, afte
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-03-28 13:29:57 +0200
+Last updated 2022-08-08 08:51:04 +0200
 </div>
 </div>
 </body>

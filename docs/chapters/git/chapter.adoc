@@ -14,7 +14,11 @@
  * Eleverna arbetar med Git för källkod och om de vill `Issues` + `Github project boards` projekt 1
 
 .Tillfälle 3
- * Github flow: genomngång + övningar
+ * Versionsnummer
+ * Github flow
+ * Genomngång + övningar
+
+.Tillfälle 4
  * Workshop: git extras
 ====
 
@@ -117,12 +121,15 @@ När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapa
 
 Ungefär samma strategier kallas också för `Feature branch workflow`, `Branching och merging` eller `Fork and pull`. 
 
+.Föreläsning icon:building[]
+* Versionsnummer & GitHub flow
+
 .Läs icon:book[]
 * https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow[Feature branch workflow - Bitbucket]  
 * https://www.atlassian.com/git/tutorials/using-branches/git-checkout[Git checkout branch - Bitbucket]
 * https://www.atlassian.com/git/tutorials/using-branches/git-merge[Git merge - Bitbucket]
 
-==== How-to: Github flow icon:map[] #todo#
+==== How-to: Github flow icon:map[] 
 
 Som standard på Github får alla repositories en branch som heter `main`.
 
@@ -130,20 +137,13 @@ Skapa en ny och byt aktiv branch till din nya med kommandot: `git checkout -b ny
 
 När du arbetat färdigt gör du som vanligt, `git commit -ma "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: `git push --set-upstream origin ny-branch`.
 
-När du arbetat färdigt i din nya branch är det dags att merga den till main.
-
-Byt aktiv branch till main (`git checkout main`) och merga med: `git merge ny-branch`. Git försöker slå ihop filerna automatiskt men finns det ändringar på samma rad måste du hantera det manuellt. Då får du en sk. merge-konflikt (se bild).
-
-image::git-merge-exempel-konflikt.png[]
+När du arbetat färdigt i din nya branch är det dags att merga den till main. I många projekt är detta en tvåstegsraket. Först öppnas en Pull Request. Efter review mergas den. För att skapa `pull requests` anväds https://cli.github.com/manual/gh_pr_create[`gh pr create ny-pull-request`] men oftast behövs mer information som t.ex. kommentarer och många använder github.com för att göra `PR`.
 
 När du mergat din branch kan du ta bort den med `git branch -d ny-branch`. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.
 
 `git diff` visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.
 
 === Arbetsmetoder med Git flow
-
-.Föreläsningar
-Projekthantering - GitHub flow
 
 .GitHub project management
 Tl;DR.
