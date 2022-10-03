@@ -1648,6 +1648,37 @@ Logga in: <code>gh auth login</code></p>
 </div>
 <div class="sect3">
 <h4 id="_github_flow">Github flow</h4>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="title">Tl;DR (Github flow)</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Använd <a href="https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects">Github Projects</a> som kanban</p>
+</li>
+<li>
+<p>Skapa <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart">issues</a> för allt som ska ändras &amp; assigna medlemmar till issues</p>
+</li>
+<li>
+<p>Skapa en branch för varje issue du jobbar med. Följ en * <a href="https://deepsource.io/blog/git-branch-naming-conventions/naming" class="bare">deepsource.io/blog/git-branch-naming-conventions/naming</a> convention] i projektet.</p>
+</li>
+<li>
+<p>Skapa en pull request för din branch.</p>
+</li>
+<li>
+<p>Pull requests måste genomgå code review.</p>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.</p>
 </div>
@@ -1674,49 +1705,10 @@ Logga in: <code>gh auth login</code></p>
 <li>
 <p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Git merge - Bitbucket</a></p>
 </li>
-</ul>
-</div>
-<div class="sect4">
-<h5 id="_github_flow_tldr">Github flow - Tl;DR</h5>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Använd Github Project Boards som kanban</p>
-</li>
-<li>
-<p>Skapa issues för allt som ska ändras</p>
-</li>
-<li>
-<p>Assigna medlemmar till issues</p>
-</li>
-<li>
-<p>Skapa en branch för varje issue du jobbar med. Följ en naming convention i projektet.</p>
-</li>
-<li>
-<p>Skapa en pull request för din branch.</p>
-</li>
-<li>
-<p>Pull requests måste genomgå code review.</p>
-</li>
-</ol>
-</div>
-<div class="ulist">
-<div class="title">Läs <span class="icon"><i class="fa fa-book"></i></span></div>
-<ul>
-<li>
-<p><a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart">Quickstart for GitHub Issues</a></p>
-</li>
 <li>
 <p><a href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a></p>
 </li>
-<li>
-<p><a href="https://docs.github.com/en/issues/organizing-your-work-with-project-boards">Organizing your work with projects</a></p>
-</li>
-<li>
-<p><a href="https://deepsource.io/blog/git-branch-naming-conventions/">Git branch naming conventions</a></p>
-</li>
 </ul>
-</div>
 </div>
 <div class="sect4">
 <h5 id="_how_to_github_flow">How-to: Github flow <span class="icon"><i class="fa fa-map"></i></span></h5>
@@ -1726,19 +1718,20 @@ Logga in: <code>gh auth login</code></p>
 <p>Som standard på Github får alla repositories en branch som heter <code>main</code>.</p>
 </li>
 <li>
-<p>Skapa en ny och byt aktiv branch till din nya med kommandot: <code>git checkout -b ny-branch</code>. Se vilka branches som finns i repositoryt på din dator: <code>git branch</code>. Byter tillbaka till main: <code>git checkout main</code>.</p>
+<p>Skapa en ny och byt aktiv branch: <code>git checkout -b ny-branch</code><br>
+Se vilka branches som finns (remode och lokalt): <code>git branch</code>.</p>
 </li>
 <li>
-<p>När du arbetat färdigt gör du som vanligt, <code>git commit -ma "Ny feature"</code>. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: <code>git push --set-upstream origin ny-branch</code>.</p>
+<p>När du arbetat färdigt gör du som vanligt, <code>git commit -am "Ny feature"</code>. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: <code>git push --set-upstream origin ny-branch</code>.</p>
 </li>
 <li>
-<p>När du arbetat färdigt i din nya branch är det dags att merga den till main. I många projekt är detta en tvåstegsraket. Först öppnas en Pull Request. Efter review mergas den. För att skapa <code>pull requests</code> anväds <a href="https://cli.github.com/manual/gh_pr_create"><code>gh pr create ny-pull-request</code></a> men oftast behövs mer information som t.ex. kommentarer och många använder github.com för att göra <code>PR</code>.</p>
+<p>När du arbetat färdigt i din nya branch är det dags att merga den till main. I många projekt är detta en tvåstegsraket. Först öppnas en Pull Request. Efter review mergas den. För att skapa <code>pull requests</code> anväds <a href="https://cli.github.com/manual/gh_pr_create"><code>gh pr create ny-pull-request</code></a> men oftast behövs mer information som t.ex. kommentarer, kopplingar till issues osv och många använder github.com för att göra <code>PR</code> med <code>gh pr create -w</code>.</p>
 </li>
 <li>
-<p>När du mergat din branch kan du ta bort den med <code>git branch -d ny-branch</code>. Den försvinner lokalt men finns kvar på Github. Titta under branches i ditt repository på github.com.</p>
+<p>När du mergat din branch kan du ta bort den lokalt med <code>git branch -d ny-branch</code>. Finns dock kvar remote. Titta under branches i ditt repository på github.com. Det är lite olika om man vill spara gamla branches eller ej.</p>
 </li>
 <li>
-<p><code>git diff</code> visar vilka ändringar som gjorts sedan commit. Det går även att jämföra olika branches.</p>
+<p>Byt tillbaka till main branch: <code>git checkout main</code>.</p>
 </li>
 </ul>
 </div>
@@ -3269,7 +3262,7 @@ Förekommer det aktiviteter för avkoppling och gemenskap (t.ex. spel, lek, afte
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2022-08-08 08:51:04 +0200
+Last updated 2022-03-28 13:29:57 +0200
 </div>
 </div>
 </body>
