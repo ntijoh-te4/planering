@@ -158,6 +158,7 @@ Se vilka branches som finns (remode och lokalt): `git branch`.
 * https://git-scm.com/docs/git-bisect[Bisect]
 * https://git-scm.com/docs/git-stash[Stash]
 * https://github.com/cli/cli[GitHub CLI]
+* https://git-scm.com/docs/git-rebase[Rebase]
 
 .Övningar icon:graduation-cap[]
 
