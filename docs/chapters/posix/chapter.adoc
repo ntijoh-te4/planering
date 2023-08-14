@@ -13,7 +13,7 @@ För Windows finns WSL och Cygwin.
 * För att kunna använda CLI-baserade utvecklingsverktyg och göra grundläggande arbete i terminalen.
 
 === icon:building[] Föreläsningar
-* Terminalen och lite om Unix
+* Terminalen, Unix & open source 
 
 === icon:graduation-cap[] Övning - Terminalen 1
 * Gör övningen från första presentationen om terminalen
