@@ -181,4 +181,4 @@ Förklara, diskutera, reflektera och motivera.
  * https://www.scrum.org/resources/scrum-glossary[Scrum glossary - scrum.org] icon:book[]
  * https://www.agilealliance.org/agile101/agile-glossary/[Agile glossary - Agile alliance] icon:book[]
 
-Plocka upp de fem ord eller koncept du viste minst om, läs på och förbered att berätta för dina klasskamrater. 
+Plocka upp de fem ord eller koncept du viste minst om, läs på och samanfatta. 
