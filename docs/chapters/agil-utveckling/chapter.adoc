@@ -143,7 +143,7 @@ Förklara följande med dina egna ord. Undvik att sväva ut. Försök hålla det
 
 * Vad är en Sprint?
 * Förklara de olika rollerna i Scrum: `Product owner`, `Scrum master` och `Scrum team`
-* Vad är en `product backlog item` och till vad / varför änvänds de?
+* Vad är en `product backlog item` och till vad / varför används de?
 * Vad är en `product backlog` och vad är en `sprint backlog`?
 * Vad menas med `minimum viable product` (`MVP`)? Ibland används även `minimum viable feature`.
 * Vad menas med `definition of done` (`DoD`)?
