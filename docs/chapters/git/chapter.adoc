@@ -5,24 +5,22 @@
 ====
 .Tillfälle 1
  * Genomgång och intro till versionshantering
- * Genomgång av flödet från att skapa ett repository i Github webbsidan till att lösa merge-problem i delade repositories.
- * Övning: Eleverna skapar repositories där de skapar och löser merge-konflikter.
- * Arbeta med materialet till Github flow
+ * Genomgång av flödet från att skapa ett repository i `Github` webbsidan till att lösa `merge-problem` i delade `repositories`
+ * Övning: Eleverna skapar `repositories` där de skapar och löser `merge-konflikter`
+ * Kort om `Github issues` + `Github project boards`
+ * Eleverna arbetar med `Git` för källkod i *projekt 1*
 
 .Tillfälle 2
- * Kort om Github issues + Github project boards
- * Eleverna arbetar med Git för källkod och om de vill `Issues` + `Github project boards` projekt 1
-
-.Tillfälle 3
- * Versionsnummer
- * Github flow
+ * `Issues` + `Github project boards` 
+ * `Github flow`
+ * Hur brukar man sätta Versionsnummer på mjukvara?
  * Genomngång + övningar
 
-.Tillfälle 4
- * Workshop: History, cherry pick, bisect, stash
+.Tillfälle 3
+ * Workshop: `History`, `cherry pick`, `bisect`, `stash`
 ====
 
-För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca tio år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github. 
+För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca 15 år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github. 
 
 Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (`add` & `commit`). Sedan laddas alla versioner upp och till servern (`push`) och ner (`pull`) från servern. 
 
@@ -36,6 +34,9 @@ Det kan ibland uppstå problem med att `merga` kod även med Github och vi komme
 * https://git-scm.com/video/get-going[Börja med Git]
 
 == How-to: Intro till Git icon:map[]
+
+Vi använder namnstandarder `ntijoh-fornamn-efternamn` (ex. `ntijoh-ola-lindberg`) på alla Github-konto i organisationen. Har du ett konto tidigare byt - annars skapa ett nytt.
+
 En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.
 
 [NOTE] 
