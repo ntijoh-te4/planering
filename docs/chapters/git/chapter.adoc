@@ -11,7 +11,7 @@
  * Eleverna arbetar med `Git` för källkod i *projekt 1*
 
 .Tillfälle 2
- * `Issues` + `Github project boards` 
+ * `Issues` + `Github project boards`
  * `Github flow`
  * Hur brukar man sätta Versionsnummer på mjukvara?
  * Genomngång + övningar
@@ -20,17 +20,17 @@
  * Workshop: `History`, `cherry pick`, `bisect`, `stash`
 ====
 
-För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca 15 år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github. 
+För att skapa spårbarhet och enkelare kunna hitta när ett fel blev till i ett mjukvaruprojekt versionshanteras i princip alltid källkod (och dokumentation) och Git är sedan ca 15 år det vanligaste versionshanteringssystemet. Kapitlet ger kunskaper om versionshantering med hjälp av Git och Github.
 
-Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (`add` & `commit`). Sedan laddas alla versioner upp och till servern (`push`) och ner (`pull`) från servern. 
+Git är ett distribuerat versionssystem vilket betyder att alla filer och data finns på alla klienter. Du arbetar med dina ändringar lokalt på din dator där du kan arbeta med lokala versioner (`add` & `commit`). Sedan laddas alla versioner upp och till servern (`push`) och ner (`pull`) från servern.
 
-Det kan ibland uppstå problem med att `merga` kod även med Github och vi kommer ta upp strategier för det senare. Långt innan Git använde man istället system som låste filer som ändrades i tills den som ändrat släppt låset. 
+Det kan ibland uppstå problem med att `merga` kod även med Github och vi kommer ta upp strategier för det senare. Långt innan Git använde man istället system som låste filer som ändrades i tills den som ändrat släppt låset.
 
 
 .En kort intro till versionshantering & Git icon:play[]
 
 * https://git-scm.com/video/what-is-version-control[Vad är versionshantering?]
-* https://git-scm.com/video/what-is-git[Vad är Git?] 
+* https://git-scm.com/video/what-is-git[Vad är Git?]
 * https://git-scm.com/video/get-going[Börja med Git]
 
 == How-to: Intro till Git icon:map[]
@@ -39,9 +39,9 @@ Vi använder namnstandarder `ntijoh-fornamn-efternamn` (ex. `ntijoh-ola-lindberg
 
 En kort guide för att kunna skapa ett repository på Github dit du sedan kan ladda upp dina ändringar.
 
-[NOTE] 
+[NOTE]
 .Problem med inloggning eller authentisering?
-==== 
+====
 Beroende på om ni loggat in i Github tidigare har authentiseringen lagrats på olika ställen i din dator. Det enklaste sättet att fixa det verkar vara att använda `github-cli` som ni installerar med `brew install gh`.
 
 Logga ut: `gh auth logout`
@@ -53,7 +53,7 @@ icon:book[] Manualsidor: `man gh-auth`
 === 1. Skapa och ladda ner ett repository på Github
 Logga in på Github och skapa ett nytt repository i webbgränssnittet. Döp det till `learning-vcs`. Lägg till README-filen (viktigt), Gör det privat och låt övrigt vara. Addressen till repositoriet finns både via `HTTPS` och `SSH`. Väljer du `HTTPS` får du göra `authentiseringen` (inloggningen) i webbläsaren, annars måste du skapa `SSH-nycklar` manuellt och ladda upp till ditt Github-konto.
 
-Använd kommandot `git clone` i terminalen för att hämta ett repository till mappen du står i. Glöm inte ersätta `ntijoh-ola-lindberg` med din användare. 
+Använd kommandot `git clone` i terminalen för att hämta ett repository till mappen du står i. Glöm inte ersätta `ntijoh-ola-lindberg` med din användare.
 
 ----
 git clone https://github.com/ntijoh-ola-lindberg/learning-vcs.git
@@ -68,7 +68,7 @@ Skapa filen `fil1.txt` och kolla status (`git status`). Din nya fil står som `U
 
 Lägg till filen till `git` med `git add fil1.txt` vilket gör att `git` vet att filen finns. Med `git status` ser du att filen nu står som `Changes to be committed`.
 
-En `commit` betyder att nuvarande version av filen är lagrad till `git`. Det går först nu att backa ändringar. Normalt görs en `commit` minst varje gånge en `todo` är avklarad. Lägg till filen med `git commit -m "Skapade dokumentet"`. 
+En `commit` betyder att nuvarande version av filen är lagrad till `git`. Det går först nu att backa ändringar. Normalt görs en `commit` minst varje gånge en `todo` är avklarad. Lägg till filen med `git commit -m "Skapade dokumentet"`.
 
 Kolla status (`git status`). Din lokala version av repot är nu före serverns version av repot. Dina ändringar och versioner finns lokalt på datorn men inte på servern.
 
@@ -119,38 +119,46 @@ Det går att använda VSCode som diff / merge-verktyg: https://www.roboleary.net
 
 === Github flow
 
-[NOTE] 
+*_Ska du bara göra en sak så gör <<_övning_github_flow, övningen för Github flow>>._* Den innehåller allt.
+
+[NOTE]
 .Tl;DR (Github flow)
-==== 
+====
 . Använd https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects[Github Projects] som kanban
 . Skapa https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart[issues] för allt som ska ändras & assigna medlemmar till issues
-. Skapa en branch för varje issue du jobbar med. Följ en * https://deepsource.io/blog/git-branch-naming-conventions/naming convention] i projektet.
+. Skapa en branch för varje issue du jobbar med. Följ https://deepsource.com/blog/git-branch-naming-conventions[Git branch naming conventions från Deepsource] i projektet.
 . Skapa en pull request för din branch.
 . Pull requests måste genomgå code review.
-==== 
+====
 
 När du lägger till en feature är ett vanligt sätt i Git-projekt att du skapar en branch, gör dina ändringar och sedan mergar tillbaka ändringarna till huvudkoden. Det finns flera fördelar. Bland annat skapas en isolerad miljö där du kan testa dina ändringar i lugn och ro utan att riskera att röra något i övriga projektet.
 
-Ungefär samma strategier kallas också för `Feature branch workflow`, `Branching och merging` eller `Fork and pull`. 
+Ungefär samma strategier kallas också för `Feature branch workflow`, `Branching och merging` eller `Fork and pull`.
 
 .Föreläsning icon:building[]
 * Versionsnummer & GitHub flow
 
 .Läs icon:book[]
-* https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow[Feature branch workflow - Bitbucket]  
+* https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow[Feature branch workflow - Bitbucket]
 * https://www.atlassian.com/git/tutorials/using-branches/git-checkout[Git checkout branch - Bitbucket]
 * https://www.atlassian.com/git/tutorials/using-branches/git-merge[Git merge - Bitbucket]
 * https://docs.github.com/en/get-started/quickstart/github-flow[GitHub flow]
 
-==== How-to: Github flow icon:map[] 
-
+==== How-to: Github flow icon:map[]
 * Som standard på Github får alla repositories en branch som heter `main`.
-* Skapa en ny och byt aktiv branch: `git checkout -b ny-branch` +   
-Se vilka branches som finns (remode och lokalt): `git branch`. 
+* Skapa en ny och byt aktiv branch: `git checkout -b ny-branch` +
+Se vilka branches som finns (remode och lokalt): `git branch`.
 * När du arbetat färdigt gör du som vanligt, `git commit -am "Ny feature"`. Du behöver dessutom ladda upp din nya branch till servern (den finns än så länge bara på din dator) och då måste du berätta till var den ska pushas: `git push --set-upstream origin ny-branch`.
 * När du arbetat färdigt i din nya branch är det dags att merga den till main. I många projekt är detta en tvåstegsraket. Först öppnas en Pull Request. Efter review mergas den. För att skapa `pull requests` anväds https://cli.github.com/manual/gh_pr_create[`gh pr create ny-pull-request`] men oftast behövs mer information som t.ex. kommentarer, kopplingar till issues osv och många använder github.com för att göra `PR` med `gh pr create -w`.
 * När du mergat din branch kan du ta bort den lokalt med `git branch -d ny-branch`. Finns dock kvar remote. Titta under branches i ditt repository på github.com. Det är lite olika om man vill spara gamla branches eller ej.
 * Byt tillbaka till main branch: `git checkout main`.
+
+==== Övning Github flow icon:graduation-cap[]
+1. Gör (& läs) hela Github flow övningen: https://docs.github.com/en/get-started/start-your-journey/hello-world
+2. I CLI (terminalen):
+    ** Klona repositoriet
+    ** Gör minst 1 issue, 1 feature branch och en 1 pull request. Använd namnstandard: https://deepsource.com/blog/git-branch-naming-conventions[Git branch naming conventions från Deepsource].
+    ** Merga och ta bort branchen
 
 == Git: History, cherry pick, bisect, stash
 
